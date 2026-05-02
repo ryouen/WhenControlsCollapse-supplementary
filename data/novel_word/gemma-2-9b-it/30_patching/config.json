@@ -2,7 +2,7 @@
   "phase_name": "30_patching",
   "source_rule": "alpha_same_pair_same_attr_cross_crel",
   "patch_mechanism": "input_overwrite_v5_1_pattern",
-  "patch_mechanism_version": "v2_post_20260421_oooerror_fix",
+  "patch_mechanism_version": "v2_canonical_patch_mechanism",
   "ratios_dose": [
     0.01,
     0.03,
@@ -35,7 +35,7 @@
     "n_pairs": 10,
     "n_patch_trials": 120,
     "patch_mechanism": "input_overwrite_v5_1_pattern",
-    "patch_mechanism_version": "v2_post_20260421_oooerror_fix",
+    "patch_mechanism_version": "v2_canonical_patch_mechanism",
     "source_rule": "alpha_same_pair_same_attr_cross_crel",
     "trials_fingerprint_sha256": "f538458f40860bcd4dad0da4afd32f2b63eaf7dcc0a72df381c96e2d92cd4af1"
   },

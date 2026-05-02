@@ -67,7 +67,7 @@
   "phase0_collect_batch": 32,
   "parity_calibration_n": 256,
   "patch_mechanism": "input_overwrite_v5_1_pattern",
-  "patch_mechanism_version": "v2_post_20260421_oooerror_fix",
+  "patch_mechanism_version": "v2_canonical_patch_mechanism",
   "rsa_metric": "cosine_similarity_rdm",
   "cell_naming": "hihp_hilp_C_D",
   "diag_rank_formula": "rank(rsa_max)+rank(perturbation_L2)",

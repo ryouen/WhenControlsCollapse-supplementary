@@ -1,8 +1,11 @@
 # When Controls Collapse — Supplementary Material (Appendix G.6)
 
-This directory contains the byte-level reproduction artifacts referenced in Appendix G.6
-of the paper. The 8 models were loaded across **10 distinct production runs** spanning
-2026-04-13 to 2026-04-30. Each file below covers a specific reproduction concern.
+The shipped bundle contains the canonical review-time artifacts used to verify the
+submitted paper tables and figures. Internal exploratory scripts and intermediate
+development artifacts are not included. The canonical reproduction path uses the
+notebooks under `notebooks/`, the scripts under `code/`, and the CSV artifacts under
+`data/`. The four metadata files below pin the byte-level reproduction state referenced
+in Appendix G.6.
 
 ## Files
 
@@ -36,8 +39,8 @@ from production-notebook stdout logs preserved in the notebook output cells:
 - 70B paper-Main: `Successfully installed bitsandbytes-0.49.2 transformers-5.6.0` (Cell 1 install log)
 - Prospect 70B: explicit `Uninstalling transformers-5.0.0 → installed transformers-5.6.0` (Cell 1)
 - Phase 2 v2: `Torch: 2.10.0+cu128, nnsight 0.6.3` + transformers resolved via `pip install -U` to 5.6.2 at 04-26~27 (PyPI release table cross-validated)
-- 04-29~30 paper-Main re-run reuses `wcc-paper-main-7std` / `-70b` blocks, with Cell 1 EXPLICITLY pinned to `transformers==5.0.0` (3 7-std models) or `==5.6.0` (70B) to neutralize Colab default drift.
-- 04-30 Phase 2 v3 reanalysis reuses `wcc-phase2-v2-reanalysis` byte-for-byte (same `pip install -U` resolves to 5.6.2 on 04-30).
+- The four-model novel-word re-run (Llama-8B, Gemma-2-9B, Gemma-3-27B, 70B) reuses `wcc-paper-main-7std` / `-70b` blocks with Cell 1 explicitly pinned to `transformers==5.0.0` (3 native-precision models) or `==5.6.0` (70B) to neutralize Colab default drift.
+- The Phase 2 v3 reanalysis reuses `wcc-phase2-v2-reanalysis` byte-for-byte.
 
 ## Reproducing a single model run
 
@@ -85,22 +88,17 @@ one-shot helper scripts are not shipped, to keep the bundle minimal.
 
 ### What is NOT shipped (and why)
 
-- **Alternative GPT-J execution paths**: the canonical GPT-J production data shipped under `data/novel_word/gpt-j-6b-fp32/` was produced by the Colab notebook `notebooks/unified_pipeline_gpt-j-6b-fp32.ipynb` on Colab A100-SXM4-80GB. Alternative loading paths used during development are not part of the production reproduction path.
-- **NDIF remote-inference scripts** (`run_70b_pipeline.py` etc.): superseded by the Colab notebook `unified_pipeline_llama-3.1-70b-instruct-4bit.ipynb`. 70B reproduction = the shipped Colab notebook.
-- **One-shot audit / recompute helpers** used during the development cycle. They are not part of forward reproduction; the canonical reproduction path uses the production pipeline notebooks under `notebooks/` plus `code/cross_model/aggregate_v7_5.py`.
-- **IOI v14 / Pythia / SAE variants** (`tasks/ioi/run_v14_*.py`, `run_pythia_v13*.py`,
-  `run_sae_*.py`): exploratory variants that were not used in the submitted
-  Appendix E. The canonical IOI script is `tasks/ioi/run_full_pipeline.py`.
-- **KN pilot scripts** (`tasks/kn_fact_edit/run_pilot_phase{10_20_30,35_36}.py`,
-  `run_sparse_regime.py`): pre-production design pilots. The canonical KN production
-  script (Appendix F.4 24-config robustness sweep) is `tasks/kn_fact_edit/run_robustness.py`.
+- **Alternative GPT-J execution paths**: the canonical GPT-J production data under `data/novel_word/gpt-j-6b-fp32/` was produced by `notebooks/unified_pipeline_gpt-j-6b-fp32.ipynb` on Colab A100-SXM4-80GB. Alternative loading paths are not part of the canonical reproduction path.
+- **NDIF remote-inference scripts**: the canonical 70B reproduction is `notebooks/unified_pipeline_llama-3.1-70b-instruct-4bit.ipynb`.
+- **Auxiliary helper scripts** that are not part of the canonical reproduction path; the production pipeline notebooks under `notebooks/` plus `code/cross_model/aggregate_v7_5.py` are the canonical entry points.
+- **IOI alternative variants** (`tasks/ioi/run_v14_*.py`, `run_pythia_v13*.py`, `run_sae_*.py`): exploratory variants not used in the submitted Appendix E. The canonical IOI script is `tasks/ioi/run_full_pipeline.py`.
+- **KN pilot scripts** (`tasks/kn_fact_edit/run_pilot_phase{10_20_30,35_36}.py`, `run_sparse_regime.py`): not part of the canonical reproduction path. The canonical KN script (Appendix F.4 24-config robustness sweep) is `tasks/kn_fact_edit/run_robustness.py`.
 
 ### Raw activation tensors (not bundled)
 
 Raw activation `.npz` artifacts (per-model `activation_vectors_*.npz` and
 `clean_logits_*.npz` at ~0.3–1 GB per model per phase, totalling ~4.9 GB
-across 8 models × 2 phases) are **not bundled in this supplementary ZIP** because
-their combined size exceeds the NeurIPS supplementary size cap. The production
+across 8 models × 2 phases) are **not included in this bundle**. The production
 Colab notebooks under `notebooks/` regenerate them deterministically from the
 pinned model checkpoints (see `metadata/checkpoint_revisions.txt`); the per-model
 CSVs that paper tables actually cite (`cell_classification.csv`,
@@ -162,10 +160,10 @@ identifier remains valid post-publication.
 ## License
 
 The analysis code under `code/` and the Colab notebooks under `notebooks/` are released
-under the **MIT License** (see `LICENSE`). Pre-trained model weights are NOT bundled here;
-each model retains its upstream license as published on the Hugging Face Hub (see
+under the **MIT License** (see `LICENSE`). Pre-trained model weights are NOT bundled here; each
+model retains its upstream license as published on the Hugging Face Hub (see
 `metadata/checkpoint_revisions.txt` for the model_id → repo mapping).
 
-The copyright holder line in `LICENSE` is currently anonymized (`[Anonymized for
-double-blind review]`) and will be replaced with author / affiliation information at
-camera-ready time. The MIT terms themselves are unchanged.
+The copyright holder line in `LICENSE` is currently anonymized (`[Anonymized for double-blind
+review]`) and will be replaced with author / affiliation information at camera-ready time.
+The MIT terms themselves are unchanged.

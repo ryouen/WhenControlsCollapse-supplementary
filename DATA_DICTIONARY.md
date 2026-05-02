@@ -185,17 +185,17 @@ Edge-level analysis on 4 model variants: `gpt-j-6b, gemma-2-9b-it, qwen-2.5-7b-i
 - **`normalized_argmax_per_model.csv`** — per-model task-validation accuracy (clean prompts, no patching). Columns: `model, n=80, strict_argmax_pct, normalized_first_token_argmax_pct, gain_pp, d_plus_pct`. Backs Appendix A §A.5 (Table A3) D+ validity and the body §2.1 "100% capitalization-normalized first-token argmax" claim for the canonical-instruct core.
 - **`causal_imp_crossfit.csv`** — Phase-1-vs-Phase-2 cross-fit per-head sensitivity check on the causal-importance reanalysis (8 models × 5 cycles). Columns include `model, source ∈ {v2_session_consistent, v3_post_v7_5_0_rerun, v4_eligible_denominator}, n_C_p, n_D_p, k, mean_abs_delta_C_p_full, mean_abs_delta_D_p_full, mean_abs_delta_C_p_xfit, mean_abs_delta_D_p_xfit, gap_full, gap_xfit`. Per-model `source` reflects the latest reanalysis variant (per Appendix G §G.1 / `metadata/run_summary.txt`). Backs Appendix B Table B15.
 
-**Other aggregates (uncited in current Appendix v7.7.7.7; provided for completeness, but the canonical paper-cited values come from the four files above)**:
+**Auxiliary cross-model summaries** (retained for consistency checks; canonical table values are documented in the corresponding per-model CSVs and Appendix tables above):
 
-- **`8model_comparison.csv`** — earlier cross-model summary; superseded by per-model `30_patching/dose_response_v2.csv` recompute (Appendix G §G.4 / Table G1).
-- **`behavioral_flip_rates_per_model.csv`** — earlier per-model top-1 flip aggregate (7-model only; 70B not included).
-- **`cell_counts_per_model.csv`** — earlier per-model |A|/|B|/|C|/|D| (7-model only); current canonical counts are in Table G2.
-- **`main_dose_response_gap_per_model.csv`** — earlier C−D summary (7-model only).
-- **`prospect_gap_per_model.csv`** — earlier prospect gap summary (Prospect not run on 70B by design).
-- **`body_table7_gini_fr_vs_nw.csv`** — earlier Table 7 Gini comparison; current canonical comes from per-head Gini recompute on the eligibility-filtered head set (Gemma-3 = 1885, Qwen-7B = 783, others architectural).
+- **`8model_comparison.csv`** — auxiliary cross-model summary; canonical values come from per-model `30_patching/dose_response_v2.csv` (Appendix G §G.4 / Table G1).
+- **`behavioral_flip_rates_per_model.csv`** — auxiliary per-model top-1 flip aggregate (7-model only; 70B not included).
+- **`cell_counts_per_model.csv`** — auxiliary per-model |A|/|B|/|C|/|D| (7-model only); canonical counts are in Table G2.
+- **`main_dose_response_gap_per_model.csv`** — auxiliary C−D summary (7-model only).
+- **`prospect_gap_per_model.csv`** — auxiliary prospect gap summary (Prospect not run on 70B by design).
+- **`body_table7_gini_fr_vs_nw.csv`** — auxiliary Table 7 Gini comparison; canonical values come from a per-head Gini recompute on the eligibility-filtered head set (Gemma-3 = 1885, Qwen-7B = 783, others architectural).
 - **`saturation_onsets.csv`** — per-model `r_sat = min(|C|, |D|) / eligible_heads`. Matches Appendix G §G.3 Table G2.
 - **`within_stratum_28rows.csv`** — flattened table source for Appendix B Table B2 (the `28rows` filename refers to the native-precision seven-model × 4-quartile = 28-comparison family α / 28 = 0.001786; the 70B stress-arm rows are appended in the Appendix table for the full 8-model × 4-quartile = 32-row presentation).
-- **`causal_importance_reanalysis_v2_summary.csv`** — earlier Phase-2 summary; superseded by `causal_imp_crossfit.csv` for the cross-fit version and by Table B11/B12 for the headline values.
+- **`causal_importance_reanalysis_v2_summary.csv`** — auxiliary Phase-2 summary; canonical headline values are in Table B11/B12, with the cross-fit values in `causal_imp_crossfit.csv`.
 
 ## Naming conventions and units
 

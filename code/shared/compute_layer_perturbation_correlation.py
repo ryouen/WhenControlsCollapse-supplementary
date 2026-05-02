@@ -9,7 +9,6 @@ For each unit (model or task), computes:
 Outputs:
   cross_model/layer_bias_analysis.csv     — per-unit summary
   cross_model/layer_analysis/{unit}_dual_classification.csv — per-head
-  reports/task1_layer_bias.md              — narrative report
 """
 
 from __future__ import annotations

@@ -2,7 +2,7 @@
   "phase_name": "40_readout",
   "source_rule": "alpha_same_pair_same_attr_cross_crel",
   "patch_mechanism": "input_overwrite_v5_1_pattern",
-  "patch_mechanism_version": "v2_post_20260421_oooerror_fix",
+  "patch_mechanism_version": "v2_canonical_patch_mechanism",
   "ratios_readout": [
     0.05,
     0.1,
