@@ -20,29 +20,29 @@
 # novelword Prospect | 7 standard models | 2026-04-22 | Colab A100-SXM4-80GB | wcc-paper-main-7std (no -U) | models/{model}/50_prospect/...
 # novelword Prospect | 70B-4bit | 2026-04-23 | Colab G4_GPU-96GB (RTX PRO 6000) | wcc-paper-main-70b | models/llama-3.1-70b-instruct-4bit/50_prospect/...
 # factual_recall (70B)| 70B-4bit | 2026-04-25 | Colab G4_GPU-96GB (RTX PRO 6000) | wcc-phase2-v2-reanalysis | tasks/factual_recall/llama-3.1-70b-instruct-4bit/{phase}/...
-# Phase 2 v2 reanalysis| 8 models | 2026-04-26 ~ 04-27 | Colab A100-SXM4-40GB / G4-95GB | wcc-phase2-v2-reanalysis | models/{model}/causal_importance_reanalysis_v2_session_consistent/...
-# novelword paper-Main| Re-run 4 models, Phase 0/B/C.1/C.2/...| 2026-04-29 ~ 04-30 | Colab A100-SXM4-80GB / G4-96GB | wcc-paper-main-7std-pinned-cell1, wcc-paper-main-70b | models/{model}/{phase}/...
-# Phase 2 v3 reanalysis| 6 models (causal-imp axis) | 2026-04-30 | Colab A100-SXM4-80GB / G4-96GB | wcc-phase2-v2-reanalysis | models/{model}/causal_importance_reanalysis_v3_post_v7_5_0_rerun/...
+# causal-importance reanalysis (v2)| 8 models | 2026-04-26 ~ 04-27 | Colab A100-SXM4-40GB / G4-95GB | wcc-phase2-v2-reanalysis | models/{model}/causal_importance_reanalysis_v2_session_consistent/...
+# novelword paper-Main| Canonical update (4 models), Phase 0/B/C.1/C.2/...| 2026-04-29 ~ 04-30 | Colab A100-SXM4-80GB / G4-96GB | wcc-paper-main-7std-pinned-cell1, wcc-paper-main-70b | models/{model}/{phase}/...
+# causal-importance reanalysis (v3)| 6 models (causal-imp axis) | 2026-04-30 | Colab A100-SXM4-80GB / G4-96GB | wcc-phase2-v2-reanalysis | models/{model}/causal_importance_reanalysis_v3/...
 
 # === Notes on hardware ===
 # - "Colab A100-SXM4-80GB" is Colab Pro+ A100 (80 GB VRAM); used for all 7-standard-model runs.
 # - "Colab G4_GPU-96GB (RTX PRO 6000 Blackwell Server Edition)" is the new Colab "G4" runtime
 # (95.0 GB VRAM); used for all Llama-70B-4bit runs starting 2026-04-22 because the
 # bf16 KV cache for 80 layers × 64 heads requires the larger VRAM.
-# - "Phase 2 v2 reanalysis" used an A100-80GB for 7 standard models (1 of the runs got
+# - "causal-importance reanalysis (v2)" used an A100-80GB for 7 standard models (1 of the runs got
 # an A100-40GB instead — see `models/{m}/causal_importance_reanalysis_v2_session_consistent/config.json`
 # field `_session_log` for the exact GPU per run); 70B got the G4 95GB.
-# - "novelword paper-Main re-run" (04-29~30) re-ran the Phase A/B/C/D/E pipeline for 4
+# - "novelword paper-Main canonical update" (04-29~30) re-ran the Phase A/B/C/D/E pipeline for 4
 # models (Llama-3.1-8B-Instruct, Gemma-2-9B-IT, Gemma-3-27B, Llama-3.1-70B-Instruct-4bit)
 # to apply the equal-k convention used throughout the paper and to guarantee
 # session-consistent transformers pinning (Cell 1 explicit `==5.0.0` for the 3 7-standard
 # models, `==5.6.0` for 70B). The other 4 models (Qwen-7B, Qwen-14B, OLMo-13B, GPT-J-6B)
-# were not re-run because their Apr 21 outputs are byte-equal under the same env.
-# - "Phase 2 v3 reanalysis" (04-30) re-ran the C'/D' (causal-importance axis) group
-# patching using the v7.5.0-rerun `30_patching/individual_head_effects.csv` as the
-# per-head causal-imp source (median split over the same 4 re-run models + Qwen-7B
-# + Qwen-14B; OLMo + GPT-J kept v2 since main pipeline unchanged). This is purely
-# a re-classification + re-patching pass — no Novel Word data collected.
+# were not re-executed because their Apr 21 outputs are byte-equal under the same env.
+# - "causal-importance reanalysis (v3)" (04-30) executed the C'/D' (causal-importance axis) group
+# patching using the canonical paper-Main `30_patching/individual_head_effects.csv` as the
+# per-head causal-imp source (median split over the same 4 canonically updated models + Qwen-7B
+# + Qwen-14B; OLMo + GPT-J use the v2 reanalysis as canonical since the main pipeline is unchanged
+# for those models). This is purely a re-classification + re-patching pass — no Novel Word data collected.
 # - The Colab notebook `unified_pipeline_v7_5_0.ipynb` and 7 model-specific variants
 # produced the paper-Main 7-standard runs; `unified_pipeline_llama70b-4bit_v7_5_0.ipynb`
 # produced 70B paper-Main.
@@ -57,24 +57,24 @@
 # FactRec 7-standard (04-18~19, `pip install transformers` no-U → no upgrade),
 # paper-Main 7-standard (04-21, no explicit transformers install),
 # Prospect 7-standard (04-22, `pip install transformers` no-U → no upgrade),
-# paper-Main 7-standard re-run (04-29~30, Cell 1 EXPLICITLY pinned `==5.0.0`
+# paper-Main 7-standard canonical update (04-29~30, Cell 1 EXPLICITLY pinned `==5.0.0`
 # to neutralize Colab default drift; matches Apr 21 origin).
 # - **5.6.0** — Released 2026-04-22T15:41Z. Pulled by `pip install -U transformers` in:
 # paper-Main 70B (04-22, install line uses `-U`),
 # Prospect 70B (04-23, Cell 1 explicitly logs "Uninstalling transformers-5.0.0... Successfully installed transformers-5.6.0"),
-# paper-Main 70B re-run (04-29, Cell 1 EXPLICITLY pinned `==5.6.0` for
+# paper-Main 70B canonical update (04-29, Cell 1 EXPLICITLY pinned `==5.6.0` for
 # session-consistency; matches Apr 22 origin).
 # - **5.6.2** — Released 2026-04-23T18:33Z (latest at run date). Pulled by `pip install -U transformers` in:
 # FactRec 70B (04-25, install line uses `-U`),
-# Phase 2 v2 reanalysis (04-26~27, install line uses `-U`),
-# Phase 2 v3 reanalysis (04-30, install line uses `-U`; PyPI confirms
+# causal-importance reanalysis (v2) (04-26~27, install line uses `-U`),
+# causal-importance reanalysis (v3) (04-30, install line uses `-U`; PyPI confirms
 # 5.6.2 was still latest stable on 04-30).
 #
 # Direct evidence in run-time stdout logs (preserved in notebook output cells):
 # - paper-Main 7-standard: `[2026-04-21 ...] PyTorch=2.10.0+cu128 | Transformers=5.0.0 | nnsight=0.6.3`
 # - paper-Main 70B: `Successfully installed bitsandbytes-0.49.2 transformers-5.6.0`
 # - Prospect 70B: `Uninstalling transformers-5.0.0 ... Successfully installed bitsandbytes-0.49.2 transformers-5.6.0`
-# - All Phase 2 v2: `[10:09:59] Torch: 2.10.0+cu128 | CUDA available: True; nnsight version: 0.6.3` (transformers version inferred from `pip install -U transformers` resolved to 5.6.2 at 04-26~27 — PyPI release table shows 5.6.2 was latest 04-23 ~ 04-26)
+# - All causal-importance reanalysis (v2): `[10:09:59] Torch: 2.10.0+cu128 | CUDA available: True; nnsight version: 0.6.3` (transformers version inferred from `pip install -U transformers` resolved to 5.6.2 at 04-26~27 — PyPI release table shows 5.6.2 was latest 04-23 ~ 04-26)
 #
 # For the 7-standard FactRec and 7-standard Prospect runs, the notebook source has
 # `pip install -q nnsight transformers accelerate ...` WITHOUT `-U`, so `transformers`

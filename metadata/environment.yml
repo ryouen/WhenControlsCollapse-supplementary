@@ -6,11 +6,11 @@
 # Environment   | transformers | bitsandbytes | Used by
 # --------------+--------------+--------------+----------------------------------------------------------------------------
 # wcc-paper-main-7std        | 5.0.0       | (n/a)        | ACDC-cross-model (TransformerLens), FactRec 7-std (04-18), paper-Main 7-std (04-21),
-#                                                          Prospect 7-std (04-22), paper-Main 7-std re-run 4-of-4-models (04-29~30; Cell 1 `==5.0.0` explicit pin)
+#                                                          Prospect 7-std (04-22), paper-Main 7-std canonical update 4-of-4-models (04-29~30; Cell 1 `==5.0.0` explicit pin)
 # wcc-paper-main-70b         | 5.6.0       | 0.49.2       | paper-Main 70B (04-22), Prospect 70B (04-23),
-#                                                          paper-Main 70B re-run (04-29; Cell 1 `==5.6.0` explicit pin)
-# wcc-phase2-v2-reanalysis   | 5.6.2       | 0.49.2       | FactRec 70B (04-25), Phase 2 v2 reanalysis 8 models (04-26~27),
-#                                                          Phase 2 v3 reanalysis 6 models (04-30, same env, post-04-29 paper-Main re-run)
+#                                                          paper-Main 70B canonical update (04-29; Cell 1 `==5.6.0` explicit pin)
+# wcc-phase2-v2-reanalysis   | 5.6.2       | 0.49.2       | FactRec 70B (04-25), causal-importance reanalysis (v2) 8 models (04-26~27),
+#                                                          causal-importance reanalysis (v3) 6 models (04-30, same env, post-04-29 paper-Main canonical update)
 
 ---
 name: wcc-paper-main-7std
@@ -25,7 +25,7 @@ name: wcc-paper-main-7std
 # evidence (Appendix F.5 / Table F4) comprises the 4 TransformerLens-loadable model
 # variants whose 30_patching outputs ship under data/acdc_ioi_cross_model/
 # (gpt-j-6b, gemma-2-9b-it, qwen-2.5-7b-instruct, qwen-2.5-14b-instruct).
-# 04-29~30 paper-Main re-run for 4 models (Llama-8B, Gemma-2-9B, Gemma-3-27B + 70B-as-separate-env)
+# 04-29~30 paper-Main canonical update for 4 models (Llama-8B, Gemma-2-9B, Gemma-3-27B + 70B-as-separate-env)
 # uses the SAME env block but with Cell 1 EXPLICITLY pinning `pip install transformers==5.0.0`
 # (instead of relying on Colab default) to neutralize Colab-image drift between Apr 22
 # and Apr 29. Verified via Cell 3 stdout: `Transformers=5.0.0` matches Apr 21 origin byte-equal.
@@ -56,10 +56,9 @@ name: wcc-paper-main-70b
 # Prospect 70B notebook (`prospect_v7_5_5_llama-3.1-70b-instruct-4bit.ipynb`) Cell 1
 # captures: `Uninstalling transformers-5.0.0... Successfully installed bitsandbytes-0.49.2 transformers-5.6.0`
 # (= explicit downgrade from Colab default 5.0.0 then re-install via `pip install -U`).
-# 04-29 paper-Main 70B re-run uses the SAME env block but Cell 1 EXPLICITLY pins
+# The 04-29 paper-Main 70B canonical update uses the SAME env block but Cell 1 EXPLICITLY pins
 # `pip install transformers==5.6.0 bitsandbytes==0.49.2` (instead of `-U`) to neutralize
-# any post-Apr-22 PyPI drift. Note: the original Apr 22 run had a mid-run upgrade artifact
-# (5.0.0 → 5.6.0 between Cells); the Apr 29 re-run is single-version session-consistent.
+# any post-Apr-22 PyPI drift; the Apr 29 update is single-version session-consistent end-to-end.
 channels: [defaults]
 dependencies:
   - python=3.12
@@ -77,20 +76,18 @@ dependencies:
 
 ---
 name: wcc-phase2-v2-reanalysis
-# Causal-importance Phase 2 v2 reanalysis (04-26~27), FactRec 70B addendum (04-25),
-# AND Phase 2 v3 reanalysis (04-30, post v7.5.0-rerun).
+# Causal-importance reanalysis (v2 04-26~27 and v3 04-30) and FactRec 70B addendum (04-25).
 # All three runs use Cell 1 `pip install -q -U transformers accelerate nnsight scipy pandas`
-# (Phase 2 v2/v3 also include `bitsandbytes>=0.46.1` for the 70B variant).
+# (causal-importance reanalysis (v2)/v3 also include `bitsandbytes>=0.46.1` for the 70B variant).
 # The `-U` flag pulled the latest transformers at run date.
 # PyPI release dates (verified): transformers 5.6.2 released 2026-04-23T18:33Z; remained
 # the latest stable through 2026-04-30. So at all three run dates (04-25 / 04-26~27 / 04-30),
 # `pip install -U transformers` resolved to the same 5.6.2.
 #
-# Note: For Phase 2 v3 reanalysis (04-30), the env block is identical to Phase 2 v2
-# (same transformers 5.6.2, same nnsight 0.6.3, same torch 2.10.0+cu128). The v3 vs v2
-# numerical shift originates from upstream `30_patching/individual_head_effects.csv`
-# (re-generated under wcc-paper-main-7std-pinned-cell1 on 04-29~30 with HEAD_BATCH_SIZE=128
-# batched patching, replacing the Apr 21 single-head patching), NOT from this env.
+# Note: the v3 causal-importance reanalysis (04-30) uses an env block identical to v2
+# (same transformers 5.6.2, same nnsight 0.6.3, same torch 2.10.0+cu128); v3 differs from
+# v2 only in its upstream `30_patching/individual_head_effects.csv` source (the canonical
+# 04-29~30 run with HEAD_BATCH_SIZE=128 batched patching), not in env.
 # Direct stdout evidence captured in v2 notebook Cell 1 output:
 #   `[10:09:59] Torch: 2.10.0+cu128 | CUDA available: True`
 #   `[10:09:59] GPU: NVIDIA A100-SXM4-40GB  VRAM=39.5 GB`  (or RTX PRO 6000 Blackwell for 70B)
@@ -104,9 +101,9 @@ dependencies:
     - accelerate                   # `-U` resolved
     - bitsandbytes==0.49.2         # 70B variant only
     - nnsight==0.6.3
-    - wordfreq==3.1.1              # only for novelword Phase 2 v2 (no FactRec)
-    - rapidfuzz==3.14.5             # only for novelword Phase 2 v2
-    # Phase 2 v2 `-U pandas` resolved to pandas 3.0.2, which is incompatible with
+    - wordfreq==3.1.1              # only for novelword causal-importance reanalysis (v2) (no FactRec)
+    - rapidfuzz==3.14.5             # only for novelword causal-importance reanalysis (v2)
+    # causal-importance reanalysis (v2) `-U pandas` resolved to pandas 3.0.2, which is incompatible with
     # google-colab 1.0.0 / db-dtypes / gradio / cudf-cu12 (pip emits warnings, but the
     # pipeline does not exercise affected APIs, so warnings are non-blocking).
     - pandas==3.0.2

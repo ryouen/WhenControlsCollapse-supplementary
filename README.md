@@ -38,9 +38,9 @@ from production-notebook stdout logs preserved in the notebook output cells:
 - 7-standard paper-Main: `Transformers=5.0.0` (Cell 3 log line)
 - 70B paper-Main: `Successfully installed bitsandbytes-0.49.2 transformers-5.6.0` (Cell 1 install log)
 - Prospect 70B: explicit `Uninstalling transformers-5.0.0 → installed transformers-5.6.0` (Cell 1)
-- Phase 2 v2: `Torch: 2.10.0+cu128, nnsight 0.6.3` + transformers resolved via `pip install -U` to 5.6.2 at 04-26~27 (PyPI release table cross-validated)
-- The four-model novel-word re-run (Llama-8B, Gemma-2-9B, Gemma-3-27B, 70B) reuses `wcc-paper-main-7std` / `-70b` blocks with Cell 1 explicitly pinned to `transformers==5.0.0` (3 native-precision models) or `==5.6.0` (70B) to neutralize Colab default drift.
-- The Phase 2 v3 reanalysis reuses `wcc-phase2-v2-reanalysis` byte-for-byte.
+- causal-importance reanalysis (v2): `Torch: 2.10.0+cu128, nnsight 0.6.3` + transformers resolved via `pip install -U` to 5.6.2 at 04-26~27 (PyPI release table cross-validated)
+- The four-model novel-word canonical update (Llama-8B, Gemma-2-9B, Gemma-3-27B, 70B) reuses `wcc-paper-main-7std` / `-70b` blocks with Cell 1 explicitly pinned to `transformers==5.0.0` (3 native-precision models) or `==5.6.0` (70B) to neutralize Colab default drift.
+- The causal-importance reanalysis (v3) reuses `wcc-phase2-v2-reanalysis` byte-for-byte.
 
 ## Reproducing a single model run
 
@@ -60,7 +60,7 @@ local = snapshot_download(
 #    `environment.yml` for the exact pip pin. E.g.:
 #    - paper-Main 7-standard:    `pip install transformers==5.0.0`
 #    - paper-Main 70B-4bit:      `pip install transformers==5.6.0 bitsandbytes==0.49.2`
-#    - Phase 2 v2 reanalysis:    `pip install transformers==5.6.2`
+#    - causal-importance reanalysis (v2):    `pip install transformers==5.6.2`
 
 # 3. Load with nnsight 0.6.3:
 model = LanguageModel(local, dtype=torch.bfloat16, device_map="auto")
@@ -79,7 +79,7 @@ one-shot helper scripts are not shipped, to keep the bundle minimal.
 | Novel-Word Phase 10–40 (7 standard models) | `notebooks/unified_pipeline_*.ipynb` | All 7 standard models |
 | Novel-Word Phase 10–40 (Llama-70B-4bit) | `notebooks/unified_pipeline_llama-3.1-70b-instruct-4bit.ipynb` | 70B paper-Main |
 | Novel-Word Prospect (Phase 50) | `notebooks/prospect_*.ipynb` | All 8 models |
-| Phase 2 v2 reanalysis (group-patch causal-imp) | `notebooks/causal_importance_reanalysis_*.ipynb` | All 8 models |
+| causal-importance reanalysis (v2) (group-patch causal-imp) | `notebooks/causal_importance_reanalysis_*.ipynb` | All 8 models |
 | Behavioral aggregates | `notebooks/behavioral_*.ipynb` | All 8 models |
 | ACDC cross-model | `notebooks/acdc_ioi_cross_model.ipynb` | 4 TransformerLens-loadable models (gpt-j-6b, gemma-2-9b-it, qwen-2.5-7b-instruct, qwen-2.5-14b-instruct) |
 | Factual-recall (Appendix D) | `notebooks/factual_recall_*.ipynb` | All 8 models |

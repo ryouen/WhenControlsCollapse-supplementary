@@ -160,7 +160,7 @@ Edge-level analysis on 4 model variants: `gpt-j-6b, gemma-2-9b-it, qwen-2.5-7b-i
 
 ### `cross_model/` (project-root level)
 
-- **`causal_importance_phase2_dose_response_long.csv`** — Phase 2 v2 reanalysis long-format (24 rows × 7 cols).
+- **`causal_importance_phase2_dose_response_long.csv`** — causal-importance reanalysis long-format (24 rows × 7 cols).
   Backs Appendix B Table B11.
 
 - **`causal_importance_phase2_summary.csv`** / **`mwu.csv`** / **`paired_tests.csv`** —
@@ -183,7 +183,7 @@ Edge-level analysis on 4 model variants: `gpt-j-6b, gemma-2-9b-it, qwen-2.5-7b-i
 - **`signed_delta_per_cell.csv`** — backs **Appendix B Table B1**. 8 models × 4 cells = 32 rows. Columns: `model, cell ∈ {A,B,C,D}, n_heads, mean_signed, mean_abs, pct_down_pt1, pct_up_pt1, pct_near0_pt1, tilt_down_minus_up`. `mean_signed` = mean(`delta_target_logit_signed`) over (head, tuple) pairs in cell, where `delta_target_logit_signed = patched − clean` (Appendix B §B.1). `tilt_down_minus_up` = (% with Δ < −0.1) − (% with Δ > +0.1), in pp.
 - **`strict_argmax_flip_per_model.csv`** — strict (token-id-level, no normalization) argmax-flip rate per (model, group, ratio). 8 models × 5 groups × ~5 ratios = 156 rows. Columns: `model, group, ratio, strict_flip_rate, n`. Companion to body Table 4 and Appendix B Table B6 (which use capitalization-normalized flips).
 - **`normalized_argmax_per_model.csv`** — per-model task-validation accuracy (clean prompts, no patching). Columns: `model, n=80, strict_argmax_pct, normalized_first_token_argmax_pct, gain_pp, d_plus_pct`. Backs Appendix A §A.5 (Table A3) D+ validity and the body §2.1 "100% capitalization-normalized first-token argmax" claim for the canonical-instruct core.
-- **`causal_imp_crossfit.csv`** — Phase-1-vs-Phase-2 cross-fit per-head sensitivity check on the causal-importance reanalysis (8 models × 5 cycles). Columns include `model, source ∈ {v2_session_consistent, v3_post_v7_5_0_rerun, v4_eligible_denominator}, n_C_p, n_D_p, k, mean_abs_delta_C_p_full, mean_abs_delta_D_p_full, mean_abs_delta_C_p_xfit, mean_abs_delta_D_p_xfit, gap_full, gap_xfit`. Per-model `source` reflects the latest reanalysis variant (per Appendix G §G.1 / `metadata/run_summary.txt`). Backs Appendix B Table B15.
+- **`causal_imp_crossfit.csv`** — Phase-1-vs-Phase-2 cross-fit per-head sensitivity check on the causal-importance reanalysis (8 models × 5 cycles). Columns include `model, source ∈ {v2, v3, v4}, n_C_p, n_D_p, k, mean_abs_delta_C_p_full, mean_abs_delta_D_p_full, mean_abs_delta_C_p_xfit, mean_abs_delta_D_p_xfit, gap_full, gap_xfit`. Per-model `source` indicates which reanalysis variant supplied the per-head causal-imp values for that row (see Appendix G §G.1 / `metadata/run_summary.txt`). Backs Appendix B Table B15.
 
 **Auxiliary cross-model summaries** (retained for consistency checks; canonical table values are documented in the corresponding per-model CSVs and Appendix tables above):
 
@@ -206,4 +206,4 @@ Edge-level analysis on 4 model variants: `gpt-j-6b, gemma-2-9b-it, qwen-2.5-7b-i
 
 ## Reproduction provenance
 
-All values can be regenerated from the model checkpoints listed in `metadata/checkpoint_revisions.txt` via the analysis scripts in `code/` and the Colab notebooks in `notebooks/`. The production runs spanning 2026-04-13 to 2026-04-30 are documented in `metadata/run_summary.txt` (8 originals plus the 2026-04-29/30 paper-Main re-run on `transformers 5.0.0` for four models and the 2026-04-30 Phase 2 v3 reanalysis); environment versions are pinned in `metadata/environment.yml` (three blocks: `wcc-paper-main-7std`, `wcc-paper-main-70b`, `wcc-phase2-v2-reanalysis`). The Phase 2 v2 / v3 reanalysis is session-consistent — see Appendix G §G.5 for the OLMo-13B 6.0-logit cross-session divergence rationale.
+All values can be regenerated from the model checkpoints listed in `metadata/checkpoint_revisions.txt` via the analysis scripts in `code/` and the Colab notebooks in `notebooks/`. The production runs are documented in `metadata/run_summary.txt`; environment versions are pinned in `metadata/environment.yml` (three blocks: `wcc-paper-main-7std`, `wcc-paper-main-70b`, `wcc-phase2-v2-reanalysis`). The causal-importance reanalysis is session-consistent — see Appendix G §G.5 for the OLMo-13B 6.0-logit cross-session divergence rationale.
