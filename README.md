@@ -189,3 +189,14 @@ together with the per-file LFS sha256 in `checkpoint_manifest.json` gives a stab
 identifier from which any reviewer can reconstruct the exact bytes via Hugging Face Hub's
 content-addressed download. Hugging Face retains commit history indefinitely, so this
 identifier remains valid post-publication.
+
+## License
+
+The analysis code under `code/` and the Colab notebooks under `notebooks/` are released
+under the **MIT License** (see `LICENSE`). Pre-trained model weights are NOT bundled here;
+each model retains its upstream license as published on the Hugging Face Hub (see
+`metadata/checkpoint_revisions.txt` for the model_id → repo mapping).
+
+The copyright holder line in `LICENSE` is currently anonymized (`[Anonymized for
+double-blind review]`) and will be replaced with author / affiliation information at
+camera-ready time. The MIT terms themselves are unchanged.
