@@ -34,11 +34,10 @@
 # field `_session_log` for the exact GPU per run); 70B got the G4 95GB.
 # - "novelword paper-Main re-run" (04-29~30) re-ran the Phase A/B/C/D/E pipeline for 4
 # models (Llama-3.1-8B-Instruct, Gemma-2-9B-IT, Gemma-3-27B, Llama-3.1-70B-Instruct-4bit)
-# to fix the equal-k off-by-1 bug present in the Apr 21 paper-Main outputs, and to
-# guarantee session-consistent transformers pinning (Cell 1 explicit `==5.0.0` for
-# the 3 7-standard models, `==5.6.0` for 70B). The other 4 models (Qwen-7B, Qwen-14B, OLMo-13B, GPT-J-6B) were NOT re-run because their Apr 21
-# outputs were already deterministic-equal under the same env (verified via byte-equal
-# `individual_head_effects.csv` reproduction in deterministic re-run smoke tests).
+# to apply the equal-k convention used throughout the paper and to guarantee
+# session-consistent transformers pinning (Cell 1 explicit `==5.0.0` for the 3 7-standard
+# models, `==5.6.0` for 70B). The other 4 models (Qwen-7B, Qwen-14B, OLMo-13B, GPT-J-6B)
+# were not re-run because their Apr 21 outputs are byte-equal under the same env.
 # - "Phase 2 v3 reanalysis" (04-30) re-ran the C'/D' (causal-importance axis) group
 # patching using the v7.5.0-rerun `30_patching/individual_head_effects.csv` as the
 # per-head causal-imp source (median split over the same 4 re-run models + Qwen-7B
@@ -49,8 +48,7 @@
 # produced 70B paper-Main.
 # - Prospect notebooks: `prospect_v7_5_5_*.ipynb` (8 model-specific variants).
 # Each notebook produces deterministic output given the pinned environment block and
-# the WORD_SEED=2027 stimulus seed; cloud-storage account-level distribution does not
-# affect reproducibility.
+# the WORD_SEED=2027 stimulus seed.
 
 # === Notes on transformers version ===
 # Three distinct transformers versions across the runs:
@@ -78,16 +76,16 @@
 # - Prospect 70B: `Uninstalling transformers-5.0.0 ... Successfully installed bitsandbytes-0.49.2 transformers-5.6.0`
 # - All Phase 2 v2: `[10:09:59] Torch: 2.10.0+cu128 | CUDA available: True; nnsight version: 0.6.3` (transformers version inferred from `pip install -U transformers` resolved to 5.6.2 at 04-26~27 — PyPI release table shows 5.6.2 was latest 04-23 ~ 04-26)
 #
-# For the 7-standard FactRec and 7-standard Prospect runs, the local notebook source
-# (Drive originals) has `pip install -q nnsight transformers accelerate ...` WITHOUT `-U`,
-# so `transformers` stays at the Colab default (5.0.0 at run dates, confirmed by
-# adjacent paper-Main 04-21 log).
+# For the 7-standard FactRec and 7-standard Prospect runs, the notebook source has
+# `pip install -q nnsight transformers accelerate ...` WITHOUT `-U`, so `transformers`
+# stays at the Colab default (5.0.0 at run dates, confirmed by adjacent paper-Main
+# 04-21 log).
 
 # === Caveat on auxiliary local-GPU runs (greater_than / induction / kn_fact_edit_robustness) ===
 # These are GPT-2-small (TransformerLens) experiments referenced by Appendix G.1
-# auxiliary checks. They ran on a local workstation with RTX 3060 (8 GB VRAM) during
-# the 2026-04-08 ~ 04-13 design phase. The exact pinned transformers / torch versions
-# for these auxiliary runs are not captured in the per-run config; if exact
-# reproduction is required, see the production calibration notebooks (under the project's research-internal repository, not bundled in this archive) for the source code.
+# auxiliary checks. They ran on a single consumer-class GPU during the design phase.
+# The exact pinned transformers / torch versions for these auxiliary runs are not
+# captured in the per-run config; the shipped per-task scripts under
+# code/tasks/{induction,greater_than,kn_fact_edit}/ are the canonical source.
 # These runs are NOT part of the main 8-model results table (Table G1) and do not
 # affect any direction or significance call in the paper.

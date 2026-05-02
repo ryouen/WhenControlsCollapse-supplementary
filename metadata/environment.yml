@@ -116,10 +116,10 @@ dependencies:
 
 ---
 # === Auxiliary local-GPU environment (NOT in main 8-model results) ===
-# greater_than / induction / kn_fact_edit_robustness ran on a local workstation with
-# RTX 3060 (8 GB VRAM) during the 2026-04-08 ~ 04-13 design phase. These are
-# GPT-2-small TransformerLens experiments referenced by Appendix G.1 as auxiliary
-# cross-checks. The exact pinned library versions for these auxiliary runs are NOT
-# captured in the per-run config files. If exact reproduction is required, the source
-# code is in `notebooks/01_prompt_calibration_*.ipynb` and the saved data is sufficient
-# to verify the cross-check claims without re-running the experiments.
+# greater_than / induction / kn_fact_edit_robustness are GPT-2-small TransformerLens
+# experiments referenced by Appendix G.1 as auxiliary cross-checks; they ran on a
+# single consumer-class GPU during the design phase. The exact pinned library versions
+# for these auxiliary runs are NOT captured in the per-run config files. The shipped
+# per-task scripts under `code/tasks/{induction,greater_than,kn_fact_edit}/` are the
+# canonical source, and the saved data is sufficient to verify the cross-check claims
+# without re-running the experiments.

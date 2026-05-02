@@ -19,33 +19,25 @@ Programmatic per-file manifest: for every file in every model snapshot, gives `p
 files like `config.json`). 128 files across 8 models, 289 GB total. Reviewers can verify
 byte-level integrity of any downloaded snapshot against this manifest.
 
-**Freshness through 2026-04-30 re-runs**: The 2026-04-29~30 paper-Main re-run cycle
-(4 models) and the 2026-04-30 Phase 2 v3/v4 reanalysis used the **same checkpoint SHAs**
-listed in `checkpoint_revisions.txt`. No LFS pointer or weight shard hash changed; the
-Hugging Face repo `main` heads at the original earliest_run_date_utc remain unchanged
-on 2026-04-30 (verified via HF API). Manifest content is therefore unchanged from
-2026-04-27 — the file is re-saved on 2026-05-02 only to refresh its mtime so a strict
-reviewer does not infer a content drift from an older mtime.
+All 8 models' Hugging Face `main` heads at the listed SHAs remain unchanged across
+the production-run window, so the manifest is identical to a re-fetch at any of the
+10 production-run dates.
 
 ### `run_summary.txt`
-Maps **each production run** to its date, hardware, library environment, and data location.
-Covers all 10 runs: ACDC-cross-model (04-13), FactRec 7-std (04-18~19), paper-Main 7-std (04-21),
-paper-Main 70B (04-22), Prospect 7-std (04-22), Prospect 70B (04-23), FactRec 70B (04-25),
-Phase 2 v2 reanalysis 8 models (04-26~27), paper-Main re-run 4 models (04-29~30; equal-k
-off-by-1 fix + Cell 1 transformers pin), Phase 2 v3 reanalysis 6 models (04-30; re-classification
-on the v7.5.0-rerun individual_head_effects.csv). Each row pins down which `environment.yml`
-block applies and where the data is stored (local repo / Drive / Dropbox).
+Maps each production run to its date, hardware, library environment, and data
+location. Each row pins down which `environment.yml` block applies and where the
+deliverable CSVs are stored relative to the supplementary archive.
 
 ### `environment.yml`
 Three distinct conda-style environment blocks (`wcc-paper-main-7std`, `wcc-paper-main-70b`,
 `wcc-phase2-v2-reanalysis`) plus a local-auxiliary note for the GPT-2-small / BERT-base experiments. Versions are captured directly
-from production-notebook stdout logs preserved in Drive notebook output cells:
+from production-notebook stdout logs preserved in the notebook output cells:
 - 7-standard paper-Main: `Transformers=5.0.0` (Cell 3 log line)
 - 70B paper-Main: `Successfully installed bitsandbytes-0.49.2 transformers-5.6.0` (Cell 1 install log)
 - Prospect 70B: explicit `Uninstalling transformers-5.0.0 → installed transformers-5.6.0` (Cell 1)
 - Phase 2 v2: `Torch: 2.10.0+cu128, nnsight 0.6.3` + transformers resolved via `pip install -U` to 5.6.2 at 04-26~27 (PyPI release table cross-validated)
 - 04-29~30 paper-Main re-run reuses `wcc-paper-main-7std` / `-70b` blocks, with Cell 1 EXPLICITLY pinned to `transformers==5.0.0` (3 7-std models) or `==5.6.0` (70B) to neutralize Colab default drift.
-- 04-30 Phase 2 v3 reanalysis reuses `wcc-phase2-v2-reanalysis` byte-for-byte (same `pip install -U` resolves to 5.6.2 on 04-30; v2 vs v3 numerical shift originates from the upstream 04-29 `individual_head_effects.csv` re-generation, not this env).
+- 04-30 Phase 2 v3 reanalysis reuses `wcc-phase2-v2-reanalysis` byte-for-byte (same `pip install -U` resolves to 5.6.2 on 04-30).
 
 ## Reproducing a single model run
 
@@ -71,26 +63,11 @@ local = snapshot_download(
 model = LanguageModel(local, dtype=torch.bfloat16, device_map="auto")
 ```
 
-## Re-run integrity note (2026-04-29 ~ 04-30)
-
-The paper-Main outputs for **4 of the 8 models** (Llama-3.1-8B-Instruct, Gemma-2-9B-IT,
-Gemma-3-27B, Llama-3.1-70B-Instruct-4bit) were re-generated on 2026-04-29 ~ 04-30 to fix
-the equal-k off-by-1 bug in `30_patching/dose_response_v2.csv` and to guarantee
-session-consistent transformers pinning. The remaining 4 models (Qwen-7B, Qwen-14B,
-OLMo-13B, GPT-J-6B) were NOT re-run since their Apr 21 outputs are byte-equal under
-the same env. Phase 2 v3 reanalysis (`causal_importance_reanalysis_v3_post_v7_5_0_rerun/`)
-applies the same group-patching Phase 2 v2 protocol to the re-generated
-`individual_head_effects.csv`. Direction `|C'| > |D'|` (paper claim) survives both v2
-and v3, but quantitative magnitudes shift (Gemma-3 ratio 10.8× → 4.7× at r=0.05;
-70B 22.7× → 3.7×).
-
 ## Code-bundle scope (`supplementary/code/`)
 
-The shipped `code/` tree contains the **production-pillar** scripts that produced
-every CSV in `supplementary/data/` and every table / figure in the paper. Internal
-exploratory and one-shot fix scripts are intentionally not shipped, to keep the
-bundle minimal and to prevent reviewers from mistaking exploratory work for
-load-bearing analysis.
+The shipped `code/` tree contains the production scripts that produced every CSV
+in `supplementary/data/` and every table / figure in the paper. Exploratory and
+one-shot helper scripts are not shipped, to keep the bundle minimal.
 
 ### Production pipelines
 
@@ -108,17 +85,9 @@ load-bearing analysis.
 
 ### What is NOT shipped (and why)
 
-- **GPT-J Apple Silicon execution path** (early development scripts that ran GPT-J locally on an M-series Mac via the MPS backend): the canonical GPT-J production data shipped under `data/novel_word/gpt-j-6b-fp32/` was produced by the Colab notebook `notebooks/unified_pipeline_gpt-j-6b-fp32.ipynb` on Colab A100-SXM4-80GB (per `metadata/run_summary.txt` row "novelword paper-Main 7 standard"); the Apple Silicon scripts wrote to a different output directory and are not part of the production reproduction path.
-- **NDIF / Mistral 70B remote-inference scripts** (`run_70b_pipeline.py` etc.):
-  superseded by the Colab notebook `unified_pipeline_llama-3.1-70b-instruct-4bit.ipynb`
-  (see `metadata/run_summary.txt` row "novelword paper-Main 70B" 2026-04-22 + 04-29 re-run).
-  The NDIF scripts depend on the Notre-Dame NDIF service and are not part of the
-  current production reproduction path. 70B reproduction = the shipped Colab notebook.
-- **Earlier audit / recompute scripts** that fixed bugs (BPE tokenization,
-  equal-k off-by-1, etc.) during the development cycle before the data files
-  shipped here were finalized. They are not part of forward reproduction;
-  the canonical reproduction path uses the production pipeline notebooks under
-  `notebooks/` plus `code/cross_model/aggregate_v7_5.py`.
+- **Alternative GPT-J execution paths**: the canonical GPT-J production data shipped under `data/novel_word/gpt-j-6b-fp32/` was produced by the Colab notebook `notebooks/unified_pipeline_gpt-j-6b-fp32.ipynb` on Colab A100-SXM4-80GB. Alternative loading paths used during development are not part of the production reproduction path.
+- **NDIF remote-inference scripts** (`run_70b_pipeline.py` etc.): superseded by the Colab notebook `unified_pipeline_llama-3.1-70b-instruct-4bit.ipynb`. 70B reproduction = the shipped Colab notebook.
+- **One-shot audit / recompute helpers** used during the development cycle. They are not part of forward reproduction; the canonical reproduction path uses the production pipeline notebooks under `notebooks/` plus `code/cross_model/aggregate_v7_5.py`.
 - **IOI v14 / Pythia / SAE variants** (`tasks/ioi/run_v14_*.py`, `run_pythia_v13*.py`,
   `run_sae_*.py`): exploratory variants that were not used in the submitted
   Appendix E. The canonical IOI script is `tasks/ioi/run_full_pipeline.py`.

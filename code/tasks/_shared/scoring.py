@@ -5,7 +5,7 @@ Canonical column names per spec/WCC_naming_conventions.md §6:
 - Perturbation: pert_raw_l2, pert_relative_l2, pert_cosine_distance, pert_standardized_l2
 - Cell: hi_imp, hi_pert, cell (A/B/C/D)
 
-Cell label semantics (CRITICAL — historical bug source):
+Cell label semantics (use exactly these definitions):
     A = hi_imp AND hi_pert    ("true positive")
     B = hi_imp AND lo_pert    ("quiet specialist")
     C = lo_imp AND hi_pert    ("false positive" — paper's central concern)
