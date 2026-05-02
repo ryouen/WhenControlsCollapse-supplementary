@@ -1,0 +1,42 @@
+{
+  "pipeline_version": "v7.5_causal_imp_phase2",
+  "analysis_name": "causal_importance_reanalysis",
+  "model_id": "google/gemma-2-9b-it",
+  "model_short": "gemma-2-9b-it",
+  "model_dtype": "bfloat16",
+  "orderings": [
+    "C_p_imp_asc",
+    "D_p_imp_asc"
+  ],
+  "ratio_labels": [
+    "r0.05",
+    "r0.10",
+    "saturation"
+  ],
+  "r_values": {
+    "r0.05": 0.05,
+    "r0.10": 0.1,
+    "saturation": 0.12797619047619047
+  },
+  "k_values": {
+    "r0.05": 33,
+    "r0.10": 67,
+    "saturation": 86
+  },
+  "cell_counts": {
+    "hihp_p": 250,
+    "hilp_p": 107,
+    "C_p": 86,
+    "D_p": 229
+  },
+  "thresholds": {
+    "causal_imp_median": 0.035416666666666666,
+    "perturbation_median": 1.7816407084465027
+  },
+  "patch_batch_size_used": 32,
+  "total_heads": 672,
+  "n_patch_trials": 120,
+  "sanity_max_clean_diff": 0.0,
+  "phase2_elapsed_sec": 9.99,
+  "completed_at": "2026-04-30T05:02:28.999242"
+}

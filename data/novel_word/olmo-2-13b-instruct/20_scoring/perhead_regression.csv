@@ -1,0 +1,2 @@
+model,n_heads,beta_imp,beta_pert,beta_layer,p_imp,p_pert,p_layer,R2_full,R2_imp_only,R2_pert_only,R2_layer_only,partial_R2_pert
+olmo-2-13b-instruct,1600,0.1124,0.661,-0.1333,2.2191748806548296e-08,1.0071540923736548e-181,2.2765098348814052e-10,0.4131,0.0109,0.3765,0.001,0.4042

@@ -1,0 +1,7 @@
+{
+  "median_rsa_max": 0.5019713044166565,
+  "median_perturbation_L2": 0.40073688328266144,
+  "n_tied_on_median_importance": 0,
+  "n_tied_on_median_perturbation": 0,
+  "n_heads_total": 1600
+}

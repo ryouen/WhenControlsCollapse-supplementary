@@ -1,0 +1,609 @@
+{
+  "threshold_used": 0.5,
+  "attempts_used": 7386,
+  "max_gap_observed": 0.49609375,
+  "candidate_pool_size": 20000,
+  "common_word_list_source": "wordfreq.top_n_list('en', 3000, wordlist='large') from wordfreq==3.1.1 (https://pypi.org/project/wordfreq/)",
+  "pair_gaps": [
+    {
+      "pair_id": "pair0",
+      "word_a": "pluswounwe",
+      "word_b": "nilflerpem",
+      "gap": 0.2724609375
+    },
+    {
+      "pair_id": "pair1",
+      "word_a": "moungisgel",
+      "word_b": "grodosplu",
+      "gap": 0.40625
+    },
+    {
+      "pair_id": "pair2",
+      "word_a": "girlatrei",
+      "word_b": "sonsaprom",
+      "gap": 0.44921875
+    },
+    {
+      "pair_id": "pair3",
+      "word_a": "slelweisgem",
+      "word_b": "tesflurfait",
+      "gap": 0.015625
+    },
+    {
+      "pair_id": "pair4",
+      "word_a": "braszeintok",
+      "word_b": "kirzelplom",
+      "gap": 0.375
+    },
+    {
+      "pair_id": "pair5",
+      "word_a": "mongelpreir",
+      "word_b": "sousnoltour",
+      "gap": 0.2265625
+    },
+    {
+      "pair_id": "pair6",
+      "word_a": "lurziflein",
+      "word_b": "nourormoum",
+      "gap": 0.1640625
+    },
+    {
+      "pair_id": "pair7",
+      "word_a": "spurkervour",
+      "word_b": "maiszergut",
+      "gap": 0.46875
+    },
+    {
+      "pair_id": "pair8",
+      "word_a": "pleikrawait",
+      "word_b": "wisfliskrum",
+      "gap": 0.0625
+    },
+    {
+      "pair_id": "pair9",
+      "word_a": "treiszesaim",
+      "word_b": "sleismurbam",
+      "gap": 0.1328125
+    },
+    {
+      "pair_id": "pair10",
+      "word_a": "parflainzin",
+      "word_b": "resseinpeik",
+      "gap": 0.2265625
+    },
+    {
+      "pair_id": "pair11",
+      "word_a": "presdeidom",
+      "word_b": "tinmoulrok",
+      "gap": 0.4609375
+    },
+    {
+      "pair_id": "pair12",
+      "word_a": "kirraissper",
+      "word_b": "nazailgral",
+      "gap": 0.4375
+    },
+    {
+      "pair_id": "pair13",
+      "word_a": "wurtrouslum",
+      "word_b": "trouprabruk",
+      "gap": 0.171875
+    },
+    {
+      "pair_id": "pair14",
+      "word_a": "saisbronwim",
+      "word_b": "zoungairmu",
+      "gap": 0.4375
+    },
+    {
+      "pair_id": "pair15",
+      "word_a": "fillintrit",
+      "word_b": "parbiset",
+      "gap": 0.36328125
+    },
+    {
+      "pair_id": "pair16",
+      "word_a": "pemaisgris",
+      "word_b": "kulbromen",
+      "gap": 0.453125
+    },
+    {
+      "pair_id": "pair17",
+      "word_a": "bonzertrou",
+      "word_b": "welkobok",
+      "gap": 0.2734375
+    },
+    {
+      "pair_id": "pair18",
+      "word_a": "kenflinwor",
+      "word_b": "prolkonzat",
+      "gap": 0.328125
+    },
+    {
+      "pair_id": "pair19",
+      "word_a": "broplailbak",
+      "word_b": "speilbonsur",
+      "gap": 0.1171875
+    },
+    {
+      "pair_id": "pair20",
+      "word_a": "winlesgou",
+      "word_b": "virgrotom",
+      "gap": 0.13818359375
+    },
+    {
+      "pair_id": "pair21",
+      "word_a": "lenflosgat",
+      "word_b": "sulgralfai",
+      "gap": 0.10546875
+    },
+    {
+      "pair_id": "pair22",
+      "word_a": "fleistrilzu",
+      "word_b": "riprortrai",
+      "gap": 0.1796875
+    },
+    {
+      "pair_id": "pair23",
+      "word_a": "grainslanbe",
+      "word_b": "burfirnul",
+      "gap": 0.388671875
+    },
+    {
+      "pair_id": "pair24",
+      "word_a": "dusloulfar",
+      "word_b": "kupralslu",
+      "gap": 0.171875
+    },
+    {
+      "pair_id": "pair25",
+      "word_a": "rouweisfaik",
+      "word_b": "nosrilmeit",
+      "gap": 0.2890625
+    },
+    {
+      "pair_id": "pair26",
+      "word_a": "fasgrurprul",
+      "word_b": "kosplolspun",
+      "gap": 0.21875
+    },
+    {
+      "pair_id": "pair27",
+      "word_a": "pelbeilkain",
+      "word_b": "roubronlaim",
+      "gap": 0.0390625
+    },
+    {
+      "pair_id": "pair28",
+      "word_a": "spasgrondu",
+      "word_b": "dorplufli",
+      "gap": 0.3125
+    },
+    {
+      "pair_id": "pair29",
+      "word_a": "bosvirtreik",
+      "word_b": "punstalneir",
+      "gap": 0.1015625
+    },
+    {
+      "pair_id": "pair30",
+      "word_a": "barkreilpon",
+      "word_b": "tusfopeir",
+      "gap": 0.3046875
+    },
+    {
+      "pair_id": "pair31",
+      "word_a": "volrouvouk",
+      "word_b": "plusmaldous",
+      "gap": 0.4073944091796875
+    },
+    {
+      "pair_id": "pair32",
+      "word_a": "presvanzaim",
+      "word_b": "burzeilnel",
+      "gap": 0.482421875
+    },
+    {
+      "pair_id": "pair33",
+      "word_a": "roudeinpot",
+      "word_b": "brairbulbam",
+      "gap": 0.1171875
+    },
+    {
+      "pair_id": "pair34",
+      "word_a": "mentasstil",
+      "word_b": "vilgroreil",
+      "gap": 0.0625
+    },
+    {
+      "pair_id": "pair35",
+      "word_a": "bolvonwai",
+      "word_b": "plaikratral",
+      "gap": 0.046875
+    },
+    {
+      "pair_id": "pair36",
+      "word_a": "keinweldok",
+      "word_b": "dollousnoul",
+      "gap": 0.1875
+    },
+    {
+      "pair_id": "pair37",
+      "word_a": "gesstunges",
+      "word_b": "telurkreit",
+      "gap": 0.140625
+    },
+    {
+      "pair_id": "pair38",
+      "word_a": "brairfogus",
+      "word_b": "gesstounzor",
+      "gap": 0.49609375
+    },
+    {
+      "pair_id": "pair39",
+      "word_a": "sailziprot",
+      "word_b": "broselwait",
+      "gap": 0.21875
+    },
+    {
+      "pair_id": "pair40",
+      "word_a": "nanflainli",
+      "word_b": "soulmunvut",
+      "gap": 0.1875
+    },
+    {
+      "pair_id": "pair41",
+      "word_a": "flofainsto",
+      "word_b": "taildailzon",
+      "gap": 0.171875
+    },
+    {
+      "pair_id": "pair42",
+      "word_a": "treinventir",
+      "word_b": "munzurdar",
+      "gap": 0.421875
+    },
+    {
+      "pair_id": "pair43",
+      "word_a": "monslaiplus",
+      "word_b": "valdesdei",
+      "gap": 0.169921875
+    },
+    {
+      "pair_id": "pair44",
+      "word_a": "lobrismeim",
+      "word_b": "broszerpai",
+      "gap": 0.4765625
+    },
+    {
+      "pair_id": "pair45",
+      "word_a": "sleirgistim",
+      "word_b": "masturspaim",
+      "gap": 0.3203125
+    },
+    {
+      "pair_id": "pair46",
+      "word_a": "bregrerslil",
+      "word_b": "lolbreirnim",
+      "gap": 0.24658203125
+    },
+    {
+      "pair_id": "pair47",
+      "word_a": "lousserlot",
+      "word_b": "renlaibrom",
+      "gap": 0.109375
+    },
+    {
+      "pair_id": "pair48",
+      "word_a": "kreiwaldum",
+      "word_b": "vousstosein",
+      "gap": 0.359375
+    },
+    {
+      "pair_id": "pair49",
+      "word_a": "plopreinva",
+      "word_b": "grimailzum",
+      "gap": 0.1875
+    },
+    {
+      "pair_id": "pair50",
+      "word_a": "wisbander",
+      "word_b": "milvensoul",
+      "gap": 0.3671875
+    },
+    {
+      "pair_id": "pair51",
+      "word_a": "tousweinmu",
+      "word_b": "paispainsik",
+      "gap": 0.328125
+    },
+    {
+      "pair_id": "pair52",
+      "word_a": "slospisfil",
+      "word_b": "dasfaillol",
+      "gap": 0.1171875
+    },
+    {
+      "pair_id": "pair53",
+      "word_a": "funstorrail",
+      "word_b": "velteirom",
+      "gap": 0.0703125
+    },
+    {
+      "pair_id": "pair54",
+      "word_a": "kunbrulrin",
+      "word_b": "lilbrarmoun",
+      "gap": 0.15625
+    },
+    {
+      "pair_id": "pair55",
+      "word_a": "lunfourbrok",
+      "word_b": "spurkuskoun",
+      "gap": 0.1875
+    },
+    {
+      "pair_id": "pair56",
+      "word_a": "linfasmok",
+      "word_b": "minfaisber",
+      "gap": 0.1826171875
+    },
+    {
+      "pair_id": "pair57",
+      "word_a": "benfondur",
+      "word_b": "dotrouzum",
+      "gap": 0.4664306640625
+    },
+    {
+      "pair_id": "pair58",
+      "word_a": "sporplarbra",
+      "word_b": "pespougen",
+      "gap": 0.140625
+    },
+    {
+      "pair_id": "pair59",
+      "word_a": "trafloutas",
+      "word_b": "lilplilspek",
+      "gap": 0.0625
+    },
+    {
+      "pair_id": "pair60",
+      "word_a": "telbrosstal",
+      "word_b": "zenplainpil",
+      "gap": 0.0234375
+    },
+    {
+      "pair_id": "pair61",
+      "word_a": "kenpirbouk",
+      "word_b": "punpraigrin",
+      "gap": 0.4609375
+    },
+    {
+      "pair_id": "pair62",
+      "word_a": "tourgouszas",
+      "word_b": "plusstornel",
+      "gap": 0.154296875
+    },
+    {
+      "pair_id": "pair63",
+      "word_a": "bosmorbom",
+      "word_b": "nouswolfo",
+      "gap": 0.1015625
+    },
+    {
+      "pair_id": "pair64",
+      "word_a": "sloswungram",
+      "word_b": "kinfaissait",
+      "gap": 0.03515625
+    },
+    {
+      "pair_id": "pair65",
+      "word_a": "wilnesweis",
+      "word_b": "spirbarai",
+      "gap": 0.25390625
+    },
+    {
+      "pair_id": "pair66",
+      "word_a": "dolprousvas",
+      "word_b": "wilslulslou",
+      "gap": 0.0234375
+    },
+    {
+      "pair_id": "pair67",
+      "word_a": "dusoulker",
+      "word_b": "bogregen",
+      "gap": 0.46875
+    },
+    {
+      "pair_id": "pair68",
+      "word_a": "lurzounzin",
+      "word_b": "rolzisbre",
+      "gap": 0.328125
+    },
+    {
+      "pair_id": "pair69",
+      "word_a": "konnarstok",
+      "word_b": "nurziltrer",
+      "gap": 0.36328125
+    },
+    {
+      "pair_id": "pair70",
+      "word_a": "moufuwim",
+      "word_b": "spurzarfei",
+      "gap": 0.109375
+    },
+    {
+      "pair_id": "pair71",
+      "word_a": "flourtumom",
+      "word_b": "badairvein",
+      "gap": 0.4718017578125
+    },
+    {
+      "pair_id": "pair72",
+      "word_a": "penbolstat",
+      "word_b": "valrasmes",
+      "gap": 0.1513671875
+    },
+    {
+      "pair_id": "pair73",
+      "word_a": "furbanfei",
+      "word_b": "punplouswel",
+      "gap": 0.3828125
+    },
+    {
+      "pair_id": "pair74",
+      "word_a": "stertrismum",
+      "word_b": "firpindein",
+      "gap": 0.484375
+    },
+    {
+      "pair_id": "pair75",
+      "word_a": "trosgoulpor",
+      "word_b": "mesmainstik",
+      "gap": 0.44140625
+    },
+    {
+      "pair_id": "pair76",
+      "word_a": "wisfliskrum",
+      "word_b": "florroulpla",
+      "gap": 0.078125
+    },
+    {
+      "pair_id": "pair77",
+      "word_a": "garganvu",
+      "word_b": "tulairlor",
+      "gap": 0.3125
+    },
+    {
+      "pair_id": "pair78",
+      "word_a": "tenlislout",
+      "word_b": "dasginkron",
+      "gap": 0.0703125
+    },
+    {
+      "pair_id": "pair79",
+      "word_a": "bronweisbik",
+      "word_b": "finrilmeir",
+      "gap": 0.49609375
+    },
+    {
+      "pair_id": "pair80",
+      "word_a": "reintrulwi",
+      "word_b": "wenpispeim",
+      "gap": 0.140625
+    },
+    {
+      "pair_id": "pair81",
+      "word_a": "worwinpril",
+      "word_b": "kesbesgoul",
+      "gap": 0.109375
+    },
+    {
+      "pair_id": "pair82",
+      "word_a": "flebusgri",
+      "word_b": "tolkouplour",
+      "gap": 0.3984375
+    },
+    {
+      "pair_id": "pair83",
+      "word_a": "winnounkros",
+      "word_b": "farpaiflan",
+      "gap": 0.208984375
+    },
+    {
+      "pair_id": "pair84",
+      "word_a": "silflalbar",
+      "word_b": "desnenwoul",
+      "gap": 0.09765625
+    },
+    {
+      "pair_id": "pair85",
+      "word_a": "mirtrutren",
+      "word_b": "flobraldeir",
+      "gap": 0.1328125
+    },
+    {
+      "pair_id": "pair86",
+      "word_a": "vilnurbrum",
+      "word_b": "rinbrikreim",
+      "gap": 0.203125
+    },
+    {
+      "pair_id": "pair87",
+      "word_a": "slaibroses",
+      "word_b": "ganflounbou",
+      "gap": 0.1953125
+    },
+    {
+      "pair_id": "pair88",
+      "word_a": "trelnidat",
+      "word_b": "rankrusvur",
+      "gap": 0.1015625
+    },
+    {
+      "pair_id": "pair89",
+      "word_a": "relfeinstin",
+      "word_b": "funveimak",
+      "gap": 0.10546875
+    },
+    {
+      "pair_id": "pair90",
+      "word_a": "treilzinlal",
+      "word_b": "dirfouni",
+      "gap": 0.140625
+    },
+    {
+      "pair_id": "pair91",
+      "word_a": "laplerdit",
+      "word_b": "rububrim",
+      "gap": 0.05078125
+    },
+    {
+      "pair_id": "pair92",
+      "word_a": "lossaspein",
+      "word_b": "konsesteil",
+      "gap": 0.2578125
+    },
+    {
+      "pair_id": "pair93",
+      "word_a": "sourmugrat",
+      "word_b": "merrosmu",
+      "gap": 0.08984375
+    },
+    {
+      "pair_id": "pair94",
+      "word_a": "plaikigout",
+      "word_b": "sesdountra",
+      "gap": 0.359375
+    },
+    {
+      "pair_id": "pair95",
+      "word_a": "buboltreik",
+      "word_b": "talveilsout",
+      "gap": 0.2890625
+    },
+    {
+      "pair_id": "pair96",
+      "word_a": "naweinplol",
+      "word_b": "kokresplair",
+      "gap": 0.078125
+    },
+    {
+      "pair_id": "pair97",
+      "word_a": "zerflavait",
+      "word_b": "taszeisbal",
+      "gap": 0.171875
+    },
+    {
+      "pair_id": "pair98",
+      "word_a": "trosgogim",
+      "word_b": "dilzairplan",
+      "gap": 0.328125
+    },
+    {
+      "pair_id": "pair99",
+      "word_a": "pronkrelze",
+      "word_b": "nourormoum",
+      "gap": 0.28125
+    }
+  ]
+}

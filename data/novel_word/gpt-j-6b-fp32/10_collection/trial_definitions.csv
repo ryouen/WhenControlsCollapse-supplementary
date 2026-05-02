@@ -1,0 +1,481 @@
+trial_id,crel,attr_dim,pair_id,word_a,word_b,correct_answer,incorrect_answer,answer_type,prompt
+SAME_P_pair0,SAME,P,pair0,mitailplus,ginrorzes,bold,cautious,attribute_word,"Definitions:
+- mitailplus: something that is bold and complex
+- ginrorzes is the same as mitailplus
+
+Q: Is ginrorzes bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+OPP_P_pair0,OPP,P,pair0,mitailplus,ginrorzes,cautious,bold,attribute_word,"Definitions:
+- mitailplus: something that is bold and complex
+- ginrorzes is the opposite of mitailplus
+
+Q: Is ginrorzes bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+SAME_Q_pair0,SAME,Q,pair0,mitailplus,ginrorzes,complex,simple,attribute_word,"Definitions:
+- mitailplus: something that is bold and complex
+- ginrorzes is the same as mitailplus
+
+Q: Is ginrorzes complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+OPP_Q_pair0,OPP,Q,pair0,mitailplus,ginrorzes,simple,complex,attribute_word,"Definitions:
+- mitailplus: something that is bold and complex
+- ginrorzes is the opposite of mitailplus
+
+Q: Is ginrorzes complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+MORE_P_pair0,MORE,P,pair0,mitailplus,ginrorzes,ginrorzes,mitailplus,novel_word,"Definitions:
+- mitailplus: something that is bold and complex
+- ginrorzes is more/greater than mitailplus in all respects
+
+Q: Which is more bold, mitailplus or ginrorzes? (Answer EXACTLY ONE WORD)
+A:"
+LESS_P_pair0,LESS,P,pair0,mitailplus,ginrorzes,mitailplus,ginrorzes,novel_word,"Definitions:
+- mitailplus: something that is bold and complex
+- ginrorzes is less/smaller than mitailplus in all respects
+
+Q: Which is more bold, mitailplus or ginrorzes? (Answer EXACTLY ONE WORD)
+A:"
+MORE_Q_pair0,MORE,Q,pair0,mitailplus,ginrorzes,ginrorzes,mitailplus,novel_word,"Definitions:
+- mitailplus: something that is bold and complex
+- ginrorzes is more/greater than mitailplus in all respects
+
+Q: Which is more complex, mitailplus or ginrorzes? (Answer EXACTLY ONE WORD)
+A:"
+LESS_Q_pair0,LESS,Q,pair0,mitailplus,ginrorzes,mitailplus,ginrorzes,novel_word,"Definitions:
+- mitailplus: something that is bold and complex
+- ginrorzes is less/smaller than mitailplus in all respects
+
+Q: Which is more complex, mitailplus or ginrorzes? (Answer EXACTLY ONE WORD)
+A:"
+SAME_P_pair1,SAME,P,pair1,molwainmom,linprarsun,bold,cautious,attribute_word,"Definitions:
+- molwainmom: something that is bold and complex
+- linprarsun is the same as molwainmom
+
+Q: Is linprarsun bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+OPP_P_pair1,OPP,P,pair1,molwainmom,linprarsun,cautious,bold,attribute_word,"Definitions:
+- molwainmom: something that is bold and complex
+- linprarsun is the opposite of molwainmom
+
+Q: Is linprarsun bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+SAME_Q_pair1,SAME,Q,pair1,molwainmom,linprarsun,complex,simple,attribute_word,"Definitions:
+- molwainmom: something that is bold and complex
+- linprarsun is the same as molwainmom
+
+Q: Is linprarsun complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+OPP_Q_pair1,OPP,Q,pair1,molwainmom,linprarsun,simple,complex,attribute_word,"Definitions:
+- molwainmom: something that is bold and complex
+- linprarsun is the opposite of molwainmom
+
+Q: Is linprarsun complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+MORE_P_pair1,MORE,P,pair1,molwainmom,linprarsun,linprarsun,molwainmom,novel_word,"Definitions:
+- molwainmom: something that is bold and complex
+- linprarsun is more/greater than molwainmom in all respects
+
+Q: Which is more bold, molwainmom or linprarsun? (Answer EXACTLY ONE WORD)
+A:"
+LESS_P_pair1,LESS,P,pair1,molwainmom,linprarsun,molwainmom,linprarsun,novel_word,"Definitions:
+- molwainmom: something that is bold and complex
+- linprarsun is less/smaller than molwainmom in all respects
+
+Q: Which is more bold, molwainmom or linprarsun? (Answer EXACTLY ONE WORD)
+A:"
+MORE_Q_pair1,MORE,Q,pair1,molwainmom,linprarsun,linprarsun,molwainmom,novel_word,"Definitions:
+- molwainmom: something that is bold and complex
+- linprarsun is more/greater than molwainmom in all respects
+
+Q: Which is more complex, molwainmom or linprarsun? (Answer EXACTLY ONE WORD)
+A:"
+LESS_Q_pair1,LESS,Q,pair1,molwainmom,linprarsun,molwainmom,linprarsun,novel_word,"Definitions:
+- molwainmom: something that is bold and complex
+- linprarsun is less/smaller than molwainmom in all respects
+
+Q: Which is more complex, molwainmom or linprarsun? (Answer EXACTLY ONE WORD)
+A:"
+SAME_P_pair2,SAME,P,pair2,fingreibrem,troulruprel,bold,cautious,attribute_word,"Definitions:
+- fingreibrem: something that is bold and complex
+- troulruprel is the same as fingreibrem
+
+Q: Is troulruprel bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+OPP_P_pair2,OPP,P,pair2,fingreibrem,troulruprel,cautious,bold,attribute_word,"Definitions:
+- fingreibrem: something that is bold and complex
+- troulruprel is the opposite of fingreibrem
+
+Q: Is troulruprel bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+SAME_Q_pair2,SAME,Q,pair2,fingreibrem,troulruprel,complex,simple,attribute_word,"Definitions:
+- fingreibrem: something that is bold and complex
+- troulruprel is the same as fingreibrem
+
+Q: Is troulruprel complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+OPP_Q_pair2,OPP,Q,pair2,fingreibrem,troulruprel,simple,complex,attribute_word,"Definitions:
+- fingreibrem: something that is bold and complex
+- troulruprel is the opposite of fingreibrem
+
+Q: Is troulruprel complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+MORE_P_pair2,MORE,P,pair2,fingreibrem,troulruprel,troulruprel,fingreibrem,novel_word,"Definitions:
+- fingreibrem: something that is bold and complex
+- troulruprel is more/greater than fingreibrem in all respects
+
+Q: Which is more bold, fingreibrem or troulruprel? (Answer EXACTLY ONE WORD)
+A:"
+LESS_P_pair2,LESS,P,pair2,fingreibrem,troulruprel,fingreibrem,troulruprel,novel_word,"Definitions:
+- fingreibrem: something that is bold and complex
+- troulruprel is less/smaller than fingreibrem in all respects
+
+Q: Which is more bold, fingreibrem or troulruprel? (Answer EXACTLY ONE WORD)
+A:"
+MORE_Q_pair2,MORE,Q,pair2,fingreibrem,troulruprel,troulruprel,fingreibrem,novel_word,"Definitions:
+- fingreibrem: something that is bold and complex
+- troulruprel is more/greater than fingreibrem in all respects
+
+Q: Which is more complex, fingreibrem or troulruprel? (Answer EXACTLY ONE WORD)
+A:"
+LESS_Q_pair2,LESS,Q,pair2,fingreibrem,troulruprel,fingreibrem,troulruprel,novel_word,"Definitions:
+- fingreibrem: something that is bold and complex
+- troulruprel is less/smaller than fingreibrem in all respects
+
+Q: Which is more complex, fingreibrem or troulruprel? (Answer EXACTLY ONE WORD)
+A:"
+SAME_P_pair3,SAME,P,pair3,sursternaik,putreirdeim,bold,cautious,attribute_word,"Definitions:
+- sursternaik: something that is bold and complex
+- putreirdeim is the same as sursternaik
+
+Q: Is putreirdeim bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+OPP_P_pair3,OPP,P,pair3,sursternaik,putreirdeim,cautious,bold,attribute_word,"Definitions:
+- sursternaik: something that is bold and complex
+- putreirdeim is the opposite of sursternaik
+
+Q: Is putreirdeim bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+SAME_Q_pair3,SAME,Q,pair3,sursternaik,putreirdeim,complex,simple,attribute_word,"Definitions:
+- sursternaik: something that is bold and complex
+- putreirdeim is the same as sursternaik
+
+Q: Is putreirdeim complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+OPP_Q_pair3,OPP,Q,pair3,sursternaik,putreirdeim,simple,complex,attribute_word,"Definitions:
+- sursternaik: something that is bold and complex
+- putreirdeim is the opposite of sursternaik
+
+Q: Is putreirdeim complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+MORE_P_pair3,MORE,P,pair3,sursternaik,putreirdeim,putreirdeim,sursternaik,novel_word,"Definitions:
+- sursternaik: something that is bold and complex
+- putreirdeim is more/greater than sursternaik in all respects
+
+Q: Which is more bold, sursternaik or putreirdeim? (Answer EXACTLY ONE WORD)
+A:"
+LESS_P_pair3,LESS,P,pair3,sursternaik,putreirdeim,sursternaik,putreirdeim,novel_word,"Definitions:
+- sursternaik: something that is bold and complex
+- putreirdeim is less/smaller than sursternaik in all respects
+
+Q: Which is more bold, sursternaik or putreirdeim? (Answer EXACTLY ONE WORD)
+A:"
+MORE_Q_pair3,MORE,Q,pair3,sursternaik,putreirdeim,putreirdeim,sursternaik,novel_word,"Definitions:
+- sursternaik: something that is bold and complex
+- putreirdeim is more/greater than sursternaik in all respects
+
+Q: Which is more complex, sursternaik or putreirdeim? (Answer EXACTLY ONE WORD)
+A:"
+LESS_Q_pair3,LESS,Q,pair3,sursternaik,putreirdeim,sursternaik,putreirdeim,novel_word,"Definitions:
+- sursternaik: something that is bold and complex
+- putreirdeim is less/smaller than sursternaik in all respects
+
+Q: Which is more complex, sursternaik or putreirdeim? (Answer EXACTLY ONE WORD)
+A:"
+SAME_P_pair4,SAME,P,pair4,dinbrokrat,boltrasgan,bold,cautious,attribute_word,"Definitions:
+- dinbrokrat: something that is bold and complex
+- boltrasgan is the same as dinbrokrat
+
+Q: Is boltrasgan bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+OPP_P_pair4,OPP,P,pair4,dinbrokrat,boltrasgan,cautious,bold,attribute_word,"Definitions:
+- dinbrokrat: something that is bold and complex
+- boltrasgan is the opposite of dinbrokrat
+
+Q: Is boltrasgan bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+SAME_Q_pair4,SAME,Q,pair4,dinbrokrat,boltrasgan,complex,simple,attribute_word,"Definitions:
+- dinbrokrat: something that is bold and complex
+- boltrasgan is the same as dinbrokrat
+
+Q: Is boltrasgan complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+OPP_Q_pair4,OPP,Q,pair4,dinbrokrat,boltrasgan,simple,complex,attribute_word,"Definitions:
+- dinbrokrat: something that is bold and complex
+- boltrasgan is the opposite of dinbrokrat
+
+Q: Is boltrasgan complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+MORE_P_pair4,MORE,P,pair4,dinbrokrat,boltrasgan,boltrasgan,dinbrokrat,novel_word,"Definitions:
+- dinbrokrat: something that is bold and complex
+- boltrasgan is more/greater than dinbrokrat in all respects
+
+Q: Which is more bold, dinbrokrat or boltrasgan? (Answer EXACTLY ONE WORD)
+A:"
+LESS_P_pair4,LESS,P,pair4,dinbrokrat,boltrasgan,dinbrokrat,boltrasgan,novel_word,"Definitions:
+- dinbrokrat: something that is bold and complex
+- boltrasgan is less/smaller than dinbrokrat in all respects
+
+Q: Which is more bold, dinbrokrat or boltrasgan? (Answer EXACTLY ONE WORD)
+A:"
+MORE_Q_pair4,MORE,Q,pair4,dinbrokrat,boltrasgan,boltrasgan,dinbrokrat,novel_word,"Definitions:
+- dinbrokrat: something that is bold and complex
+- boltrasgan is more/greater than dinbrokrat in all respects
+
+Q: Which is more complex, dinbrokrat or boltrasgan? (Answer EXACTLY ONE WORD)
+A:"
+LESS_Q_pair4,LESS,Q,pair4,dinbrokrat,boltrasgan,dinbrokrat,boltrasgan,novel_word,"Definitions:
+- dinbrokrat: something that is bold and complex
+- boltrasgan is less/smaller than dinbrokrat in all respects
+
+Q: Which is more complex, dinbrokrat or boltrasgan? (Answer EXACTLY ONE WORD)
+A:"
+SAME_P_pair5,SAME,P,pair5,surtolgim,posprunflei,bold,cautious,attribute_word,"Definitions:
+- surtolgim: something that is bold and complex
+- posprunflei is the same as surtolgim
+
+Q: Is posprunflei bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+OPP_P_pair5,OPP,P,pair5,surtolgim,posprunflei,cautious,bold,attribute_word,"Definitions:
+- surtolgim: something that is bold and complex
+- posprunflei is the opposite of surtolgim
+
+Q: Is posprunflei bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+SAME_Q_pair5,SAME,Q,pair5,surtolgim,posprunflei,complex,simple,attribute_word,"Definitions:
+- surtolgim: something that is bold and complex
+- posprunflei is the same as surtolgim
+
+Q: Is posprunflei complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+OPP_Q_pair5,OPP,Q,pair5,surtolgim,posprunflei,simple,complex,attribute_word,"Definitions:
+- surtolgim: something that is bold and complex
+- posprunflei is the opposite of surtolgim
+
+Q: Is posprunflei complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+MORE_P_pair5,MORE,P,pair5,surtolgim,posprunflei,posprunflei,surtolgim,novel_word,"Definitions:
+- surtolgim: something that is bold and complex
+- posprunflei is more/greater than surtolgim in all respects
+
+Q: Which is more bold, surtolgim or posprunflei? (Answer EXACTLY ONE WORD)
+A:"
+LESS_P_pair5,LESS,P,pair5,surtolgim,posprunflei,surtolgim,posprunflei,novel_word,"Definitions:
+- surtolgim: something that is bold and complex
+- posprunflei is less/smaller than surtolgim in all respects
+
+Q: Which is more bold, surtolgim or posprunflei? (Answer EXACTLY ONE WORD)
+A:"
+MORE_Q_pair5,MORE,Q,pair5,surtolgim,posprunflei,posprunflei,surtolgim,novel_word,"Definitions:
+- surtolgim: something that is bold and complex
+- posprunflei is more/greater than surtolgim in all respects
+
+Q: Which is more complex, surtolgim or posprunflei? (Answer EXACTLY ONE WORD)
+A:"
+LESS_Q_pair5,LESS,Q,pair5,surtolgim,posprunflei,surtolgim,posprunflei,novel_word,"Definitions:
+- surtolgim: something that is bold and complex
+- posprunflei is less/smaller than surtolgim in all respects
+
+Q: Which is more complex, surtolgim or posprunflei? (Answer EXACTLY ONE WORD)
+A:"
+SAME_P_pair6,SAME,P,pair6,walbilsour,pinvullin,bold,cautious,attribute_word,"Definitions:
+- walbilsour: something that is bold and complex
+- pinvullin is the same as walbilsour
+
+Q: Is pinvullin bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+OPP_P_pair6,OPP,P,pair6,walbilsour,pinvullin,cautious,bold,attribute_word,"Definitions:
+- walbilsour: something that is bold and complex
+- pinvullin is the opposite of walbilsour
+
+Q: Is pinvullin bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+SAME_Q_pair6,SAME,Q,pair6,walbilsour,pinvullin,complex,simple,attribute_word,"Definitions:
+- walbilsour: something that is bold and complex
+- pinvullin is the same as walbilsour
+
+Q: Is pinvullin complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+OPP_Q_pair6,OPP,Q,pair6,walbilsour,pinvullin,simple,complex,attribute_word,"Definitions:
+- walbilsour: something that is bold and complex
+- pinvullin is the opposite of walbilsour
+
+Q: Is pinvullin complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+MORE_P_pair6,MORE,P,pair6,walbilsour,pinvullin,pinvullin,walbilsour,novel_word,"Definitions:
+- walbilsour: something that is bold and complex
+- pinvullin is more/greater than walbilsour in all respects
+
+Q: Which is more bold, walbilsour or pinvullin? (Answer EXACTLY ONE WORD)
+A:"
+LESS_P_pair6,LESS,P,pair6,walbilsour,pinvullin,walbilsour,pinvullin,novel_word,"Definitions:
+- walbilsour: something that is bold and complex
+- pinvullin is less/smaller than walbilsour in all respects
+
+Q: Which is more bold, walbilsour or pinvullin? (Answer EXACTLY ONE WORD)
+A:"
+MORE_Q_pair6,MORE,Q,pair6,walbilsour,pinvullin,pinvullin,walbilsour,novel_word,"Definitions:
+- walbilsour: something that is bold and complex
+- pinvullin is more/greater than walbilsour in all respects
+
+Q: Which is more complex, walbilsour or pinvullin? (Answer EXACTLY ONE WORD)
+A:"
+LESS_Q_pair6,LESS,Q,pair6,walbilsour,pinvullin,walbilsour,pinvullin,novel_word,"Definitions:
+- walbilsour: something that is bold and complex
+- pinvullin is less/smaller than walbilsour in all respects
+
+Q: Which is more complex, walbilsour or pinvullin? (Answer EXACTLY ONE WORD)
+A:"
+SAME_P_pair7,SAME,P,pair7,stipreisdol,mantunkrur,bold,cautious,attribute_word,"Definitions:
+- stipreisdol: something that is bold and complex
+- mantunkrur is the same as stipreisdol
+
+Q: Is mantunkrur bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+OPP_P_pair7,OPP,P,pair7,stipreisdol,mantunkrur,cautious,bold,attribute_word,"Definitions:
+- stipreisdol: something that is bold and complex
+- mantunkrur is the opposite of stipreisdol
+
+Q: Is mantunkrur bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+SAME_Q_pair7,SAME,Q,pair7,stipreisdol,mantunkrur,complex,simple,attribute_word,"Definitions:
+- stipreisdol: something that is bold and complex
+- mantunkrur is the same as stipreisdol
+
+Q: Is mantunkrur complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+OPP_Q_pair7,OPP,Q,pair7,stipreisdol,mantunkrur,simple,complex,attribute_word,"Definitions:
+- stipreisdol: something that is bold and complex
+- mantunkrur is the opposite of stipreisdol
+
+Q: Is mantunkrur complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+MORE_P_pair7,MORE,P,pair7,stipreisdol,mantunkrur,mantunkrur,stipreisdol,novel_word,"Definitions:
+- stipreisdol: something that is bold and complex
+- mantunkrur is more/greater than stipreisdol in all respects
+
+Q: Which is more bold, stipreisdol or mantunkrur? (Answer EXACTLY ONE WORD)
+A:"
+LESS_P_pair7,LESS,P,pair7,stipreisdol,mantunkrur,stipreisdol,mantunkrur,novel_word,"Definitions:
+- stipreisdol: something that is bold and complex
+- mantunkrur is less/smaller than stipreisdol in all respects
+
+Q: Which is more bold, stipreisdol or mantunkrur? (Answer EXACTLY ONE WORD)
+A:"
+MORE_Q_pair7,MORE,Q,pair7,stipreisdol,mantunkrur,mantunkrur,stipreisdol,novel_word,"Definitions:
+- stipreisdol: something that is bold and complex
+- mantunkrur is more/greater than stipreisdol in all respects
+
+Q: Which is more complex, stipreisdol or mantunkrur? (Answer EXACTLY ONE WORD)
+A:"
+LESS_Q_pair7,LESS,Q,pair7,stipreisdol,mantunkrur,stipreisdol,mantunkrur,novel_word,"Definitions:
+- stipreisdol: something that is bold and complex
+- mantunkrur is less/smaller than stipreisdol in all respects
+
+Q: Which is more complex, stipreisdol or mantunkrur? (Answer EXACTLY ONE WORD)
+A:"
+SAME_P_pair8,SAME,P,pair8,surgrouteit,resnanplais,bold,cautious,attribute_word,"Definitions:
+- surgrouteit: something that is bold and complex
+- resnanplais is the same as surgrouteit
+
+Q: Is resnanplais bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+OPP_P_pair8,OPP,P,pair8,surgrouteit,resnanplais,cautious,bold,attribute_word,"Definitions:
+- surgrouteit: something that is bold and complex
+- resnanplais is the opposite of surgrouteit
+
+Q: Is resnanplais bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+SAME_Q_pair8,SAME,Q,pair8,surgrouteit,resnanplais,complex,simple,attribute_word,"Definitions:
+- surgrouteit: something that is bold and complex
+- resnanplais is the same as surgrouteit
+
+Q: Is resnanplais complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+OPP_Q_pair8,OPP,Q,pair8,surgrouteit,resnanplais,simple,complex,attribute_word,"Definitions:
+- surgrouteit: something that is bold and complex
+- resnanplais is the opposite of surgrouteit
+
+Q: Is resnanplais complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+MORE_P_pair8,MORE,P,pair8,surgrouteit,resnanplais,resnanplais,surgrouteit,novel_word,"Definitions:
+- surgrouteit: something that is bold and complex
+- resnanplais is more/greater than surgrouteit in all respects
+
+Q: Which is more bold, surgrouteit or resnanplais? (Answer EXACTLY ONE WORD)
+A:"
+LESS_P_pair8,LESS,P,pair8,surgrouteit,resnanplais,surgrouteit,resnanplais,novel_word,"Definitions:
+- surgrouteit: something that is bold and complex
+- resnanplais is less/smaller than surgrouteit in all respects
+
+Q: Which is more bold, surgrouteit or resnanplais? (Answer EXACTLY ONE WORD)
+A:"
+MORE_Q_pair8,MORE,Q,pair8,surgrouteit,resnanplais,resnanplais,surgrouteit,novel_word,"Definitions:
+- surgrouteit: something that is bold and complex
+- resnanplais is more/greater than surgrouteit in all respects
+
+Q: Which is more complex, surgrouteit or resnanplais? (Answer EXACTLY ONE WORD)
+A:"
+LESS_Q_pair8,LESS,Q,pair8,surgrouteit,resnanplais,surgrouteit,resnanplais,novel_word,"Definitions:
+- surgrouteit: something that is bold and complex
+- resnanplais is less/smaller than surgrouteit in all respects
+
+Q: Which is more complex, surgrouteit or resnanplais? (Answer EXACTLY ONE WORD)
+A:"
+SAME_P_pair9,SAME,P,pair9,vasfloumus,muspreirdou,bold,cautious,attribute_word,"Definitions:
+- vasfloumus: something that is bold and complex
+- muspreirdou is the same as vasfloumus
+
+Q: Is muspreirdou bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+OPP_P_pair9,OPP,P,pair9,vasfloumus,muspreirdou,cautious,bold,attribute_word,"Definitions:
+- vasfloumus: something that is bold and complex
+- muspreirdou is the opposite of vasfloumus
+
+Q: Is muspreirdou bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+SAME_Q_pair9,SAME,Q,pair9,vasfloumus,muspreirdou,complex,simple,attribute_word,"Definitions:
+- vasfloumus: something that is bold and complex
+- muspreirdou is the same as vasfloumus
+
+Q: Is muspreirdou complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+OPP_Q_pair9,OPP,Q,pair9,vasfloumus,muspreirdou,simple,complex,attribute_word,"Definitions:
+- vasfloumus: something that is bold and complex
+- muspreirdou is the opposite of vasfloumus
+
+Q: Is muspreirdou complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+MORE_P_pair9,MORE,P,pair9,vasfloumus,muspreirdou,muspreirdou,vasfloumus,novel_word,"Definitions:
+- vasfloumus: something that is bold and complex
+- muspreirdou is more/greater than vasfloumus in all respects
+
+Q: Which is more bold, vasfloumus or muspreirdou? (Answer EXACTLY ONE WORD)
+A:"
+LESS_P_pair9,LESS,P,pair9,vasfloumus,muspreirdou,vasfloumus,muspreirdou,novel_word,"Definitions:
+- vasfloumus: something that is bold and complex
+- muspreirdou is less/smaller than vasfloumus in all respects
+
+Q: Which is more bold, vasfloumus or muspreirdou? (Answer EXACTLY ONE WORD)
+A:"
+MORE_Q_pair9,MORE,Q,pair9,vasfloumus,muspreirdou,muspreirdou,vasfloumus,novel_word,"Definitions:
+- vasfloumus: something that is bold and complex
+- muspreirdou is more/greater than vasfloumus in all respects
+
+Q: Which is more complex, vasfloumus or muspreirdou? (Answer EXACTLY ONE WORD)
+A:"
+LESS_Q_pair9,LESS,Q,pair9,vasfloumus,muspreirdou,vasfloumus,muspreirdou,novel_word,"Definitions:
+- vasfloumus: something that is bold and complex
+- muspreirdou is less/smaller than vasfloumus in all respects
+
+Q: Which is more complex, vasfloumus or muspreirdou? (Answer EXACTLY ONE WORD)
+A:"

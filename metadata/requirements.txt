@@ -1,0 +1,22 @@
+# Paper-Main 7-standard environment (default for novel-word + factual-recall + ACDC + Prospect 7-std runs)
+# This file mirrors the wcc-paper-main-7std conda block in environment.yml.
+# For 70B and Phase 2 v2 environments, see requirements_paper_main_70b.txt and
+# requirements_phase2_v2_reanalysis.txt respectively. See metadata/run_summary.txt
+# for which environment applies to which run.
+#
+# Python: 3.12 (Colab default at 2026-04-13 ~ 04-22)
+# CUDA: 12.8 (via torch +cu128 wheel)
+
+torch==2.10.0
+transformers==5.0.0
+accelerate
+nnsight==0.6.3
+wordfreq==3.1.1
+rapidfuzz==3.14.5
+numpy
+pandas==2.2.2
+scipy
+scikit-learn
+datasets
+transformer-lens   # IOI / ACDC cross-checks only
+statsmodels        # joint regression in code/shared/compute_perhead_regression.py

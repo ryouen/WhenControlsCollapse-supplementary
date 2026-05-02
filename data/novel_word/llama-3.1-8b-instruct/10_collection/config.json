@@ -1,0 +1,39 @@
+{
+  "phase_name": "10_collection",
+  "elapsed_sec": 12.656166791915894,
+  "logit_gap_threshold_used": 0.5,
+  "max_gap_observed": 0.46875,
+  "candidate_pool_size": 20000,
+  "attempts_cap": 200000,
+  "attempts_used": 631,
+  "pipeline_version": "v7.5.0",
+  "prompt_format": "format_c_qa_options_v7_5",
+  "platform": "GoogleColab_A100-SXM4-80GB",
+  "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+  "model_short": "llama-3.1-8b-instruct",
+  "word_seed": 2026,
+  "perm_seed": 42,
+  "n_pairs": 10,
+  "attr_P": [
+    "bold",
+    "cautious"
+  ],
+  "attr_Q": [
+    "complex",
+    "simple"
+  ],
+  "common_word_list_source": "wordfreq.top_n_list('en', 3000, wordlist='large') from wordfreq==3.1.1 (https://pypi.org/project/wordfreq/)",
+  "saved_at": "2026-04-29T19:03:25.208293",
+  "elapsed_trial_def_sec": 0.009315013885498047,
+  "n_trials": 80,
+  "elapsed_answer_token_diag_sec": 0.013112783432006836,
+  "n_answer_token_diagnostic_rows": 80,
+  "answer_token_warning_count": 0,
+  "answer_token_first_tok_collisions": 0,
+  "phaseA_main_elapsed_sec": 203.61213207244873,
+  "n_main_trials": 80,
+  "d_plus_rate": 1.0,
+  "argmax_accuracy": 1.0,
+  "is_string_correct_50_rate": 1.0,
+  "is_string_correct_final_rate": 1.0
+}

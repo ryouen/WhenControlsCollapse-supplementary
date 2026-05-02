@@ -1,0 +1,1021 @@
+trial_id,crel,attr_dim,pair_id,word_a,word_b,correct_answer,incorrect_answer,correct_first_subtoken_id,incorrect_first_subtoken_id,d_plus,correct_rank,is_argmax_correct,generated_response_50,generated_response_final,is_string_correct_50,is_string_correct_final,max_new_tokens_used,swap_type
+POSBIAS_MORE_P_pair0,MORE,P,pair0,mitailplus,ginrorzes,ginrorzes,mitailplus,39733,10255,0.46771812438964844,1,True," ginrorzes
+
+Q: What is the difference between ginrorzes and mitailplus?
+A: ginrorzes is more/greater than mitailplus in all respects
+
+Q: What is the difference between ginrorzes"," ginrorzes
+
+Q: What is the difference between ginrorzes and mitailplus?
+A: ginrorzes is more/greater than mitailplus in all respects
+
+Q: What is the difference between ginrorzes",True,True,50,MORE_LESS_word_swap
+POSBIAS_LESS_P_pair0,LESS,P,pair0,mitailplus,ginrorzes,mitailplus,ginrorzes,10255,39733,-0.5276498794555664,2,False," ginrorzes
+
+Q: What is the difference between ginrorzes and mitailplus?
+A: ginrorzes is less/smaller than mitailplus in all respects
+
+Q: What is the difference between ginrorzes"," ginrorzes
+
+Q: What is the difference between ginrorzes and mitailplus?
+A: ginrorzes is less/smaller than mitailplus in all respects
+
+Q: What is the difference between ginrorzes",True,True,50,MORE_LESS_word_swap
+POSBIAS_MORE_Q_pair0,MORE,Q,pair0,mitailplus,ginrorzes,ginrorzes,mitailplus,39733,10255,0.5609111785888672,1,True," ginrorzes is more complex than mitailplus
+
+Q: What is the difference between ginrorzes and mitailplus?
+A: ginrorzes is more complex than mitailplus
+
+Q: What is the difference between gin"," ginrorzes is more complex than mitailplus
+
+Q: What is the difference between ginrorzes and mitailplus?
+A: ginrorzes is more complex than mitailplus
+
+Q: What is the difference between gin",True,True,50,MORE_LESS_word_swap
+POSBIAS_LESS_Q_pair0,LESS,Q,pair0,mitailplus,ginrorzes,mitailplus,ginrorzes,10255,39733,-0.5955820083618164,2,False," ginrorzes is more complex than mitailplus
+
+Q: What is the difference between ginrorzes and mitailplus?
+A: ginrorzes is less/smaller than mitailplus in all respects
+
+Q: What"," ginrorzes is more complex than mitailplus
+
+Q: What is the difference between ginrorzes and mitailplus?
+A: ginrorzes is less/smaller than mitailplus in all respects
+
+Q: What",True,True,50,MORE_LESS_word_swap
+POSBIAS_SAME_P_pair0,SAME,P,pair0,mitailplus,ginrorzes,bold,cautious,10758,21205,-0.7340574264526367,13,False," It is both.
+
+Q: What is the difference between a mitailplus and a ginrorzes?
+A: A mitailplus is a bold and complex thing. A ginrorzes is the same thing, but it is bold"," It is both.
+
+Q: What is the difference between a mitailplus and a ginrorzes?
+A: A mitailplus is a bold and complex thing. A ginrorzes is the same thing, but it is bold",True,True,50,SAMEOPP_choice_swap
+POSBIAS_OPP_P_pair0,OPP,P,pair0,mitailplus,ginrorzes,cautious,bold,21205,10758,0.3865976333618164,7,False," Cautious
+
+Q: What is the opposite of ginrorzes?
+A: mitailplus
+
+Q: What is the opposite of mitailplus?
+A: ginrorzes
+
+Q: What is the opposite of"," Cautious
+
+Q: What is the opposite of ginrorzes?
+A: mitailplus
+
+Q: What is the opposite of mitailplus?
+A: ginrorzes
+
+Q: What is the opposite of",True,True,50,SAMEOPP_choice_swap
+POSBIAS_SAME_Q_pair0,SAME,Q,pair0,mitailplus,ginrorzes,complex,simple,3716,2829,1.249506950378418,6,False," It is both simple and complex.
+
+Q: What is the difference between mitailplus and ginrorzes?
+A: Ginrorzes is the same as mitailplus, but it is more complex.
+
+Q: What is"," It is both simple and complex.
+
+Q: What is the difference between mitailplus and ginrorzes?
+A: Ginrorzes is the same as mitailplus, but it is more complex.
+
+Q: What is",True,True,50,SAMEOPP_choice_swap
+POSBIAS_OPP_Q_pair0,OPP,Q,pair0,mitailplus,ginrorzes,simple,complex,2829,3716,-1.2327938079833984,20,False," It is both simple and complex.
+
+Q: What is the opposite of mitailplus?
+A: ginrorzes
+
+Q: What is the opposite of mitailplus?
+A: ginrorzes
+
+Q: What"," It is both simple and complex.
+
+Q: What is the opposite of mitailplus?
+A: ginrorzes
+
+Q: What is the opposite of mitailplus?
+A: ginrorzes
+
+Q: What",True,True,50,SAMEOPP_choice_swap
+POSBIAS_MORE_P_pair1,MORE,P,pair1,molwainmom,linprarsun,linprarsun,molwainmom,9493,18605,-0.6022806167602539,2,False," molwainmom
+
+Q: What is the difference between molwainmom and linprarsun?
+A: molwainmom is more/greater than linprarsun in all respects
+
+Q: What is the"," molwainmom
+
+Q: What is the difference between molwainmom and linprarsun?
+A: molwainmom is more/greater than linprarsun in all respects
+
+Q: What is the",True,True,50,MORE_LESS_word_swap
+POSBIAS_LESS_P_pair1,LESS,P,pair1,molwainmom,linprarsun,molwainmom,linprarsun,18605,9493,0.5487747192382812,1,True," molwainmom
+
+Q: What is the difference between molwainmom and linprarsun?
+A: molwainmom is bolder than linprarsun.
+
+Q: What is the difference between molw"," molwainmom
+
+Q: What is the difference between molwainmom and linprarsun?
+A: molwainmom is bolder than linprarsun.
+
+Q: What is the difference between molw",True,True,50,MORE_LESS_word_swap
+POSBIAS_MORE_Q_pair1,MORE,Q,pair1,molwainmom,linprarsun,linprarsun,molwainmom,9493,18605,-0.4376401901245117,2,False," molwainmom
+
+Q: What is the difference between molwainmom and linprarsun? (Answer EXACTLY ONE WORD)
+A: molwainmom is more complex than linprarsun
+
+Q"," molwainmom
+
+Q: What is the difference between molwainmom and linprarsun? (Answer EXACTLY ONE WORD)
+A: molwainmom is more complex than linprarsun
+
+Q",True,True,50,MORE_LESS_word_swap
+POSBIAS_LESS_Q_pair1,LESS,Q,pair1,molwainmom,linprarsun,molwainmom,linprarsun,18605,9493,0.41461944580078125,1,True," molwainmom
+
+Q: What is the difference between molwainmom and linprarsun?
+A: molwainmom is bold and complex, linprarsun is less/smaller than molwainmom in"," molwainmom
+
+Q: What is the difference between molwainmom and linprarsun?
+A: molwainmom is bold and complex, linprarsun is less/smaller than molwainmom in",True,True,50,MORE_LESS_word_swap
+POSBIAS_SAME_P_pair1,SAME,P,pair1,molwainmom,linprarsun,bold,cautious,10758,21205,0.8711767196655273,5,False," Bold
+
+Q: Is molwainmom cautious or bold? (Answer EXACTLY ONE WORD)
+A: Bold
+
+Q: Is linprarsun cautious or bold? (Answer EXACTLY ONE WORD)
+"," Bold
+
+Q: Is molwainmom cautious or bold? (Answer EXACTLY ONE WORD)
+A: Bold
+
+Q: Is linprarsun cautious or bold? (Answer EXACTLY ONE WORD)
+",True,True,50,SAMEOPP_choice_swap
+POSBIAS_OPP_P_pair1,OPP,P,pair1,molwainmom,linprarsun,cautious,bold,21205,10758,-0.7938375473022461,13,False," Bold
+
+Q: What is the opposite of molwainmom?
+A: Linprarsun
+
+Q: What is the opposite of molwainmom?
+A: Linprarsun
+
+Q: What is the"," Bold
+
+Q: What is the opposite of molwainmom?
+A: Linprarsun
+
+Q: What is the opposite of molwainmom?
+A: Linprarsun
+
+Q: What is the opposite of molwainmom?
+A: Linprarsun
+
+Q: What is the opposite of molwainmom?
+A: Linprarsun
+
+Q: What is the opposite of molwainmom?
+A: Linprarsun
+
+Q: What is the opposite",False,False,512,SAMEOPP_choice_swap
+POSBIAS_SAME_Q_pair1,SAME,Q,pair1,molwainmom,linprarsun,complex,simple,3716,2829,0.9432058334350586,7,False," Complex
+
+Q: What is the difference between molwainmom and linprarsun?
+A: molwainmom is a word that is bold and complex. linprarsun is the same as molwainmom.
+"," Complex
+
+Q: What is the difference between molwainmom and linprarsun?
+A: molwainmom is a word that is bold and complex. linprarsun is the same as molwainmom.
+",True,True,50,SAMEOPP_choice_swap
+POSBIAS_OPP_Q_pair1,OPP,Q,pair1,molwainmom,linprarsun,simple,complex,2829,3716,-0.9719905853271484,19,False," Complex
+
+Q: What is the opposite of molwainmom?
+A: linprarsun
+
+Q: What is the opposite of molwainmom?
+A: linprarsun
+
+Q: What is the"," Complex
+
+Q: What is the opposite of molwainmom?
+A: linprarsun
+
+Q: What is the opposite of molwainmom?
+A: linprarsun
+
+Q: What is the opposite of molwainmom?
+A: linprarsun
+
+Q: What is the opposite of molwainmom?
+A: linprarsun
+
+Q: What is the opposite of molwainmom?
+A: linprarsun
+
+Q: What is the oppos",False,False,512,SAMEOPP_choice_swap
+POSBIAS_MORE_P_pair2,MORE,P,pair2,fingreibrem,troulruprel,troulruprel,fingreibrem,4057,8038,-0.20184040069580078,2,False," fingreibrem
+
+Q: What is the difference between troulruprel and fingreibrem? (Answer EXACTLY ONE WORD)
+A: fingreibrem is more/greater than troulruprel in"," fingreibrem
+
+Q: What is the difference between troulruprel and fingreibrem? (Answer EXACTLY ONE WORD)
+A: fingreibrem is more/greater than troulruprel in",True,True,50,MORE_LESS_word_swap
+POSBIAS_LESS_P_pair2,LESS,P,pair2,fingreibrem,troulruprel,fingreibrem,troulruprel,8038,4057,0.3516530990600586,1,True," fingreibrem
+
+Q: What is the difference between troulruprel and fingreibrem? (Answer EXACTLY ONE WORD)
+A: fingreibrem is bold and complex, troulruprel is less"," fingreibrem
+
+Q: What is the difference between troulruprel and fingreibrem? (Answer EXACTLY ONE WORD)
+A: fingreibrem is bold and complex, troulruprel is less",True,True,50,MORE_LESS_word_swap
+POSBIAS_MORE_Q_pair2,MORE,Q,pair2,fingreibrem,troulruprel,troulruprel,fingreibrem,4057,8038,-0.40366268157958984,2,False," fingreibrem
+
+Q: What is the difference between troulruprel and fingreibrem? (Answer EXACTLY ONE WORD)
+A: fingreibrem is more complex than troulruprel
+
+Q"," fingreibrem
+
+Q: What is the difference between troulruprel and fingreibrem? (Answer EXACTLY ONE WORD)
+A: fingreibrem is more complex than troulruprel
+
+Q",True,True,50,MORE_LESS_word_swap
+POSBIAS_LESS_Q_pair2,LESS,Q,pair2,fingreibrem,troulruprel,fingreibrem,troulruprel,8038,4057,0.6299276351928711,1,True," fingreibrem
+
+Q: What is the difference between troulruprel and fingreibrem? (Answer EXACTLY ONE WORD)
+A: fingreibrem is more complex than troulruprel
+
+Q"," fingreibrem
+
+Q: What is the difference between troulruprel and fingreibrem? (Answer EXACTLY ONE WORD)
+A: fingreibrem is more complex than troulruprel
+
+Q",True,True,50,MORE_LESS_word_swap
+POSBIAS_SAME_P_pair2,SAME,P,pair2,fingreibrem,troulruprel,bold,cautious,10758,21205,0.08510112762451172,9,False," It is both.
+
+Q: What is the difference between troulruprel and fingreibrem?
+A: Fingreibrem is bold and troulruprel is cautious.
+
+Q: What is the difference between"," It is both.
+
+Q: What is the difference between troulruprel and fingreibrem?
+A: Fingreibrem is bold and troulruprel is cautious.
+
+Q: What is the difference between",True,True,50,SAMEOPP_choice_swap
+POSBIAS_OPP_P_pair2,OPP,P,pair2,fingreibrem,troulruprel,cautious,bold,21205,10758,-0.0567474365234375,11,False," Cautious
+
+Q: What is the opposite of troulruprel?
+A: Fingreibrem
+
+Q: What is the opposite of fingreibrem?
+A: Troulruprel
+
+Q:"," Cautious
+
+Q: What is the opposite of troulruprel?
+A: Fingreibrem
+
+Q: What is the opposite of fingreibrem?
+A: Troulruprel
+
+Q:",True,True,50,SAMEOPP_choice_swap
+POSBIAS_SAME_Q_pair2,SAME,Q,pair2,fingreibrem,troulruprel,complex,simple,3716,2829,0.47214698791503906,5,False," It is both simple and complex.
+
+Q: What is the difference between troulruprel and fingreibrem?
+A: Fingreibrem is something that is bold and complex.
+Troulruprel is the"," It is both simple and complex.
+
+Q: What is the difference between troulruprel and fingreibrem?
+A: Fingreibrem is something that is bold and complex.
+Troulruprel is the",True,True,50,SAMEOPP_choice_swap
+POSBIAS_OPP_Q_pair2,OPP,Q,pair2,fingreibrem,troulruprel,simple,complex,2829,3716,-0.45917224884033203,10,False," It is both simple and complex.
+
+Q: What is the opposite of troulruprel?
+A: fingreibrem
+
+Q: What is the opposite of fingreibrem?
+A: troulruprel
+"," It is both simple and complex.
+
+Q: What is the opposite of troulruprel?
+A: fingreibrem
+
+Q: What is the opposite of fingreibrem?
+A: troulruprel
+",True,True,50,SAMEOPP_choice_swap
+POSBIAS_MORE_P_pair3,MORE,P,pair3,sursternaik,putreirdeim,putreirdeim,sursternaik,1234,969,1.0343360900878906,1,True," putreirdeim
+
+Q: What is the difference between putreirdeim and sursternaik?
+A: putreirdeim is more/greater than sursternaik in all respects
+
+"," putreirdeim
+
+Q: What is the difference between putreirdeim and sursternaik?
+A: putreirdeim is more/greater than sursternaik in all respects
+
+",True,True,50,MORE_LESS_word_swap
+POSBIAS_LESS_P_pair3,LESS,P,pair3,sursternaik,putreirdeim,sursternaik,putreirdeim,969,1234,-1.0968751907348633,3,False," Putreirdeim
+
+Q: What is the difference between putreirdeim and sursternaik?
+A: Putreirdeim is more complex than sursternaik.
+
+Q: What is"," Putreirdeim
+
+Q: What is the difference between putreirdeim and sursternaik?
+A: Putreirdeim is more complex than sursternaik.
+
+Q: What is",True,True,50,MORE_LESS_word_swap
+POSBIAS_MORE_Q_pair3,MORE,Q,pair3,sursternaik,putreirdeim,putreirdeim,sursternaik,1234,969,1.1544246673583984,1,True," putreirdeim
+
+Q: What is the difference between putreirdeim and sursternaik?
+A: putreirdeim is more complex than sursternaik.
+
+Q: What is"," putreirdeim
+
+Q: What is the difference between putreirdeim and sursternaik?
+A: putreirdeim is more complex than sursternaik.
+
+Q: What is",True,True,50,MORE_LESS_word_swap
+POSBIAS_LESS_Q_pair3,LESS,Q,pair3,sursternaik,putreirdeim,sursternaik,putreirdeim,969,1234,-1.2171096801757812,3,False," Putreirdeim
+
+Q: What is the difference between putreirdeim and sursternaik?
+A: Putreirdeim is more complex than sursternaik.
+
+Q: What is"," Putreirdeim
+
+Q: What is the difference between putreirdeim and sursternaik?
+A: Putreirdeim is more complex than sursternaik.
+
+Q: What is",True,True,50,MORE_LESS_word_swap
+POSBIAS_SAME_P_pair3,SAME,P,pair3,sursternaik,putreirdeim,bold,cautious,10758,21205,0.5512275695800781,8,False," Bold
+
+Q: What is the difference between sursternaik and putreirdeim?
+A: sursternaik is a word that is bold and complex, putreirdeim is the same as surst"," Bold
+
+Q: What is the difference between sursternaik and putreirdeim?
+A: sursternaik is a word that is bold and complex, putreirdeim is the same as surst",True,True,50,SAMEOPP_choice_swap
+POSBIAS_OPP_P_pair3,OPP,P,pair3,sursternaik,putreirdeim,cautious,bold,21205,10758,-0.539154052734375,15,False," Bold
+
+Q: What is the opposite of putreirdeim?
+A: sursternaik
+
+Q: What is the opposite of sursternaik?
+A: putreirdeim
+
+Q"," Bold
+
+Q: What is the opposite of putreirdeim?
+A: sursternaik
+
+Q: What is the opposite of sursternaik?
+A: putreirdeim
+
+Q: What is the opposite of putreirdeim?
+A: sursternaik
+
+Q: What is the opposite of putreirdeim?
+A: sursternaik
+
+Q: What is the opposite of putreirdeim?
+A: sursternaik
+
+Q: What is th",False,False,512,SAMEOPP_choice_swap
+POSBIAS_SAME_Q_pair3,SAME,Q,pair3,sursternaik,putreirdeim,complex,simple,3716,2829,0.8887310028076172,7,False," It is both simple and complex.
+
+Q: What is the difference between putreirdeim and sursternaik?
+A: Putreirdeim is the same as sursternaik.
+
+Q:"," It is both simple and complex.
+
+Q: What is the difference between putreirdeim and sursternaik?
+A: Putreirdeim is the same as sursternaik.
+
+Q:",True,True,50,SAMEOPP_choice_swap
+POSBIAS_OPP_Q_pair3,OPP,Q,pair3,sursternaik,putreirdeim,simple,complex,2829,3716,-0.891749382019043,18,False," Complex
+
+Q: What is the opposite of putreirdeim?
+A: sursternaik
+
+Q: What is the opposite of sursternaik?
+A: putreirdeim
+
+Q"," Complex
+
+Q: What is the opposite of putreirdeim?
+A: sursternaik
+
+Q: What is the opposite of sursternaik?
+A: putreirdeim
+
+Q: What is the opposite of putreirdeim?
+A: sursternaik
+
+Q: What is the opposite of putreirdeim?
+A: sursternaik
+
+Q: What is the opposite of putreirdeim?
+A: sursternaik
+
+Q: What is",False,False,512,SAMEOPP_choice_swap
+POSBIAS_MORE_P_pair4,MORE,P,pair4,dinbrokrat,boltrasgan,boltrasgan,dinbrokrat,11572,16278,0.7920408248901367,1,True," boltrasgan
+
+Q: What is the difference between boltrasgan and dinbrokrat?
+A: boltrasgan is more/greater than dinbrokrat in all respects
+
+Q: What is the"," boltrasgan
+
+Q: What is the difference between boltrasgan and dinbrokrat?
+A: boltrasgan is more/greater than dinbrokrat in all respects
+
+Q: What is the",True,True,50,MORE_LESS_word_swap
+POSBIAS_LESS_P_pair4,LESS,P,pair4,dinbrokrat,boltrasgan,dinbrokrat,boltrasgan,16278,11572,-0.7385330200195312,4,False," boltrasgan
+
+Q: What is the difference between boltrasgan and dinbrokrat?
+A: boltrasgan is bolder than dinbrokrat.
+
+Q: What is the difference between boltr"," boltrasgan
+
+Q: What is the difference between boltrasgan and dinbrokrat?
+A: boltrasgan is bolder than dinbrokrat.
+
+Q: What is the difference between boltr",True,True,50,MORE_LESS_word_swap
+POSBIAS_MORE_Q_pair4,MORE,Q,pair4,dinbrokrat,boltrasgan,boltrasgan,dinbrokrat,11572,16278,0.5792446136474609,1,True," boltrasgan
+
+Q: What is the difference between boltrasgan and dinbrokrat?
+A: boltrasgan is more/greater than dinbrokrat in all respects
+
+Q: What is the"," boltrasgan
+
+Q: What is the difference between boltrasgan and dinbrokrat?
+A: boltrasgan is more/greater than dinbrokrat in all respects
+
+Q: What is the",True,True,50,MORE_LESS_word_swap
+POSBIAS_LESS_Q_pair4,LESS,Q,pair4,dinbrokrat,boltrasgan,dinbrokrat,boltrasgan,16278,11572,-0.48712158203125,4,False," boltrasgan
+
+Q: What is the difference between boltrasgan and dinbrokrat?
+A: boltrasgan is less/smaller than dinbrokrat in all respects
+
+Q: What is the"," boltrasgan
+
+Q: What is the difference between boltrasgan and dinbrokrat?
+A: boltrasgan is less/smaller than dinbrokrat in all respects
+
+Q: What is the",True,True,50,MORE_LESS_word_swap
+POSBIAS_SAME_P_pair4,SAME,P,pair4,dinbrokrat,boltrasgan,bold,cautious,10758,21205,0.030138015747070312,16,False," Bold
+
+Q: Is boltrasgan a good word? (Answer EXACTLY ONE WORD)
+A: Yes
+
+Q: Is boltrasgan a good word? (Answer EXACTLY ONE WORD)
+"," Bold
+
+Q: Is boltrasgan a good word? (Answer EXACTLY ONE WORD)
+A: Yes
+
+Q: Is boltrasgan a good word? (Answer EXACTLY ONE WORD)
+",True,True,50,SAMEOPP_choice_swap
+POSBIAS_OPP_P_pair4,OPP,P,pair4,dinbrokrat,boltrasgan,cautious,bold,21205,10758,-0.04094982147216797,18,False," Cautious
+
+Q: What is the opposite of boltrasgan?
+A: Dinbrokrat
+
+Q: What is the opposite of boltrasgan?
+A: Dinbrokrat
+
+Q: What"," Cautious
+
+Q: What is the opposite of boltrasgan?
+A: Dinbrokrat
+
+Q: What is the opposite of boltrasgan?
+A: Dinbrokrat
+
+Q: What",True,True,50,SAMEOPP_choice_swap
+POSBIAS_SAME_Q_pair4,SAME,Q,pair4,dinbrokrat,boltrasgan,complex,simple,3716,2829,0.6596345901489258,13,False," It is both simple and complex.
+
+Q: What is the difference between boltrasgan and dinbrokrat?
+A: Boltrasgan is a word that is both simple and complex.
+
+Q: What is the"," It is both simple and complex.
+
+Q: What is the difference between boltrasgan and dinbrokrat?
+A: Boltrasgan is a word that is both simple and complex.
+
+Q: What is the",True,True,50,SAMEOPP_choice_swap
+POSBIAS_OPP_Q_pair4,OPP,Q,pair4,dinbrokrat,boltrasgan,simple,complex,2829,3716,-0.6207923889160156,26,False," It is both simple and complex.
+
+Q: What is the opposite of boltrasgan?
+A: Dinbrokrat.
+
+Q: What is the opposite of boltrasgan?
+A: Dinbrokrat"," It is both simple and complex.
+
+Q: What is the opposite of boltrasgan?
+A: Dinbrokrat.
+
+Q: What is the opposite of boltrasgan?
+A: Dinbrokrat",True,True,50,SAMEOPP_choice_swap
+POSBIAS_MORE_P_pair5,MORE,P,pair5,surtolgim,posprunflei,posprunflei,surtolgim,1426,969,0.5254526138305664,1,True," posprunflei
+
+Q: What is the difference between posprunflei and surtolgim?
+A: surtolgim is more/greater than posprunflei in all respects
+
+"," posprunflei
+
+Q: What is the difference between posprunflei and surtolgim?
+A: surtolgim is more/greater than posprunflei in all respects
+
+",True,True,50,MORE_LESS_word_swap
+POSBIAS_LESS_P_pair5,LESS,P,pair5,surtolgim,posprunflei,surtolgim,posprunflei,969,1426,-0.4777212142944336,2,False," posprunflei
+
+Q: What is the difference between posprunflei and surtolgim?
+A: surtolgim is bold and complex, posprunflei is less/smaller than"," posprunflei
+
+Q: What is the difference between posprunflei and surtolgim?
+A: surtolgim is bold and complex, posprunflei is less/smaller than",True,True,50,MORE_LESS_word_swap
+POSBIAS_MORE_Q_pair5,MORE,Q,pair5,surtolgim,posprunflei,posprunflei,surtolgim,1426,969,1.0565185546875,1,True," posprunflei
+
+Q: What is the difference between posprunflei and surtolgim?
+A: posprunflei is more/greater than surtolgim in all respects
+
+"," posprunflei
+
+Q: What is the difference between posprunflei and surtolgim?
+A: posprunflei is more/greater than surtolgim in all respects
+
+",True,True,50,MORE_LESS_word_swap
+POSBIAS_LESS_Q_pair5,LESS,Q,pair5,surtolgim,posprunflei,surtolgim,posprunflei,969,1426,-1.083195686340332,2,False," posprunflei
+
+Q: What is the difference between posprunflei and surtolgim?
+A: posprunflei is more complex than surtolgim.
+
+Q: What is"," posprunflei
+
+Q: What is the difference between posprunflei and surtolgim?
+A: posprunflei is more complex than surtolgim.
+
+Q: What is",True,True,50,MORE_LESS_word_swap
+POSBIAS_SAME_P_pair5,SAME,P,pair5,surtolgim,posprunflei,bold,cautious,10758,21205,0.14085674285888672,7,False," It is both.
+
+Q: What is the difference between posprunflei and surtolgim?
+A: surtolgim is bold and posprunflei is cautious.
+
+Q: What is"," It is both.
+
+Q: What is the difference between posprunflei and surtolgim?
+A: surtolgim is bold and posprunflei is cautious.
+
+Q: What is",True,True,50,SAMEOPP_choice_swap
+POSBIAS_OPP_P_pair5,OPP,P,pair5,surtolgim,posprunflei,cautious,bold,21205,10758,-0.04665374755859375,9,False," Bold
+
+Q: What is the opposite of posprunflei?
+A: Surtolgim
+
+Q: What is the opposite of surtolgim?
+A: posprunflei
+
+Q"," Bold
+
+Q: What is the opposite of posprunflei?
+A: Surtolgim
+
+Q: What is the opposite of surtolgim?
+A: posprunflei
+
+Q: What is the opposite of surtolgim?
+A: posprunflei
+
+Q: What is the opposite of surtolgim?
+A: posprunflei
+
+Q: What is the opposite of surtolgim?
+A: posprunflei
+
+Q: What is the opposite",False,False,512,SAMEOPP_choice_swap
+POSBIAS_SAME_Q_pair5,SAME,Q,pair5,surtolgim,posprunflei,complex,simple,3716,2829,0.24825096130371094,6,False," It is both simple and complex.
+
+Q: What is the difference between posprunflei and surtolgim?
+A: posprunflei is the same as surtolgim.
+
+Q:"," It is both simple and complex.
+
+Q: What is the difference between posprunflei and surtolgim?
+A: posprunflei is the same as surtolgim.
+
+Q:",True,True,50,SAMEOPP_choice_swap
+POSBIAS_OPP_Q_pair5,OPP,Q,pair5,surtolgim,posprunflei,simple,complex,2829,3716,-0.3361473083496094,10,False," It is both simple and complex.
+
+Q: What is the opposite of posprunflei?
+A: surtolgim
+
+Q: What is the opposite of surtolgim?
+A: pospr"," It is both simple and complex.
+
+Q: What is the opposite of posprunflei?
+A: surtolgim
+
+Q: What is the opposite of surtolgim?
+A: pospr",True,True,50,SAMEOPP_choice_swap
+POSBIAS_MORE_P_pair6,MORE,P,pair6,walbilsour,pinvullin,pinvullin,walbilsour,6757,6514,-0.9271268844604492,3,False," walbilsour
+
+Q: What is the difference between pinvullin and walbilsour?
+A: walbilsour is more/greater than pinvullin in all respects
+
+Q: What is the"," walbilsour
+
+Q: What is the difference between pinvullin and walbilsour?
+A: walbilsour is more/greater than pinvullin in all respects
+
+Q: What is the",True,True,50,MORE_LESS_word_swap
+POSBIAS_LESS_P_pair6,LESS,P,pair6,walbilsour,pinvullin,walbilsour,pinvullin,6514,6757,1.2361469268798828,1,True," walbilsour
+
+Q: What is the difference between a walbilsour and a pinvullin?
+A: walbilsour is bold and complex, while pinvullin is less/smaller than walb"," walbilsour
+
+Q: What is the difference between a walbilsour and a pinvullin?
+A: walbilsour is bold and complex, while pinvullin is less/smaller than walb",True,True,50,MORE_LESS_word_swap
+POSBIAS_MORE_Q_pair6,MORE,Q,pair6,walbilsour,pinvullin,pinvullin,walbilsour,6757,6514,-1.0417251586914062,3,False," walbilsour
+
+Q: What is the difference between a walbilsour and a pinvullin?
+A: walbilsour is more complex than pinvullin
+
+Q: What is the difference between a"," walbilsour
+
+Q: What is the difference between a walbilsour and a pinvullin?
+A: walbilsour is more complex than pinvullin
+
+Q: What is the difference between a",True,True,50,MORE_LESS_word_swap
+POSBIAS_LESS_Q_pair6,LESS,Q,pair6,walbilsour,pinvullin,walbilsour,pinvullin,6514,6757,1.3335580825805664,1,True," walbilsour
+
+Q: What is the difference between a walbilsour and a pinvullin?
+A: walbilsour is bold and complex, while pinvullin is less/smaller than walb"," walbilsour
+
+Q: What is the difference between a walbilsour and a pinvullin?
+A: walbilsour is bold and complex, while pinvullin is less/smaller than walb",True,True,50,MORE_LESS_word_swap
+POSBIAS_SAME_P_pair6,SAME,P,pair6,walbilsour,pinvullin,bold,cautious,10758,21205,0.03508281707763672,12,False," BOLD
+
+Q: What is the difference between a walbilsour and a pinvullin?
+A: A walbilsour is bold and complex, while a pinvullin is the same as a walbils"," BOLD
+
+Q: What is the difference between a walbilsour and a pinvullin?
+A: A walbilsour is bold and complex, while a pinvullin is the same as a walbils",True,True,50,SAMEOPP_choice_swap
+POSBIAS_OPP_P_pair6,OPP,P,pair6,walbilsour,pinvullin,cautious,bold,21205,10758,0.009112358093261719,18,False," Cautious
+
+Q: What is the opposite of a walbilsour?
+A: Pinvullin
+
+Q: What is the opposite of a pinvullin?
+A: A walbilsour
+
+"," Cautious
+
+Q: What is the opposite of a walbilsour?
+A: Pinvullin
+
+Q: What is the opposite of a pinvullin?
+A: A walbilsour
+
+",True,True,50,SAMEOPP_choice_swap
+POSBIAS_SAME_Q_pair6,SAME,Q,pair6,walbilsour,pinvullin,complex,simple,3716,2829,0.8339862823486328,7,False," It is both simple and complex.
+
+Q: What is the difference between a walbilsour and a pinvullin?
+A: A walbilsour is something that is bold and complex. A pinvullin is"," It is both simple and complex.
+
+Q: What is the difference between a walbilsour and a pinvullin?
+A: A walbilsour is something that is bold and complex. A pinvullin is",True,True,50,SAMEOPP_choice_swap
+POSBIAS_OPP_Q_pair6,OPP,Q,pair6,walbilsour,pinvullin,simple,complex,2829,3716,-0.7786016464233398,23,False," It is both.
+
+Q: What is the opposite of walbilsour?
+A: pinvullin
+
+Q: What is the opposite of pinvullin?
+A: walbilsour
+
+Q:"," It is both.
+
+Q: What is the opposite of walbilsour?
+A: pinvullin
+
+Q: What is the opposite of pinvullin?
+A: walbilsour
+
+Q: What is the opposite of walbilsour?
+A: pinvullin
+
+Q: What is the opposite of pinvullin?
+A: walbilsour
+
+Q: What is the opposite of walbilsour?
+A: pinvullin
+
+Q: What is the opposi",False,False,512,SAMEOPP_choice_swap
+POSBIAS_MORE_P_pair7,MORE,P,pair7,stipreisdol,mantunkrur,mantunkrur,stipreisdol,24818,22111,-0.8479738235473633,2,False," stipreisdol
+
+Q: What is the difference between mantunkrur and stipreisdol?
+A: stipreisdol is more/greater than mantunkrur in all respects
+
+Q: What is the"," stipreisdol
+
+Q: What is the difference between mantunkrur and stipreisdol?
+A: stipreisdol is more/greater than mantunkrur in all respects
+
+Q: What is the",True,True,50,MORE_LESS_word_swap
+POSBIAS_LESS_P_pair7,LESS,P,pair7,stipreisdol,mantunkrur,stipreisdol,mantunkrur,22111,24818,0.6669197082519531,1,True," stipreisdol
+
+Q: What is the difference between mantunkrur and stipreisdol?
+A: stipreisdol is more complex than mantunkrur.
+
+Q: What is the difference between mantunk"," stipreisdol
+
+Q: What is the difference between mantunkrur and stipreisdol?
+A: stipreisdol is more complex than mantunkrur.
+
+Q: What is the difference between mantunk",True,True,50,MORE_LESS_word_swap
+POSBIAS_MORE_Q_pair7,MORE,Q,pair7,stipreisdol,mantunkrur,mantunkrur,stipreisdol,24818,22111,-0.7206525802612305,2,False," stipreisdol
+
+Q: What is the difference between mantunkrur and stipreisdol?
+A: stipreisdol is more complex than mantunkrur in all respects.
+
+Q: What is the difference"," stipreisdol
+
+Q: What is the difference between mantunkrur and stipreisdol?
+A: stipreisdol is more complex than mantunkrur in all respects.
+
+Q: What is the difference",True,True,50,MORE_LESS_word_swap
+POSBIAS_LESS_Q_pair7,LESS,Q,pair7,stipreisdol,mantunkrur,stipreisdol,mantunkrur,22111,24818,0.4942436218261719,1,True," stipreisdol
+
+Q: What is the difference between a mantunkrur and a stipreisdol?
+A: A mantunkrur is a smaller version of a stipreisdol.
+
+Q: What is"," stipreisdol
+
+Q: What is the difference between a mantunkrur and a stipreisdol?
+A: A mantunkrur is a smaller version of a stipreisdol.
+
+Q: What is",True,True,50,MORE_LESS_word_swap
+POSBIAS_SAME_P_pair7,SAME,P,pair7,stipreisdol,mantunkrur,bold,cautious,10758,21205,1.6745901107788086,7,False," Bold
+
+Q: What is the difference between a mantunkrur and a stipreisdol?
+A: A mantunkrur is bold and complex, while a stipreisdol is bold and simple.
+
+Q:"," Bold
+
+Q: What is the difference between a mantunkrur and a stipreisdol?
+A: A mantunkrur is bold and complex, while a stipreisdol is bold and simple.
+
+Q:",True,True,50,SAMEOPP_choice_swap
+POSBIAS_OPP_P_pair7,OPP,P,pair7,stipreisdol,mantunkrur,cautious,bold,21205,10758,-1.8507356643676758,41,False," Bold
+
+Q: What is the opposite of mantunkrur?
+A: Stipreisdol
+
+Q: What is the opposite of stipreisdol?
+A: Mantunkrur
+
+Q: What is"," Bold
+
+Q: What is the opposite of mantunkrur?
+A: Stipreisdol
+
+Q: What is the opposite of stipreisdol?
+A: Mantunkrur
+
+Q: What is the opposite of mantunkrur?
+A: Stipreisdol
+
+Q: What is the opposite of stipreisdol?
+A: Mantunkrur
+
+Q: What is the opposite of mantunkrur?
+A: Stipreisdol
+
+Q: What is the opp",False,False,512,SAMEOPP_choice_swap
+POSBIAS_SAME_Q_pair7,SAME,Q,pair7,stipreisdol,mantunkrur,complex,simple,3716,2829,0.9610090255737305,9,False," It is both simple and complex.
+
+Q: What is the difference between a stipreisdol and a mantunkrur?
+A: A stipreisdol is something that is bold and complex. A mantunkrur is"," It is both simple and complex.
+
+Q: What is the difference between a stipreisdol and a mantunkrur?
+A: A stipreisdol is something that is bold and complex. A mantunkrur is",True,True,50,SAMEOPP_choice_swap
+POSBIAS_OPP_Q_pair7,OPP,Q,pair7,stipreisdol,mantunkrur,simple,complex,2829,3716,-1.0852861404418945,29,False," It is both simple and complex.
+
+Q: What is the opposite of mantunkrur?
+A: stipreisdol
+
+Q: What is the opposite of stipreisdol?
+A: mantunkrur
+"," It is both simple and complex.
+
+Q: What is the opposite of mantunkrur?
+A: stipreisdol
+
+Q: What is the opposite of stipreisdol?
+A: mantunkrur
+",True,True,50,SAMEOPP_choice_swap
+POSBIAS_MORE_P_pair8,MORE,P,pair8,surgrouteit,resnanplais,resnanplais,surgrouteit,581,969,-0.3482189178466797,2,False," surgrouteit
+
+Q: What is the difference between surgrouteit and resnanplais?
+A: surgrouteit is more/greater than resnanplais in all respects
+
+Q: What is the"," surgrouteit
+
+Q: What is the difference between surgrouteit and resnanplais?
+A: surgrouteit is more/greater than resnanplais in all respects
+
+Q: What is the",True,True,50,MORE_LESS_word_swap
+POSBIAS_LESS_P_pair8,LESS,P,pair8,surgrouteit,resnanplais,surgrouteit,resnanplais,969,581,0.12062740325927734,1,True," surgrouteit
+
+Q: What is the difference between surgrouteit and resnanplais?
+A: surgrouteit is more complex than resnanplais.
+
+Q: What is the difference between surgr"," surgrouteit
+
+Q: What is the difference between surgrouteit and resnanplais?
+A: surgrouteit is more complex than resnanplais.
+
+Q: What is the difference between surgr",True,True,50,MORE_LESS_word_swap
+POSBIAS_MORE_Q_pair8,MORE,Q,pair8,surgrouteit,resnanplais,resnanplais,surgrouteit,581,969,0.04171562194824219,1,True," resnanplais
+
+Q: What is the difference between surgrouteit and resnanplais?
+A: surgrouteit is more complex than resnanplais in all respects.
+
+Q: What is the difference"," resnanplais
+
+Q: What is the difference between surgrouteit and resnanplais?
+A: surgrouteit is more complex than resnanplais in all respects.
+
+Q: What is the difference",True,True,50,MORE_LESS_word_swap
+POSBIAS_LESS_Q_pair8,LESS,Q,pair8,surgrouteit,resnanplais,surgrouteit,resnanplais,969,581,-0.24675273895263672,2,False," resnanplais
+
+Q: What is the difference between surgrouteit and resnanplais?
+A: surgrouteit is a word that is bold and complex, while resnanplais is a word that is less"," resnanplais
+
+Q: What is the difference between surgrouteit and resnanplais?
+A: surgrouteit is a word that is bold and complex, while resnanplais is a word that is less",True,True,50,MORE_LESS_word_swap
+POSBIAS_SAME_P_pair8,SAME,P,pair8,surgrouteit,resnanplais,bold,cautious,10758,21205,-0.009351730346679688,13,False," resnanplais is a cautious person.
+
+Q: What is the difference between a surgrouteit and a resnanplais?
+A: A surgrouteit is a person who is bold and complex.
+
+Q"," resnanplais is a cautious person.
+
+Q: What is the difference between a surgrouteit and a resnanplais?
+A: A surgrouteit is a person who is bold and complex.
+
+Q",True,True,50,SAMEOPP_choice_swap
+POSBIAS_OPP_P_pair8,OPP,P,pair8,surgrouteit,resnanplais,cautious,bold,21205,10758,0.04902362823486328,13,False," Cautious
+
+Q: What is the opposite of resnanplais?
+A: surgrouteit
+
+Q: What is the opposite of surgrouteit?
+A: resnanplais
+
+Q: What"," Cautious
+
+Q: What is the opposite of resnanplais?
+A: surgrouteit
+
+Q: What is the opposite of surgrouteit?
+A: resnanplais
+
+Q: What",True,True,50,SAMEOPP_choice_swap
+POSBIAS_SAME_Q_pair8,SAME,Q,pair8,surgrouteit,resnanplais,complex,simple,3716,2829,0.44722843170166016,7,False," resnanplais is simple.
+
+Q: What is the difference between surgrouteit and resnanplais?
+A: surgrouteit is a word that is bold and complex.
+
+Q: What is the difference"," resnanplais is simple.
+
+Q: What is the difference between surgrouteit and resnanplais?
+A: surgrouteit is a word that is bold and complex.
+
+Q: What is the difference",True,True,50,SAMEOPP_choice_swap
+POSBIAS_OPP_Q_pair8,OPP,Q,pair8,surgrouteit,resnanplais,simple,complex,2829,3716,-0.49068737030029297,12,False," Complex
+
+Q: What is the opposite of surgrouteit?
+A: resnanplais
+
+Q: What is the opposite of surgrouteit?
+A: resnanplais
+
+Q: What is the"," Complex
+
+Q: What is the opposite of surgrouteit?
+A: resnanplais
+
+Q: What is the opposite of surgrouteit?
+A: resnanplais
+
+Q: What is the opposite of surgrouteit?
+A: resnanplais
+
+Q: What is the opposite of surgrouteit?
+A: resnanplais
+
+Q: What is the opposite of surgrouteit?
+A: resnanplais
+
+Q: What is",False,False,512,SAMEOPP_choice_swap
+POSBIAS_MORE_P_pair9,MORE,P,pair9,vasfloumus,muspreirdou,muspreirdou,vasfloumus,1928,34439,-0.14849376678466797,2,False," vasfloumus
+
+Q: What is the difference between muspreirdou and vasfloumus?
+A: muspreirdou is more/greater than vasfloumus in all respects
+
+Q: What is the"," vasfloumus
+
+Q: What is the difference between muspreirdou and vasfloumus?
+A: muspreirdou is more/greater than vasfloumus in all respects
+
+Q: What is the",True,True,50,MORE_LESS_word_swap
+POSBIAS_LESS_P_pair9,LESS,P,pair9,vasfloumus,muspreirdou,vasfloumus,muspreirdou,34439,1928,0.2893638610839844,1,True," vasfloumus
+
+Q: What is the difference between vasfloumus and muspreirdou?
+A: vasfloumus is bold and complex, muspreirdou is less/smaller than vasfloumus in"," vasfloumus
+
+Q: What is the difference between vasfloumus and muspreirdou?
+A: vasfloumus is bold and complex, muspreirdou is less/smaller than vasfloumus in",True,True,50,MORE_LESS_word_swap
+POSBIAS_MORE_Q_pair9,MORE,Q,pair9,vasfloumus,muspreirdou,muspreirdou,vasfloumus,1928,34439,-0.05234241485595703,2,False," vasfloumus
+
+Q: What is the difference between vasfloumus and muspreirdou? (Answer EXACTLY ONE WORD)
+A: muspreirdou is more/greater than vasfloumus in"," vasfloumus
+
+Q: What is the difference between vasfloumus and muspreirdou? (Answer EXACTLY ONE WORD)
+A: muspreirdou is more/greater than vasfloumus in",True,True,50,MORE_LESS_word_swap
+POSBIAS_LESS_Q_pair9,LESS,Q,pair9,vasfloumus,muspreirdou,vasfloumus,muspreirdou,34439,1928,0.15135478973388672,1,True," vasfloumus
+
+Q: What is the difference between vasfloumus and muspreirdou?
+A: muspreirdou is less/smaller than vasfloumus in all respects
+
+Q: What is the"," vasfloumus
+
+Q: What is the difference between vasfloumus and muspreirdou?
+A: muspreirdou is less/smaller than vasfloumus in all respects
+
+Q: What is the",True,True,50,MORE_LESS_word_swap
+POSBIAS_SAME_P_pair9,SAME,P,pair9,vasfloumus,muspreirdou,bold,cautious,10758,21205,0.4685792922973633,10,False," Vasfloumus
+
+Q: What is the difference between vasfloumus and muspreirdou?
+A: Vasfloumus is bold and muspreirdou is cautious.
+
+Q: What is the difference between vas"," Vasfloumus
+
+Q: What is the difference between vasfloumus and muspreirdou?
+A: Vasfloumus is bold and muspreirdou is cautious.
+
+Q: What is the difference between vas",True,True,50,SAMEOPP_choice_swap
+POSBIAS_OPP_P_pair9,OPP,P,pair9,vasfloumus,muspreirdou,cautious,bold,21205,10758,-0.49903297424316406,14,False," Vasfloumus
+
+Q: What is the opposite of vasfloumus?
+A: muspreirdou
+
+Q: What is the opposite of muspreirdou?
+A: vasfloumus
+
+Q:"," Vasfloumus
+
+Q: What is the opposite of vasfloumus?
+A: muspreirdou
+
+Q: What is the opposite of muspreirdou?
+A: vasfloumus
+
+Q: What is the opposite of vasfloumus?
+A: muspreirdou
+
+Q: What is the opposite of muspreirdou?
+A: vasfloumus
+
+Q: What is the opposite of vasfloumus?
+A: muspreirdou
+
+Q: What is t",False,False,512,SAMEOPP_choice_swap
+POSBIAS_SAME_Q_pair9,SAME,Q,pair9,vasfloumus,muspreirdou,complex,simple,3716,2829,0.27782154083251953,9,False," It is both simple and complex.
+
+Q: What is the difference between vasfloumus and muspreirdou?
+A: Vasfloumus is something that is bold and complex.
+Muspreirdou is the same as"," It is both simple and complex.
+
+Q: What is the difference between vasfloumus and muspreirdou?
+A: Vasfloumus is something that is bold and complex.
+Muspreirdou is the same as",True,True,50,SAMEOPP_choice_swap
+POSBIAS_OPP_Q_pair9,OPP,Q,pair9,vasfloumus,muspreirdou,simple,complex,2829,3716,-0.31197643280029297,16,False," Vasfloumus
+
+Q: What is the opposite of vasfloumus?
+A: muspreirdou
+
+Q: What is the opposite of vasfloumus?
+A: muspreirdou
+
+Q:"," Vasfloumus
+
+Q: What is the opposite of vasfloumus?
+A: muspreirdou
+
+Q: What is the opposite of vasfloumus?
+A: muspreirdou
+
+Q: What is the opposite of vasfloumus?
+A: muspreirdou
+
+Q: What is the opposite of vasfloumus?
+A: muspreirdou
+
+Q: What is the opposite of vasfloumus?
+A: muspreirdou
+
+Q: What is t",False,False,512,SAMEOPP_choice_swap

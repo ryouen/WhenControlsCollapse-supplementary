@@ -1,0 +1,41 @@
+{
+  "phase_name": "20_scoring",
+  "perm_seed": 42,
+  "n_perms": 10000,
+  "n_trials_rsa": 80,
+  "n_trials_sensitivity": 60,
+  "n_layers": 40,
+  "n_heads": 40,
+  "perturbation_tuples_per_head": 120,
+  "phaseB_elapsed_sec": 4.398,
+  "rsa_elapsed_sec": 2.2,
+  "perturbation_elapsed_sec": 0.458,
+  "partial_rsa_elapsed_sec": 0.0,
+  "sensitivity_elapsed_sec": 1.523,
+  "negative_head_count_before_clamp": 0,
+  "negative_value_range_min": null,
+  "negative_value_range_max": null,
+  "cell_counts": {
+    "hihp": 486,
+    "hilp": 314,
+    "C": 314,
+    "D": 486
+  },
+  "pipeline_version": "v7.5.0",
+  "prompt_format": "format_c_qa_options_v7_5",
+  "platform": "GoogleColab_A100-SXM4-80GB",
+  "model_id": "allenai/OLMo-2-1124-13B-Instruct",
+  "model_short": "olmo-2-13b-instruct",
+  "word_seed": 2026,
+  "n_pairs": 10,
+  "attr_P": [
+    "bold",
+    "cautious"
+  ],
+  "attr_Q": [
+    "complex",
+    "simple"
+  ],
+  "common_word_list_source": "wordfreq.top_n_list('en', 3000, wordlist='large') from wordfreq==3.1.1 (https://pypi.org/project/wordfreq/)",
+  "saved_at": "2026-04-20T20:45:41.605173"
+}

@@ -1,0 +1,70 @@
+{
+  "phase_name": "30_patching",
+  "source_rule": "alpha_same_pair_same_attr_cross_crel",
+  "patch_mechanism": "input_overwrite_v5_1_pattern",
+  "patch_mechanism_version": "v2_post_20260421_oooerror_fix",
+  "ratios_dose": [
+    0.01,
+    0.03,
+    0.05,
+    0.07,
+    0.1,
+    0.12,
+    0.15,
+    0.159439,
+    0.2,
+    0.3,
+    0.5
+  ],
+  "groups": [
+    "hihp_imp_desc",
+    "hilp_imp_desc",
+    "C_imp_asc",
+    "D_imp_asc",
+    "std_imp_asc",
+    "D_pert_asc",
+    "diag_rank_asc"
+  ],
+  "max_equal_k_ratio_applied": 0.159439,
+  "total_heads": 784,
+  "n_tuples_per_head": 120,
+  "manifest": {
+    "pipeline_version": "v7.5.0",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "word_seed": 2026,
+    "n_pairs": 10,
+    "n_patch_trials": 120,
+    "patch_mechanism": "input_overwrite_v5_1_pattern",
+    "patch_mechanism_version": "v2_post_20260421_oooerror_fix",
+    "source_rule": "alpha_same_pair_same_attr_cross_crel",
+    "trials_fingerprint_sha256": "60ad14ba82a950a4781a6d8de013a220221e1cc18794ef163f314993c3e69dd6"
+  },
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "c1_elapsed_sec": 4783.566,
+  "c2_elapsed_sec": 596.88,
+  "c1_n_heads_processed": 784,
+  "c2_n_runs": 9240,
+  "cell_counts": {
+    "hihp": 267,
+    "hilp": 125,
+    "C": 125,
+    "D": 266
+  },
+  "pipeline_version": "v7.5.0",
+  "prompt_format": "format_c_qa_options_v7_5",
+  "platform": "GoogleColab_A100-SXM4-80GB",
+  "model_short": "qwen-2.5-7b-instruct",
+  "word_seed": 2026,
+  "perm_seed": 42,
+  "n_pairs": 10,
+  "attr_P": [
+    "bold",
+    "cautious"
+  ],
+  "attr_Q": [
+    "complex",
+    "simple"
+  ],
+  "common_word_list_source": "wordfreq.top_n_list('en', 3000, wordlist='large') from wordfreq==3.1.1 (https://pypi.org/project/wordfreq/)",
+  "saved_at": "2026-04-21T11:22:32.490936"
+}

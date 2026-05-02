@@ -1,0 +1,2 @@
+model,n_heads,beta_imp,beta_pert,beta_layer,p_imp,p_pert,p_layer,R2_full,R2_imp_only,R2_pert_only,R2_layer_only,partial_R2_pert
+llama-3.1-8b-instruct,1024,0.0465,0.8217,-0.1537,0.020051336118046673,4.934654767420978e-206,1.3060647368183691e-12,0.6121,0.0044,0.5864,0.0173,0.6016

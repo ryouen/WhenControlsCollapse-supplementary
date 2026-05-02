@@ -1,0 +1,51 @@
+prompt_id,io_name,s_name,clean_text,corrupt_text,template_id,place,object
+0,Zack,Nathan,"Then, Nathan and Zack went to the station. Nathan gave a drink to","Then, Zack and Zack went to the station. Zack gave a drink to",0,station,drink
+1,Kevin,Alice,"Then, Alice and Kevin had a meeting at the hotel. Alice handed a box to","Then, Kevin and Kevin had a meeting at the hotel. Kevin handed a box to",1,hotel,box
+2,Rosa,George,"After that, George and Rosa visited the school. George passed the book to","After that, Rosa and Rosa visited the school. Rosa passed the book to",2,school,book
+3,Fiona,Charlie,"Next, Charlie and Fiona stopped by the station. Charlie offered a message to","Next, Fiona and Fiona stopped by the station. Fiona offered a message to",3,station,message
+4,Peter,Jack,"Then, Jack and Peter arrived at the hotel. Jack sent the phone to","Then, Peter and Peter arrived at the hotel. Peter sent the phone to",4,hotel,phone
+5,Helen,Lucy,"Then, Lucy and Helen went to the market. Lucy gave a note to","Then, Helen and Helen went to the market. Helen gave a note to",0,market,note
+6,Kevin,Jack,"Then, Jack and Kevin had a meeting at the library. Jack handed a message to","Then, Kevin and Kevin had a meeting at the library. Kevin handed a message to",1,library,message
+7,Kevin,Steve,"After that, Steve and Kevin visited the library. Steve passed the drink to","After that, Kevin and Kevin visited the library. Kevin passed the drink to",2,library,drink
+8,Eric,Olivia,"Next, Olivia and Eric stopped by the hotel. Olivia offered a letter to","Next, Eric and Eric stopped by the hotel. Eric offered a letter to",3,hotel,letter
+9,Oscar,Helen,"Then, Helen and Oscar arrived at the station. Helen sent the box to","Then, Oscar and Oscar arrived at the station. Oscar sent the box to",4,station,box
+10,Karen,Helen,"Then, Helen and Karen went to the market. Helen gave a phone to","Then, Karen and Karen went to the market. Karen gave a phone to",0,market,phone
+11,Lucy,Uma,"Then, Uma and Lucy had a meeting at the market. Uma handed a phone to","Then, Lucy and Lucy had a meeting at the market. Lucy handed a phone to",1,market,phone
+12,Julia,Bob,"After that, Bob and Julia visited the station. Bob passed the drink to","After that, Julia and Julia visited the station. Julia passed the drink to",2,station,drink
+13,Quinn,Ivan,"Next, Ivan and Quinn stopped by the park. Ivan offered a ticket to","Next, Quinn and Quinn stopped by the park. Quinn offered a ticket to",3,park,ticket
+14,Peter,Karen,"Then, Karen and Peter arrived at the library. Karen sent the key to","Then, Peter and Peter arrived at the library. Peter sent the key to",4,library,key
+15,Xavier,Rosa,"Then, Rosa and Xavier went to the office. Rosa gave a box to","Then, Xavier and Xavier went to the office. Xavier gave a box to",0,office,box
+16,Peter,David,"Then, David and Peter had a meeting at the library. David handed a ticket to","Then, Peter and Peter had a meeting at the library. Peter handed a ticket to",1,library,ticket
+17,Oscar,Julia,"After that, Julia and Oscar visited the hotel. Julia passed the letter to","After that, Oscar and Oscar visited the hotel. Oscar passed the letter to",2,hotel,letter
+18,Lucy,Uma,"Next, Uma and Lucy stopped by the school. Uma offered a bag to","Next, Lucy and Lucy stopped by the school. Lucy offered a bag to",3,school,bag
+19,Tina,Helen,"Then, Helen and Tina arrived at the park. Helen sent the phone to","Then, Tina and Tina arrived at the park. Tina sent the phone to",4,park,phone
+20,Kevin,Fiona,"Then, Fiona and Kevin went to the market. Fiona gave a letter to","Then, Kevin and Kevin went to the market. Kevin gave a letter to",0,market,letter
+21,Quinn,Paula,"Then, Paula and Quinn had a meeting at the library. Paula handed a key to","Then, Quinn and Quinn had a meeting at the library. Quinn handed a key to",1,library,key
+22,Peter,Olivia,"After that, Olivia and Peter visited the library. Olivia passed the box to","After that, Peter and Peter visited the library. Peter passed the box to",2,library,box
+23,Tom,Zack,"Next, Zack and Tom stopped by the airport. Zack offered a gift to","Next, Tom and Tom stopped by the airport. Tom offered a gift to",3,airport,gift
+24,Tina,Ivan,"Then, Ivan and Tina arrived at the school. Ivan sent the gift to","Then, Tina and Tina arrived at the school. Tina sent the gift to",4,school,gift
+25,Sam,Quinn,"Then, Quinn and Sam went to the airport. Quinn gave a note to","Then, Sam and Sam went to the airport. Sam gave a note to",0,airport,note
+26,Nathan,Diana,"Then, Diana and Nathan had a meeting at the museum. Diana handed a key to","Then, Nathan and Nathan had a meeting at the museum. Nathan handed a key to",1,museum,key
+27,Jack,Rosa,"After that, Rosa and Jack visited the hospital. Rosa passed the gift to","After that, Jack and Jack visited the hospital. Jack passed the gift to",2,hospital,gift
+28,Irene,Rachel,"Next, Rachel and Irene stopped by the store. Rachel offered a drink to","Next, Irene and Irene stopped by the store. Irene offered a drink to",3,store,drink
+29,Mia,Diana,"Then, Diana and Mia arrived at the station. Diana sent the drink to","Then, Mia and Mia arrived at the station. Mia sent the drink to",4,station,drink
+30,Charlie,Lucy,"Then, Lucy and Charlie went to the store. Lucy gave a gift to","Then, Charlie and Charlie went to the store. Charlie gave a gift to",0,store,gift
+31,Diana,Frank,"Then, Frank and Diana had a meeting at the hospital. Frank handed a gift to","Then, Diana and Diana had a meeting at the hospital. Diana handed a gift to",1,hospital,gift
+32,David,Nathan,"After that, Nathan and David visited the library. Nathan passed the drink to","After that, David and David visited the library. David passed the drink to",2,library,drink
+33,Kevin,Rosa,"Next, Rosa and Kevin stopped by the park. Rosa offered a gift to","Next, Kevin and Kevin stopped by the park. Kevin offered a gift to",3,park,gift
+34,Victor,Grace,"Then, Grace and Victor arrived at the airport. Grace sent the bag to","Then, Victor and Victor arrived at the airport. Victor sent the bag to",4,airport,bag
+35,Rachel,Paula,"Then, Paula and Rachel went to the park. Paula gave a bag to","Then, Rachel and Rachel went to the park. Rachel gave a bag to",0,park,bag
+36,Sam,George,"Then, George and Sam had a meeting at the restaurant. George handed a card to","Then, Sam and Sam had a meeting at the restaurant. Sam handed a card to",1,restaurant,card
+37,Frank,Charlie,"After that, Charlie and Frank visited the restaurant. Charlie passed the gift to","After that, Frank and Frank visited the restaurant. Frank passed the gift to",2,restaurant,gift
+38,Irene,Peter,"Next, Peter and Irene stopped by the park. Peter offered a letter to","Next, Irene and Irene stopped by the park. Irene offered a letter to",3,park,letter
+39,Henry,Oscar,"Then, Oscar and Henry arrived at the hotel. Oscar sent the note to","Then, Henry and Henry arrived at the hotel. Henry sent the note to",4,hotel,note
+40,Oscar,Wendy,"Then, Wendy and Oscar went to the airport. Wendy gave a bag to","Then, Oscar and Oscar went to the airport. Oscar gave a bag to",0,airport,bag
+41,Wendy,Karen,"Then, Karen and Wendy had a meeting at the station. Karen handed a key to","Then, Wendy and Wendy had a meeting at the station. Wendy handed a key to",1,station,key
+42,Alice,Lucy,"After that, Lucy and Alice visited the park. Lucy passed the gift to","After that, Alice and Alice visited the park. Alice passed the gift to",2,park,gift
+43,Kevin,Alice,"Next, Alice and Kevin stopped by the hotel. Alice offered a gift to","Next, Kevin and Kevin stopped by the hotel. Kevin offered a gift to",3,hotel,gift
+44,Tom,Ivan,"Then, Ivan and Tom arrived at the museum. Ivan sent the phone to","Then, Tom and Tom arrived at the museum. Tom sent the phone to",4,museum,phone
+45,Tina,Steve,"Then, Steve and Tina went to the store. Steve gave a drink to","Then, Tina and Tina went to the store. Tina gave a drink to",0,store,drink
+46,Quinn,David,"Then, David and Quinn had a meeting at the market. David handed a bag to","Then, Quinn and Quinn had a meeting at the market. Quinn handed a bag to",1,market,bag
+47,Paula,Kevin,"After that, Kevin and Paula visited the park. Kevin passed the letter to","After that, Paula and Paula visited the park. Paula passed the letter to",2,park,letter
+48,Tina,Eric,"Next, Eric and Tina stopped by the station. Eric offered a box to","Next, Tina and Tina stopped by the station. Tina offered a box to",3,station,box
+49,Liam,Irene,"Then, Irene and Liam arrived at the museum. Irene sent the drink to","Then, Liam and Liam arrived at the museum. Liam sent the drink to",4,museum,drink

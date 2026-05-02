@@ -1,0 +1,1025 @@
+trial_id,crel,attr_dim,pair_id,word_a,word_b,correct_answer,incorrect_answer,correct_first_subtoken_id,incorrect_first_subtoken_id,d_plus,correct_rank,is_argmax_correct,generated_response_50,generated_response_final,is_string_correct_50,is_string_correct_final,max_new_tokens_used
+SAME_P_pair0,SAME,P,pair0,molwainmom,linprarsun,bold,cautious,14265,46878,6.6875,1,True," bold
+
+Q: Is linprarsun complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is linprarsun the same as molwainmom? (Answer EXACTLY ONE WORD)
+A:"," bold
+
+Q: Is linprarsun complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is linprarsun the same as molwainmom? (Answer EXACTLY ONE WORD)
+A:",True,True,50
+OPP_P_pair0,OPP,P,pair0,molwainmom,linprarsun,cautious,bold,46878,14265,6.625,1,True," cautious
+
+Q: Is molwainmom complex or simple? (Answer EXACTly one word)
+A: complex
+
+Q: Is linprarsun the opposite of molwainmom? (Answer exactly one word)
+A: yes
+
+"," cautious
+
+Q: Is molwainmom complex or simple? (Answer EXACTly one word)
+A: complex
+
+Q: Is linprarsun the opposite of molwainmom? (Answer exactly one word)
+A: yes
+
+",True,True,50
+SAME_Q_pair0,SAME,Q,pair0,molwainmom,linprarsun,complex,simple,6485,4382,4.1875,1,True," complex
+
+Q: Is linprarsun bold or weak? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: What does linprarsun refer to? (Answer EXACTLY ONE WORD)
+A: something
+
+Q:"," complex
+
+Q: Is linprarsun bold or weak? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: What does linprarsun refer to? (Answer EXACTLY ONE WORD)
+A: something
+
+Q:",True,True,50
+OPP_Q_pair0,OPP,Q,pair0,molwainmom,linprarsun,simple,complex,4382,6485,5.875,1,True," simple
+
+Q: Is molwainmom complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is linprarsun bold or not bold? (Answer EXACTLY ONE WORD)
+A: not
+
+Q"," simple
+
+Q: Is molwainmom complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is linprarsun bold or not bold? (Answer EXACTLY ONE WORD)
+A: not
+
+Q",True,True,50
+MORE_P_pair0,MORE,P,pair0,molwainmom,linprarsun,linprarsun,molwainmom,10006,22337,4.25,1,True," linprarsun
+
+Q: Which is more complex, molwainmom or linprarsun? (Answer EXACTLY ONE WORD)
+A: linprarsun
+
+Q: Which is more bold and complex, molwainmom"," linprarsun
+
+Q: Which is more complex, molwainmom or linprarsun? (Answer EXACTLY ONE WORD)
+A: linprarsun
+
+Q: Which is more bold and complex, molwainmom",True,True,50
+LESS_P_pair0,LESS,P,pair0,molwainmom,linprarsun,molwainmom,linprarsun,22337,10006,4.875,1,True," molwainmom
+
+Q: Which is more complex, molwainmom or linprarsun? (Answer EXACTLY ONE WORD)
+A: molwainmom
+
+Q: Is linprarsun less than molwainmom"," molwainmom
+
+Q: Which is more complex, molwainmom or linprarsun? (Answer EXACTLY ONE WORD)
+A: molwainmom
+
+Q: Is linprarsun less than molwainmom",True,True,50
+MORE_Q_pair0,MORE,Q,pair0,molwainmom,linprarsun,linprarsun,molwainmom,10006,22337,4.0625,1,True," linprarsun
+
+Q: Which is bolder, molwainmom or linprarsun? (Answer EXACTLY ONE WORD)
+A: linprarsun
+
+Q: Which is more complex than the other? (Answer EX"," linprarsun
+
+Q: Which is bolder, molwainmom or linprarsun? (Answer EXACTLY ONE WORD)
+A: linprarsun
+
+Q: Which is more complex than the other? (Answer EX",True,True,50
+LESS_Q_pair0,LESS,Q,pair0,molwainmom,linprarsun,molwainmom,linprarsun,22337,10006,4.3125,1,True," molwainmom
+
+Q: Which is smaller, molwainmom or linprarsun? (Answer EXACTLY ONE WORD)
+A: linprarsun
+
+Q: Which is bolder, molwainmom or linpr"," molwainmom
+
+Q: Which is smaller, molwainmom or linprarsun? (Answer EXACTLY ONE WORD)
+A: linprarsun
+
+Q: Which is bolder, molwainmom or linpr",True,True,50
+SAME_P_pair1,SAME,P,pair1,tunzordem,plelsposrun,bold,cautious,14265,46878,8.0625,1,True," Bold
+
+Q: What is a tunzordem? (Answer IN EXACTLY 10 WORDS)
+A: A tunzordem is a bold and complex concept or idea. 
+
+Q: Is a tunzordem the same"," Bold
+
+Q: What is a tunzordem? (Answer IN EXACTLY 10 WORDS)
+A: A tunzordem is a bold and complex concept or idea. 
+
+Q: Is a tunzordem the same",True,True,50
+OPP_P_pair1,OPP,P,pair1,tunzordem,plelsposrun,cautious,bold,46878,14265,7.625,1,True," cautious
+
+Q: Is tunzordem complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is plelsposrun bold or complex? (Answer EXACTLY ONE WORD)
+A: neither
+
+Q:"," cautious
+
+Q: Is tunzordem complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is plelsposrun bold or complex? (Answer EXACTLY ONE WORD)
+A: neither
+
+Q:",True,True,50
+SAME_Q_pair1,SAME,Q,pair1,tunzordem,plelsposrun,complex,simple,6485,4382,4.75,1,True," complex
+
+Q: Is plelsposrun bold or not bold? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is plelsposrun the same as tunzordem? (Answer EXACTLY ONE WORD)
+A"," complex
+
+Q: Is plelsposrun bold or not bold? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is plelsposrun the same as tunzordem? (Answer EXACTLY ONE WORD)
+A",True,True,50
+OPP_Q_pair1,OPP,Q,pair1,tunzordem,plelsposrun,simple,complex,4382,6485,6.4375,1,True," simple
+
+Q: Is tunzordem complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is tunzordem the same as plelsposrun? (Answer EXACTLY ONE WORD)
+A:"," simple
+
+Q: Is tunzordem complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is tunzordem the same as plelsposrun? (Answer EXACTLY ONE WORD)
+A:",True,True,50
+MORE_P_pair1,MORE,P,pair1,tunzordem,plelsposrun,plelsposrun,tunzordem,7245,11716,7.5,1,True," plelsposrun
+
+Q: Which is more complex, tunzordem or plelsposrun? (Answer EXACTLY ONE WORD)
+A: plelsposrun
+
+Q: Which is greater, tunzordem or plels"," plelsposrun
+
+Q: Which is more complex, tunzordem or plelsposrun? (Answer EXACTLY ONE WORD)
+A: plelsposrun
+
+Q: Which is greater, tunzordem or plels",True,True,50
+LESS_P_pair1,LESS,P,pair1,tunzordem,plelsposrun,tunzordem,plelsposrun,11716,7245,5.0,1,True," tunzordem
+
+Q: Which is more complex, tunzordem or plelsposrun? (Answer EXACTLY ONE WORD)
+A: tunzordem
+
+Q: Is plelsposrun greater than tunzordem"," tunzordem
+
+Q: Which is more complex, tunzordem or plelsposrun? (Answer EXACTLY ONE WORD)
+A: tunzordem
+
+Q: Is plelsposrun greater than tunzordem",True,True,50
+MORE_Q_pair1,MORE,Q,pair1,tunzordem,plelsposrun,plelsposrun,tunzordem,7245,11716,9.375,1,True," plelsposrun
+
+Q: Which is more bold, tunzordem or plelsposrun? (Answer EXACTLY ONE WORD)
+A: plelsposrun
+
+Q: Which is more tunzordem, tunzord"," plelsposrun
+
+Q: Which is more bold, tunzordem or plelsposrun? (Answer EXACTLY ONE WORD)
+A: plelsposrun
+
+Q: Which is more tunzordem, tunzord",True,True,50
+LESS_Q_pair1,LESS,Q,pair1,tunzordem,plelsposrun,tunzordem,plelsposrun,11716,7245,4.125,1,True," tunzordem
+
+Q: Is plelsposrun more complex than tunzordem? (Answer EXACTLY ONE WORD)
+A: no
+
+Q: Is plelsposrun smaller than tunzordem? (Answer EXACT"," tunzordem
+
+Q: Is plelsposrun more complex than tunzordem? (Answer EXACTLY ONE WORD)
+A: no
+
+Q: Is plelsposrun smaller than tunzordem? (Answer EXACT",True,True,50
+SAME_P_pair2,SAME,P,pair2,pansaissail,felrulmat,bold,cautious,14265,46878,8.0625,1,True," bold
+
+Q: Is felrulmat complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is felrulmat something that is bold and complex or something that is bold and simple? (Answer EXACT"," bold
+
+Q: Is felrulmat complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is felrulmat something that is bold and complex or something that is bold and simple? (Answer EXACT",True,True,50
+OPP_P_pair2,OPP,P,pair2,pansaissail,felrulmat,cautious,bold,46878,14265,8.3125,1,True," cautious
+
+Q: Is pansaissail bold or cautious? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is felrulmat complex or simple? (Answer EXACTLY ONE WORD)
+A: simple
+
+Q:"," cautious
+
+Q: Is pansaissail bold or cautious? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is felrulmat complex or simple? (Answer EXACTLY ONE WORD)
+A: simple
+
+Q:",True,True,50
+SAME_Q_pair2,SAME,Q,pair2,pansaissail,felrulmat,complex,simple,6485,4382,5.3125,1,True," complex
+
+Q: Is felrulmat bold or tame? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is felrulmat pansaissail or not pansaissail? (Answer EXACTLY ONE WORD"," complex
+
+Q: Is felrulmat bold or tame? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is felrulmat pansaissail or not pansaissail? (Answer EXACTLY ONE WORD",True,True,50
+OPP_Q_pair2,OPP,Q,pair2,pansaissail,felrulmat,simple,complex,4382,6485,6.75,1,True," simple
+
+Q: Is felrulmat bold or unbold? (Answer EXACTLY ONE WORD)
+A: unbold
+
+Q: Is pansaissail bold or unbold? (Answer EXACTLY ONE WORD)
+A: bold"," simple
+
+Q: Is felrulmat bold or unbold? (Answer EXACTLY ONE WORD)
+A: unbold
+
+Q: Is pansaissail bold or unbold? (Answer EXACTLY ONE WORD)
+A: bold",True,True,50
+MORE_P_pair2,MORE,P,pair2,pansaissail,felrulmat,felrulmat,pansaissail,18515,64883,6.5,1,True," felrulmat
+
+Q: Which is more complex, pansaissail or felrulmat? (Answer EXACTLY ONE WORD)
+A: felrulmat
+
+Q: Which is more pansaissail, pansaiss"," felrulmat
+
+Q: Which is more complex, pansaissail or felrulmat? (Answer EXACTLY ONE WORD)
+A: felrulmat
+
+Q: Which is more pansaissail, pansaiss",True,True,50
+LESS_P_pair2,LESS,P,pair2,pansaissail,felrulmat,pansaissail,felrulmat,64883,18515,6.625,1,True," pansaissail
+
+Q: Which is more complex, pansaissail or felrulmat? (Answer EXACTLY ONE WORD)
+A: pansaissail
+
+Q: Is felrulmat larger than pansaissail"," pansaissail
+
+Q: Which is more complex, pansaissail or felrulmat? (Answer EXACTLY ONE WORD)
+A: pansaissail
+
+Q: Is felrulmat larger than pansaissail",True,True,50
+MORE_Q_pair2,MORE,Q,pair2,pansaissail,felrulmat,felrulmat,pansaissail,18515,64883,6.1875,1,True," felrulmat
+
+Q: Which is more bold, pansaissail or felrulmat? (Answer EXACTLY ONE WORD)
+A: felrulmat
+
+Q: Which is more complex and bold, pansaissail"," felrulmat
+
+Q: Which is more bold, pansaissail or felrulmat? (Answer EXACTLY ONE WORD)
+A: felrulmat
+
+Q: Which is more complex and bold, pansaissail",True,True,50
+LESS_Q_pair2,LESS,Q,pair2,pansaissail,felrulmat,pansaissail,felrulmat,64883,18515,6.625,1,True," pansaissail
+
+Q: Which is less complex, felrulmat or pansaissail? (Answer EXACTLY ONE WORD)
+A: felrulmat
+
+Q: Which is more bold, felrulmat or pans"," pansaissail
+
+Q: Which is less complex, felrulmat or pansaissail? (Answer EXACTLY ONE WORD)
+A: felrulmat
+
+Q: Which is more bold, felrulmat or pans",True,True,50
+SAME_P_pair3,SAME,P,pair3,lenfugron,masresgrum,bold,cautious,14265,46878,7.75,1,True," bold
+
+Q: Is masresgrum complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is masresgrum the same as lenfugron? (Answer EXACTLY ONE WORD)
+A:"," bold
+
+Q: Is masresgrum complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is masresgrum the same as lenfugron? (Answer EXACTLY ONE WORD)
+A:",True,True,50
+OPP_P_pair3,OPP,P,pair3,lenfugron,masresgrum,cautious,bold,46878,14265,7.25,1,True," cautious
+
+Q: Is masresgrum complex or simple? (Answer EXACTLY ONE WORD)
+A: simple
+
+Q: Is lenfugron bold or cautious? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q:"," cautious
+
+Q: Is masresgrum complex or simple? (Answer EXACTLY ONE WORD)
+A: simple
+
+Q: Is lenfugron bold or cautious? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q:",True,True,50
+SAME_Q_pair3,SAME,Q,pair3,lenfugron,masresgrum,complex,simple,6485,4382,5.3125,1,True," complex
+
+Q: Is lenfugron bold or tame? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is masresgrum lenfugron? (Answer EXACTLY ONE WORD)
+A: yes
+
+Q"," complex
+
+Q: Is lenfugron bold or tame? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is masresgrum lenfugron? (Answer EXACTLY ONE WORD)
+A: yes
+
+Q",True,True,50
+OPP_Q_pair3,OPP,Q,pair3,lenfugron,masresgrum,simple,complex,4382,6485,7.125,1,True," simple
+
+Q: Is lenfugron bold or subtle? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is masresgrum bold or subtle? (Answer EXACTLY ONE WORD)
+A: subtle
+
+Q:"," simple
+
+Q: Is lenfugron bold or subtle? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is masresgrum bold or subtle? (Answer EXACTLY ONE WORD)
+A: subtle
+
+Q:",True,True,50
+MORE_P_pair3,MORE,P,pair3,lenfugron,masresgrum,masresgrum,lenfugron,9427,2479,5.5,1,True," masresgrum
+
+Q: Which is more complex, lenfugron or masresgrum? (Answer EXACTLY ONE WORD)
+A: masresgrum
+
+Q: Which is more bold and complex, lenfugron"," masresgrum
+
+Q: Which is more complex, lenfugron or masresgrum? (Answer EXACTLY ONE WORD)
+A: masresgrum
+
+Q: Which is more bold and complex, lenfugron",True,True,50
+LESS_P_pair3,LESS,P,pair3,lenfugron,masresgrum,lenfugron,masresgrum,2479,9427,7.5,1,True," lenfugron
+
+Q: Which is more complex, lenfugron or masresgrum? (Answer EXACTLY ONE WORD)
+A: lenfugron
+
+Q: Which is smaller, lenfugron or masres"," lenfugron
+
+Q: Which is more complex, lenfugron or masresgrum? (Answer EXACTLY ONE WORD)
+A: lenfugron
+
+Q: Which is smaller, lenfugron or masres",True,True,50
+MORE_Q_pair3,MORE,Q,pair3,lenfugron,masresgrum,masresgrum,lenfugron,9427,2479,5.25,1,True," masresgrum
+
+Q: Which is more bold, lenfugron or masresgrum? (Answer EXACTLY ONE WORD)
+A: masresgrum
+
+Q: Is masresgrum greater than lenfugron"," masresgrum
+
+Q: Which is more bold, lenfugron or masresgrum? (Answer EXACTLY ONE WORD)
+A: masresgrum
+
+Q: Is masresgrum greater than lenfugron",True,True,50
+LESS_Q_pair3,LESS,Q,pair3,lenfugron,masresgrum,lenfugron,masresgrum,2479,9427,7.3125,1,True," lenfugron
+
+Q: Is masresgrum less complex than lenfugron? (Answer EXACTLY ONE WORD)
+A: yes
+
+Q: Which is more bold, lenfugron or masresgrum? ("," lenfugron
+
+Q: Is masresgrum less complex than lenfugron? (Answer EXACTLY ONE WORD)
+A: yes
+
+Q: Which is more bold, lenfugron or masresgrum? (",True,True,50
+SAME_P_pair4,SAME,P,pair4,traswansoul,girneisli,bold,cautious,14265,46878,7.375,1,True," Bold
+
+Q: Is girneisli simple or complex? (Answer EXACTLY ONE WORD)
+A: Complex
+
+Q: Is girneisli bold or complex? (Answer EXACTLY ONE WORD)
+A: Bold
+
+Q:"," Bold
+
+Q: Is girneisli simple or complex? (Answer EXACTLY ONE WORD)
+A: Complex
+
+Q: Is girneisli bold or complex? (Answer EXACTLY ONE WORD)
+A: Bold
+
+Q:",True,True,50
+OPP_P_pair4,OPP,P,pair4,traswansoul,girneisli,cautious,bold,46878,14265,7.125,1,True," cautious
+
+Q: Is traswansoul bold or cautious? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is girneisli complex or simple? (Answer EXACTLY ONE WORD)
+A: simple
+
+Q:"," cautious
+
+Q: Is traswansoul bold or cautious? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is girneisli complex or simple? (Answer EXACTLY ONE WORD)
+A: simple
+
+Q:",True,True,50
+SAME_Q_pair4,SAME,Q,pair4,traswansoul,girneisli,complex,simple,6485,4382,6.4375,1,True," complex
+
+Q: Is girneisli bold or not bold? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is girneisli girneisli or traswansoul? (Answer EXACTLY ONE WORD"," complex
+
+Q: Is girneisli bold or not bold? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is girneisli girneisli or traswansoul? (Answer EXACTLY ONE WORD",True,True,50
+OPP_Q_pair4,OPP,Q,pair4,traswansoul,girneisli,simple,complex,4382,6485,6.6875,1,True," simple
+
+Q: Is traswansoul complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is traswansoul bold or not bold? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q"," simple
+
+Q: Is traswansoul complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is traswansoul bold or not bold? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q",True,True,50
+MORE_P_pair4,MORE,P,pair4,traswansoul,girneisli,girneisli,traswansoul,41389,34264,5.875,1,True," girneisli
+
+Q: Which is more complex, traswansoul or girneisli? (Answer EXACTLY ONE WORD)
+A: girneisli
+
+Q: Is girneisli greater than traswansoul"," girneisli
+
+Q: Which is more complex, traswansoul or girneisli? (Answer EXACTLY ONE WORD)
+A: girneisli
+
+Q: Is girneisli greater than traswansoul",True,True,50
+LESS_P_pair4,LESS,P,pair4,traswansoul,girneisli,traswansoul,girneisli,34264,41389,6.25,1,True," traswansoul
+
+Q: Which is more complex, traswansoul or girneisli? (Answer EXACTLY ONE WORD)
+A: traswansoul
+
+Q: Which is smaller, traswansoul or girne"," traswansoul
+
+Q: Which is more complex, traswansoul or girneisli? (Answer EXACTLY ONE WORD)
+A: traswansoul
+
+Q: Which is smaller, traswansoul or girne",True,True,50
+MORE_Q_pair4,MORE,Q,pair4,traswansoul,girneisli,girneisli,traswansoul,41389,34264,6.3125,1,True," girneisli
+
+Q: Which is more bold, traswansoul or girneisli? (Answer EXACTLY ONE WORD)
+A: girneisli
+
+Q: Which is more complex, bold, or both, tras"," girneisli
+
+Q: Which is more bold, traswansoul or girneisli? (Answer EXACTLY ONE WORD)
+A: girneisli
+
+Q: Which is more complex, bold, or both, tras",True,True,50
+LESS_Q_pair4,LESS,Q,pair4,traswansoul,girneisli,traswansoul,girneisli,34264,41389,5.625,1,True," traswansoul
+
+Q: Which is more bold, traswansoul or girneisli? (Answer EXACTLY ONE WORD)
+A: traswansoul
+
+Q: Which is smaller, traswansoul or girne"," traswansoul
+
+Q: Which is more bold, traswansoul or girneisli? (Answer EXACTLY ONE WORD)
+A: traswansoul
+
+Q: Which is smaller, traswansoul or girne",True,True,50
+SAME_P_pair5,SAME,P,pair5,ferzeisrail,sursternaik,bold,cautious,14265,46878,5.4375,1,True," bold
+
+Q: Is ferzeisrail complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is ferzeisrail the same as sursternaik? (Answer EXACTLY ONE WORD)
+A:"," bold
+
+Q: Is ferzeisrail complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is ferzeisrail the same as sursternaik? (Answer EXACTLY ONE WORD)
+A:",True,True,50
+OPP_P_pair5,OPP,P,pair5,ferzeisrail,sursternaik,cautious,bold,46878,14265,8.1875,1,True," cautious
+
+Q: Is ferzeisrail complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is ferzeisrail bold or cautious? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q:"," cautious
+
+Q: Is ferzeisrail complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is ferzeisrail bold or cautious? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q:",True,True,50
+SAME_Q_pair5,SAME,Q,pair5,ferzeisrail,sursternaik,complex,simple,6485,4382,4.9375,1,True," Complex
+
+Q: Is ferzeisrail bold or tame? (Answer EXACTLY ONE WORD)
+A: Bold
+
+Q: Is ferzeisrail the same as sursternaik? (Answer EXACTLY ONE WORD)
+A:"," Complex
+
+Q: Is ferzeisrail bold or tame? (Answer EXACTLY ONE WORD)
+A: Bold
+
+Q: Is ferzeisrail the same as sursternaik? (Answer EXACTLY ONE WORD)
+A:",True,True,50
+OPP_Q_pair5,OPP,Q,pair5,ferzeisrail,sursternaik,simple,complex,4382,6485,6.4375,1,True," simple
+
+Q: Is ferzeisrail bold or weak? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is ferzeisrail complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q:"," simple
+
+Q: Is ferzeisrail bold or weak? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is ferzeisrail complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q:",True,True,50
+MORE_P_pair5,MORE,P,pair5,ferzeisrail,sursternaik,sursternaik,ferzeisrail,1765,18728,3.625,1,True," sursternaik
+
+Q: Which is more complex, ferzeisrail or sursternaik? (Answer EXACTLY ONE WORD)
+A: sursternaik
+
+Q: Is ferzeisrail bold? (Answer EXACT"," sursternaik
+
+Q: Which is more complex, ferzeisrail or sursternaik? (Answer EXACTLY ONE WORD)
+A: sursternaik
+
+Q: Is ferzeisrail bold? (Answer EXACT",True,True,50
+LESS_P_pair5,LESS,P,pair5,ferzeisrail,sursternaik,ferzeisrail,sursternaik,18728,1765,5.125,1,True," ferzeisrail
+
+Q: Which is smaller, ferzeisrail or sursternaik? (Answer EXACTLY ONE WORD)
+A: sursternaik
+
+Q: Which is more complex, ferzeisrail or surst"," ferzeisrail
+
+Q: Which is smaller, ferzeisrail or sursternaik? (Answer EXACTLY ONE WORD)
+A: sursternaik
+
+Q: Which is more complex, ferzeisrail or surst",True,True,50
+MORE_Q_pair5,MORE,Q,pair5,ferzeisrail,sursternaik,sursternaik,ferzeisrail,1765,18728,3.75,1,True," sursternaik
+
+Q: Which is more complex, sursternaik or ferzeisrail? (Answer EXACTLY ONE WORD)
+A: sursternaik
+
+Q: Which is more complex, ferzeisrail or fer"," sursternaik
+
+Q: Which is more complex, sursternaik or ferzeisrail? (Answer EXACTLY ONE WORD)
+A: sursternaik
+
+Q: Which is more complex, ferzeisrail or fer",True,True,50
+LESS_Q_pair5,LESS,Q,pair5,ferzeisrail,sursternaik,ferzeisrail,sursternaik,18728,1765,4.9375,1,True," ferzeisrail
+
+Q: Which is smaller, ferzeisrail or sursternaik? (Answer EXACTLY ONE WORD)
+A: sursternaik
+
+Q: Which is bolder, ferzeisrail or surst"," ferzeisrail
+
+Q: Which is smaller, ferzeisrail or sursternaik? (Answer EXACTLY ONE WORD)
+A: sursternaik
+
+Q: Which is bolder, ferzeisrail or surst",True,True,50
+SAME_P_pair6,SAME,P,pair6,stipreisdol,mantunkrur,bold,cautious,14265,46878,8.0625,1,True," bold
+
+Q: Is mantunkrur complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: What is the opposite of mantunkrur? (Answer EXACTLY ONE WORD)
+A: cautious
+
+Q"," bold
+
+Q: Is mantunkrur complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: What is the opposite of mantunkrur? (Answer EXACTLY ONE WORD)
+A: cautious
+
+Q",True,True,50
+OPP_P_pair6,OPP,P,pair6,stipreisdol,mantunkrur,cautious,bold,46878,14265,6.4375,1,True," cautious
+
+Q: Is stipreisdol complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is mantunkrur the opposite of stipreisdol? (Answer EXACTLY ONE WORD)
+A:"," cautious
+
+Q: Is stipreisdol complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is mantunkrur the opposite of stipreisdol? (Answer EXACTLY ONE WORD)
+A:",True,True,50
+SAME_Q_pair6,SAME,Q,pair6,stipreisdol,mantunkrur,complex,simple,6485,4382,4.1875,1,True," complex
+
+Q: Is mantunkrur bold or subtle? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is mantunkrur a word that describes a quality of something, or is it a thing itself? (Answer"," complex
+
+Q: Is mantunkrur bold or subtle? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is mantunkrur a word that describes a quality of something, or is it a thing itself? (Answer",True,True,50
+OPP_Q_pair6,OPP,Q,pair6,stipreisdol,mantunkrur,simple,complex,4382,6485,6.25,1,True," simple
+
+Q: Is the word ""stipreisdol"" a good example of a stipreisdol word? (Answer EXACTLY ONE WORD)
+A: yes
+
+Q: Is mantunkrur the opposite of stipreisd"," simple
+
+Q: Is the word ""stipreisdol"" a good example of a stipreisdol word? (Answer EXACTLY ONE WORD)
+A: yes
+
+Q: Is mantunkrur the opposite of stipreisd",True,True,50
+MORE_P_pair6,MORE,P,pair6,stipreisdol,mantunkrur,mantunkrur,stipreisdol,26976,43773,6.125,1,True," mantunkrur
+
+Q: Is mantunkrur more complex than stipreisdol? (Answer EXACTLY ONE WORD)
+A: yes
+
+Q: Is stipreisdol bold? (Answer EXACTLY ONE WORD)
+A"," mantunkrur
+
+Q: Is mantunkrur more complex than stipreisdol? (Answer EXACTLY ONE WORD)
+A: yes
+
+Q: Is stipreisdol bold? (Answer EXACTLY ONE WORD)
+A",True,True,50
+LESS_P_pair6,LESS,P,pair6,stipreisdol,mantunkrur,stipreisdol,mantunkrur,43773,26976,7.375,1,True," stipreisdol
+
+Q: Which is more complex, stipreisdol or mantunkrur? (Answer EXACTLY ONE WORD)
+A: stipreisdol
+
+Q: Which is more bold AND complex, stipreisdol"," stipreisdol
+
+Q: Which is more complex, stipreisdol or mantunkrur? (Answer EXACTLY ONE WORD)
+A: stipreisdol
+
+Q: Which is more bold AND complex, stipreisdol",True,True,50
+MORE_Q_pair6,MORE,Q,pair6,stipreisdol,mantunkrur,mantunkrur,stipreisdol,26976,43773,6.625,1,True," mantunkrur
+
+Q: Is mantunkrur more complex than stipreisdol? (Answer EXACTLY ONE WORD)
+A: yes
+
+Q: Is mantunkrur more complex than mantunkrur? (Answer EX"," mantunkrur
+
+Q: Is mantunkrur more complex than stipreisdol? (Answer EXACTLY ONE WORD)
+A: yes
+
+Q: Is mantunkrur more complex than mantunkrur? (Answer EX",True,True,50
+LESS_Q_pair6,LESS,Q,pair6,stipreisdol,mantunkrur,stipreisdol,mantunkrur,43773,26976,7.25,1,True," stipreisdol
+
+Q: Which is less complex, stipreisdol or mantunkrur? (Answer EXACTLY ONE WORD)
+A: mantunkrur
+
+Q: Which is more bold, stipreisdol or mant"," stipreisdol
+
+Q: Which is less complex, stipreisdol or mantunkrur? (Answer EXACTLY ONE WORD)
+A: mantunkrur
+
+Q: Which is more bold, stipreisdol or mant",True,True,50
+SAME_P_pair7,SAME,P,pair7,firtrarspel,grinflermai,bold,cautious,14265,46878,8.375,1,True," bold
+
+Q: Is grinflermai complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is grinflermai something that is bold and complex? (Answer EXACTLY ONE WORD)
+A: yes"," bold
+
+Q: Is grinflermai complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is grinflermai something that is bold and complex? (Answer EXACTLY ONE WORD)
+A: yes",True,True,50
+OPP_P_pair7,OPP,P,pair7,firtrarspel,grinflermai,cautious,bold,46878,14265,7.5,1,True," cautious
+
+Q: Is firtrarspel bold or cautious? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is firtrarspel complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q:"," cautious
+
+Q: Is firtrarspel bold or cautious? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is firtrarspel complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q:",True,True,50
+SAME_Q_pair7,SAME,Q,pair7,firtrarspel,grinflermai,complex,simple,6485,4382,4.6875,1,True," complex
+
+Q: Is firtrarspel bold or not bold? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is grinflermai the same as firtrarspel? (Answer EXACTLY ONE WORD)
+A"," complex
+
+Q: Is firtrarspel bold or not bold? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is grinflermai the same as firtrarspel? (Answer EXACTLY ONE WORD)
+A",True,True,50
+OPP_Q_pair7,OPP,Q,pair7,firtrarspel,grinflermai,simple,complex,4382,6485,6.5,1,True," simple
+
+Q: Is firtrarspel bold or not bold? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is firtrarspel simple or complex? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q"," simple
+
+Q: Is firtrarspel bold or not bold? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is firtrarspel simple or complex? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q",True,True,50
+MORE_P_pair7,MORE,P,pair7,firtrarspel,grinflermai,grinflermai,firtrarspel,59380,35092,3.75,1,True," grinflermai
+
+Q: Which is more complex, firtrarspel or grinflermai? (Answer EXACTLY ONE WORD)
+A: grinflermai
+
+Q: Which is firtrarspel, firtrarspel"," grinflermai
+
+Q: Which is more complex, firtrarspel or grinflermai? (Answer EXACTLY ONE WORD)
+A: grinflermai
+
+Q: Which is firtrarspel, firtrarspel",True,True,50
+LESS_P_pair7,LESS,P,pair7,firtrarspel,grinflermai,firtrarspel,grinflermai,35092,59380,8.5,1,True," firtrarspel
+
+Q: Which is more complex, firtrarspel or grinflermai? (Answer EXACTLY ONE WORD)
+A: firtrarspel
+
+Q: Which is larger, firtrarspel or grinfl"," firtrarspel
+
+Q: Which is more complex, firtrarspel or grinflermai? (Answer EXACTLY ONE WORD)
+A: firtrarspel
+
+Q: Which is larger, firtrarspel or grinfl",True,True,50
+MORE_Q_pair7,MORE,Q,pair7,firtrarspel,grinflermai,grinflermai,firtrarspel,59380,35092,3.375,1,True," grinflermai
+
+Q: Is firtrarspel bold? (Answer EXACTLY ONE WORD)
+A: yes
+
+Q: Is firtrarspel greater than grinflermai? (Answer EXACTLY ONE WORD)
+A:"," grinflermai
+
+Q: Is firtrarspel bold? (Answer EXACTLY ONE WORD)
+A: yes
+
+Q: Is firtrarspel greater than grinflermai? (Answer EXACTLY ONE WORD)
+A:",True,True,50
+LESS_Q_pair7,LESS,Q,pair7,firtrarspel,grinflermai,firtrarspel,grinflermai,35092,59380,8.25,1,True," firtrarspel
+
+Q: Is grinflermai less complex than firtrarspel? (Answer EXACTLY ONE WORD)
+A: yes
+
+Q: Is grinflermai smaller than firtrarspel? (Answer EXACT"," firtrarspel
+
+Q: Is grinflermai less complex than firtrarspel? (Answer EXACTLY ONE WORD)
+A: yes
+
+Q: Is grinflermai smaller than firtrarspel? (Answer EXACT",True,True,50
+SAME_P_pair8,SAME,P,pair8,takrunbren,fleirstelit,bold,cautious,14265,46878,6.875,1,True," bold
+
+Q: Is takrunbren complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is fleirstelit the same as takrunbren? (Answer EXACTLY ONE WORD)
+A:"," bold
+
+Q: Is takrunbren complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is fleirstelit the same as takrunbren? (Answer EXACTLY ONE WORD)
+A:",True,True,50
+OPP_P_pair8,OPP,P,pair8,takrunbren,fleirstelit,cautious,bold,46878,14265,7.4375,1,True," cautious
+
+Q: Is takrunbren bold or cautious? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is takrunbren simple or complex? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q:"," cautious
+
+Q: Is takrunbren bold or cautious? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is takrunbren simple or complex? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q:",True,True,50
+SAME_Q_pair8,SAME,Q,pair8,takrunbren,fleirstelit,complex,simple,6485,4382,4.6875,1,True," complex
+
+Q: Is fleirstelit bold or not bold? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is fleirstelit the same as takrunbren? (Answer EXACTLY ONE WORD)
+A"," complex
+
+Q: Is fleirstelit bold or not bold? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is fleirstelit the same as takrunbren? (Answer EXACTLY ONE WORD)
+A",True,True,50
+OPP_Q_pair8,OPP,Q,pair8,takrunbren,fleirstelit,simple,complex,4382,6485,6.0625,1,True," simple
+
+Q: Is takrunbren complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is takrunbren the same as fleirstelit? (Answer EXACTLY ONE WORD)
+A:"," simple
+
+Q: Is takrunbren complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is takrunbren the same as fleirstelit? (Answer EXACTLY ONE WORD)
+A:",True,True,50
+MORE_P_pair8,MORE,P,pair8,takrunbren,fleirstelit,fleirstelit,takrunbren,13259,18608,6.0,1,True," fleirstelit
+
+Q: Which is more complex, takrunbren or fleirstelit? (Answer EXACTLY ONE WORD)
+A: fleirstelit
+
+Q: Which is more bold and complex, takrunbren"," fleirstelit
+
+Q: Which is more complex, takrunbren or fleirstelit? (Answer EXACTLY ONE WORD)
+A: fleirstelit
+
+Q: Which is more bold and complex, takrunbren",True,True,50
+LESS_P_pair8,LESS,P,pair8,takrunbren,fleirstelit,takrunbren,fleirstelit,18608,13259,6.3125,1,True," takrunbren
+
+Q: Which is more complex, takrunbren or fleirstelit? (Answer EXACTLY ONE WORD)
+A: takrunbren
+
+Q: Which is smaller, takrunbren or fleirst"," takrunbren
+
+Q: Which is more complex, takrunbren or fleirstelit? (Answer EXACTLY ONE WORD)
+A: takrunbren
+
+Q: Which is smaller, takrunbren or fleirst",True,True,50
+MORE_Q_pair8,MORE,Q,pair8,takrunbren,fleirstelit,fleirstelit,takrunbren,13259,18608,6.375,1,True," fleirstelit
+
+Q: Which is more complex, fleirstelit or takrunbren? (Answer EXACTLY ONE WORD)
+A: fleirstelit
+
+Q: Which is more complex, takrunbren or tak"," fleirstelit
+
+Q: Which is more complex, fleirstelit or takrunbren? (Answer EXACTLY ONE WORD)
+A: fleirstelit
+
+Q: Which is more complex, takrunbren or tak",True,True,50
+LESS_Q_pair8,LESS,Q,pair8,takrunbren,fleirstelit,takrunbren,fleirstelit,18608,13259,5.75,1,True," takrunbren
+
+Q: Is fleirstelit less complex than takrunbren?
+A: Yes
+
+Q: Is takrunbren less complex than fleirstelit?
+A: No
+
+Q: Is fleirstelit"," takrunbren
+
+Q: Is fleirstelit less complex than takrunbren?
+A: Yes
+
+Q: Is takrunbren less complex than fleirstelit?
+A: No
+
+Q: Is fleirstelit",True,True,50
+SAME_P_pair9,SAME,P,pair9,tirzurspail,fouwoudeil,bold,cautious,14265,46878,9.25,1,True," bold
+
+Q: Is fouwoudeil simple or complex? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is fouwoudeil something that can be easily understood or something that is difficult to understand? (Answer"," bold
+
+Q: Is fouwoudeil simple or complex? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is fouwoudeil something that can be easily understood or something that is difficult to understand? (Answer",True,True,50
+OPP_P_pair9,OPP,P,pair9,tirzurspail,fouwoudeil,cautious,bold,46878,14265,8.4375,1,True," cautious
+
+Q: Is tirzurspail complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is fouwoudeil the opposite of tirzurspail? (Answer EXACTLY ONE WORD"," cautious
+
+Q: Is tirzurspail complex or simple? (Answer EXACTLY ONE WORD)
+A: complex
+
+Q: Is fouwoudeil the opposite of tirzurspail? (Answer EXACTLY ONE WORD",True,True,50
+SAME_Q_pair9,SAME,Q,pair9,tirzurspail,fouwoudeil,complex,simple,6485,4382,6.3125,1,True," complex
+
+Q: Is fouwoudeil bold or not bold? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is fouwoudeil the same as tirzurspail? (Answer EXACTLY ONE"," complex
+
+Q: Is fouwoudeil bold or not bold? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is fouwoudeil the same as tirzurspail? (Answer EXACTLY ONE",True,True,50
+OPP_Q_pair9,OPP,Q,pair9,tirzurspail,fouwoudeil,simple,complex,4382,6485,7.25,1,True," simple
+
+Q: Is tirzurspail bold or weak? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is fouwoudeil bold or weak? (Answer EXACTLY ONE WORD)
+A: weak
+
+"," simple
+
+Q: Is tirzurspail bold or weak? (Answer EXACTLY ONE WORD)
+A: bold
+
+Q: Is fouwoudeil bold or weak? (Answer EXACTLY ONE WORD)
+A: weak
+
+",True,True,50
+MORE_P_pair9,MORE,P,pair9,tirzurspail,fouwoudeil,fouwoudeil,tirzurspail,57625,45712,8.875,1,True," fouwoudeil
+
+Q: Which is more complex, tirzurspail or fouwoudeil? (Answer EXACTLY ONE WORD)
+A: fouwoudeil
+
+Q: Which is more bold and complex,"," fouwoudeil
+
+Q: Which is more complex, tirzurspail or fouwoudeil? (Answer EXACTLY ONE WORD)
+A: fouwoudeil
+
+Q: Which is more bold and complex,",True,True,50
+LESS_P_pair9,LESS,P,pair9,tirzurspail,fouwoudeil,tirzurspail,fouwoudeil,45712,57625,7.25,1,True," tirzurspail
+
+Q: Which is more complex, tirzurspail or fouwoudeil? (Answer EXACTLY ONE WORD)
+A: tirzurspail
+
+Q: Is tirzurspail less"," tirzurspail
+
+Q: Which is more complex, tirzurspail or fouwoudeil? (Answer EXACTLY ONE WORD)
+A: tirzurspail
+
+Q: Is tirzurspail less",True,True,50
+MORE_Q_pair9,MORE,Q,pair9,tirzurspail,fouwoudeil,fouwoudeil,tirzurspail,57625,45712,9.375,1,True," fouwoudeil
+
+Q: Is a tirzurspail greater than a fouwoudeil? (Answer EXACTLY ONE WORD)
+A: no
+
+Q: Is a fouwoudeil greater than a tirz"," fouwoudeil
+
+Q: Is a tirzurspail greater than a fouwoudeil? (Answer EXACTLY ONE WORD)
+A: no
+
+Q: Is a fouwoudeil greater than a tirz",True,True,50
+LESS_Q_pair9,LESS,Q,pair9,tirzurspail,fouwoudeil,tirzurspail,fouwoudeil,45712,57625,5.8125,1,True," tirzurspail
+
+Q: Is a tirzurspail more complex than a fouwoudeil? (Answer EXACTLY ONE WORD)
+A: yes
+
+Q: Is a fouwoudeil smaller than a tir"," tirzurspail
+
+Q: Is a tirzurspail more complex than a fouwoudeil? (Answer EXACTLY ONE WORD)
+A: yes
+
+Q: Is a fouwoudeil smaller than a tir",True,True,50

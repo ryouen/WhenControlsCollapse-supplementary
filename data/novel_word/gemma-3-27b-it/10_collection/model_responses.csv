@@ -1,0 +1,241 @@
+trial_id,crel,attr_dim,pair_id,word_a,word_b,correct_answer,incorrect_answer,correct_first_subtoken_id,incorrect_first_subtoken_id,d_plus,correct_rank,is_argmax_correct,generated_response_50,generated_response_final,is_string_correct_50,is_string_correct_final,max_new_tokens_used
+SAME_P_pair0,SAME,P,pair0,molwainmom,linprarsun,bold,cautious,16627,50799,9.5,2,False," Bold
+"," Bold
+",True,True,50
+OPP_P_pair0,OPP,P,pair0,molwainmom,linprarsun,cautious,bold,50799,16627,19.625,1,True," cautious
+"," cautious
+",True,True,50
+SAME_Q_pair0,SAME,Q,pair0,molwainmom,linprarsun,complex,simple,3996,3606,14.625,2,False," Complex
+"," Complex
+",True,True,50
+OPP_Q_pair0,OPP,Q,pair0,molwainmom,linprarsun,simple,complex,3606,3996,12.375,1,True," simple
+"," simple
+",True,True,50
+MORE_P_pair0,MORE,P,pair0,molwainmom,linprarsun,linprarsun,molwainmom,12161,8627,14.75,1,True," linprarsun
+"," linprarsun
+",True,True,50
+LESS_P_pair0,LESS,P,pair0,molwainmom,linprarsun,molwainmom,linprarsun,8627,12161,16.875,1,True," molwainmom
+"," molwainmom
+",True,True,50
+MORE_Q_pair0,MORE,Q,pair0,molwainmom,linprarsun,linprarsun,molwainmom,12161,8627,13.875,1,True," linprarsun
+"," linprarsun
+",True,True,50
+LESS_Q_pair0,LESS,Q,pair0,molwainmom,linprarsun,molwainmom,linprarsun,8627,12161,18.25,1,True," molwainmom
+"," molwainmom
+",True,True,50
+SAME_P_pair1,SAME,P,pair1,nousdabrik,mailpluwen,bold,cautious,16627,50799,13.75,2,False," Bold
+"," Bold
+",True,True,50
+OPP_P_pair1,OPP,P,pair1,nousdabrik,mailpluwen,cautious,bold,50799,16627,21.375,1,True," cautious
+"," cautious
+",True,True,50
+SAME_Q_pair1,SAME,Q,pair1,nousdabrik,mailpluwen,complex,simple,3996,3606,19.0625,2,False," Complex
+"," Complex
+",True,True,50
+OPP_Q_pair1,OPP,Q,pair1,nousdabrik,mailpluwen,simple,complex,3606,3996,13.875,2,False," Simple
+"," Simple
+",True,True,50
+MORE_P_pair1,MORE,P,pair1,nousdabrik,mailpluwen,mailpluwen,nousdabrik,10658,7653,14.875,1,True," mailpluwen
+"," mailpluwen
+",True,True,50
+LESS_P_pair1,LESS,P,pair1,nousdabrik,mailpluwen,nousdabrik,mailpluwen,7653,10658,21.125,1,True," nousdabrik
+"," nousdabrik
+",True,True,50
+MORE_Q_pair1,MORE,Q,pair1,nousdabrik,mailpluwen,mailpluwen,nousdabrik,10658,7653,17.625,1,True," mailpluwen
+"," mailpluwen
+",True,True,50
+LESS_Q_pair1,LESS,Q,pair1,nousdabrik,mailpluwen,nousdabrik,mailpluwen,7653,10658,23.25,1,True," nousdabrik
+"," nousdabrik
+",True,True,50
+SAME_P_pair2,SAME,P,pair2,lorspenprem,kepalmour,bold,cautious,16627,50799,16.125,2,False," Bold
+"," Bold
+",True,True,50
+OPP_P_pair2,OPP,P,pair2,lorspenprem,kepalmour,cautious,bold,50799,16627,20.375,1,False," Cautious
+"," Cautious
+",True,True,50
+SAME_Q_pair2,SAME,Q,pair2,lorspenprem,kepalmour,complex,simple,3996,3606,17.25,2,False," Complex
+"," Complex
+",True,True,50
+OPP_Q_pair2,OPP,Q,pair2,lorspenprem,kepalmour,simple,complex,3606,3996,13.375,2,False," Simple
+"," Simple
+",True,True,50
+MORE_P_pair2,MORE,P,pair2,lorspenprem,kepalmour,kepalmour,lorspenprem,16104,16003,16.75,1,True," kepalmour
+"," kepalmour
+",True,True,50
+LESS_P_pair2,LESS,P,pair2,lorspenprem,kepalmour,lorspenprem,kepalmour,16003,16104,23.375,1,True," lorspenprem
+"," lorspenprem
+",True,True,50
+MORE_Q_pair2,MORE,Q,pair2,lorspenprem,kepalmour,kepalmour,lorspenprem,16104,16003,18.875,1,True," kepalmour
+"," kepalmour
+",True,True,50
+LESS_Q_pair2,LESS,Q,pair2,lorspenprem,kepalmour,lorspenprem,kepalmour,16003,16104,25.0,1,True," lorspenprem
+"," lorspenprem
+",True,True,50
+SAME_P_pair3,SAME,P,pair3,noulnenkre,dimonkeis,bold,cautious,16627,50799,11.875,2,False," Bold
+"," Bold
+",True,True,50
+OPP_P_pair3,OPP,P,pair3,noulnenkre,dimonkeis,cautious,bold,50799,16627,20.0,1,True," cautious
+"," cautious
+",True,True,50
+SAME_Q_pair3,SAME,Q,pair3,noulnenkre,dimonkeis,complex,simple,3996,3606,16.75,2,False," Complex
+"," Complex
+",True,True,50
+OPP_Q_pair3,OPP,Q,pair3,noulnenkre,dimonkeis,simple,complex,3606,3996,12.5,2,False," Simple
+"," Simple
+",True,True,50
+MORE_P_pair3,MORE,P,pair3,noulnenkre,dimonkeis,dimonkeis,noulnenkre,4045,10515,9.625,1,True," dimonkeis
+"," dimonkeis
+",True,True,50
+LESS_P_pair3,LESS,P,pair3,noulnenkre,dimonkeis,noulnenkre,dimonkeis,10515,4045,27.875,1,True," noulnenkre
+"," noulnenkre
+",True,True,50
+MORE_Q_pair3,MORE,Q,pair3,noulnenkre,dimonkeis,dimonkeis,noulnenkre,4045,10515,15.625,1,True," dimonkeis
+"," dimonkeis
+",True,True,50
+LESS_Q_pair3,LESS,Q,pair3,noulnenkre,dimonkeis,noulnenkre,dimonkeis,10515,4045,30.125,1,True," noulnenkre
+"," noulnenkre
+",True,True,50
+SAME_P_pair4,SAME,P,pair4,brunplifouk,wurplonaik,bold,cautious,16627,50799,15.125,2,False," Bold
+"," Bold
+",True,True,50
+OPP_P_pair4,OPP,P,pair4,brunplifouk,wurplonaik,cautious,bold,50799,16627,20.75,1,True," cautious
+"," cautious
+",True,True,50
+SAME_Q_pair4,SAME,Q,pair4,brunplifouk,wurplonaik,complex,simple,3996,3606,19.375,2,False," Complex
+"," Complex
+",True,True,50
+OPP_Q_pair4,OPP,Q,pair4,brunplifouk,wurplonaik,simple,complex,3606,3996,14.0,2,False," Simple
+"," Simple
+",True,True,50
+MORE_P_pair4,MORE,P,pair4,brunplifouk,wurplonaik,wurplonaik,brunplifouk,9540,29856,13.375,1,True," wurplonaik
+"," wurplonaik
+",True,True,50
+LESS_P_pair4,LESS,P,pair4,brunplifouk,wurplonaik,brunplifouk,wurplonaik,29856,9540,16.625,1,True," brunplifouk
+"," brunplifouk
+",True,True,50
+MORE_Q_pair4,MORE,Q,pair4,brunplifouk,wurplonaik,wurplonaik,brunplifouk,9540,29856,18.0,1,True," wurplonaik
+"," wurplonaik
+",True,True,50
+LESS_Q_pair4,LESS,Q,pair4,brunplifouk,wurplonaik,brunplifouk,wurplonaik,29856,9540,19.125,1,True," brunplifouk
+"," brunplifouk
+",True,True,50
+SAME_P_pair5,SAME,P,pair5,dorsongom,plurpasnik,bold,cautious,16627,50799,17.125,2,False," Bold
+"," Bold
+",True,True,50
+OPP_P_pair5,OPP,P,pair5,dorsongom,plurpasnik,cautious,bold,50799,16627,21.25,1,True," cautious
+"," cautious
+",True,True,50
+SAME_Q_pair5,SAME,Q,pair5,dorsongom,plurpasnik,complex,simple,3996,3606,20.25,2,False," Complex
+"," Complex
+",True,True,50
+OPP_Q_pair5,OPP,Q,pair5,dorsongom,plurpasnik,simple,complex,3606,3996,12.625,2,False," Simple
+"," Simple
+",True,True,50
+MORE_P_pair5,MORE,P,pair5,dorsongom,plurpasnik,plurpasnik,dorsongom,75416,38224,19.0,1,True," plurpasnik
+"," plurpasnik
+",True,True,50
+LESS_P_pair5,LESS,P,pair5,dorsongom,plurpasnik,dorsongom,plurpasnik,38224,75416,21.9375,1,True," dorsongom
+"," dorsongom
+",True,True,50
+MORE_Q_pair5,MORE,Q,pair5,dorsongom,plurpasnik,plurpasnik,dorsongom,75416,38224,24.0,1,True," plurpasnik
+"," plurpasnik
+",True,True,50
+LESS_Q_pair5,LESS,Q,pair5,dorsongom,plurpasnik,dorsongom,plurpasnik,38224,75416,22.625,1,True," dorsongom
+"," dorsongom
+",True,True,50
+SAME_P_pair6,SAME,P,pair6,korrourvain,gesstoukei,bold,cautious,16627,50799,12.625,2,False," Bold
+"," Bold
+",True,True,50
+OPP_P_pair6,OPP,P,pair6,korrourvain,gesstoukei,cautious,bold,50799,16627,20.0,1,True," cautious
+"," cautious
+",True,True,50
+SAME_Q_pair6,SAME,Q,pair6,korrourvain,gesstoukei,complex,simple,3996,3606,17.875,3,False," Complex
+"," Complex
+",True,True,50
+OPP_Q_pair6,OPP,Q,pair6,korrourvain,gesstoukei,simple,complex,3606,3996,12.875,2,False," Simple
+"," Simple
+",True,True,50
+MORE_P_pair6,MORE,P,pair6,korrourvain,gesstoukei,gesstoukei,korrourvain,13502,13583,10.25,1,True," gesstoukei
+"," gesstoukei
+",True,True,50
+LESS_P_pair6,LESS,P,pair6,korrourvain,gesstoukei,korrourvain,gesstoukei,13583,13502,27.125,1,True," korrourvain
+"," korrourvain
+",True,True,50
+MORE_Q_pair6,MORE,Q,pair6,korrourvain,gesstoukei,gesstoukei,korrourvain,13502,13583,12.875,1,True," gesstoukei
+"," gesstoukei
+",True,True,50
+LESS_Q_pair6,LESS,Q,pair6,korrourvain,gesstoukei,korrourvain,gesstoukei,13583,13502,28.25,1,True," korrourvain
+"," korrourvain
+",True,True,50
+SAME_P_pair7,SAME,P,pair7,lurtonzout,vougelspis,bold,cautious,16627,50799,12.875,2,False," Bold
+"," Bold
+",True,True,50
+OPP_P_pair7,OPP,P,pair7,lurtonzout,vougelspis,cautious,bold,50799,16627,22.125,1,True," cautious
+"," cautious
+",True,True,50
+SAME_Q_pair7,SAME,Q,pair7,lurtonzout,vougelspis,complex,simple,3996,3606,16.5,2,False," Complex
+"," Complex
+",True,True,50
+OPP_Q_pair7,OPP,Q,pair7,lurtonzout,vougelspis,simple,complex,3606,3996,15.375,2,False," Simple
+"," Simple
+",True,True,50
+MORE_P_pair7,MORE,P,pair7,lurtonzout,vougelspis,vougelspis,lurtonzout,19414,61501,17.5,1,True," vougelspis
+"," vougelspis
+",True,True,50
+LESS_P_pair7,LESS,P,pair7,lurtonzout,vougelspis,lurtonzout,vougelspis,61501,19414,23.125,1,True," lurtonzout
+"," lurtonzout
+",True,True,50
+MORE_Q_pair7,MORE,Q,pair7,lurtonzout,vougelspis,vougelspis,lurtonzout,19414,61501,26.8125,1,True," vougelspis
+"," vougelspis
+",True,True,50
+LESS_Q_pair7,LESS,Q,pair7,lurtonzout,vougelspis,lurtonzout,vougelspis,61501,19414,24.3125,1,True," lurtonzout
+"," lurtonzout
+",True,True,50
+SAME_P_pair8,SAME,P,pair8,sapourzat,walarslat,bold,cautious,16627,50799,14.625,2,False," Bold
+"," Bold
+",True,True,50
+OPP_P_pair8,OPP,P,pair8,sapourzat,walarslat,cautious,bold,50799,16627,19.25,1,True," cautious
+"," cautious
+",True,True,50
+SAME_Q_pair8,SAME,Q,pair8,sapourzat,walarslat,complex,simple,3996,3606,18.25,2,False," Complex
+"," Complex
+",True,True,50
+OPP_Q_pair8,OPP,Q,pair8,sapourzat,walarslat,simple,complex,3606,3996,14.875,1,True," simple
+"," simple
+",True,True,50
+MORE_P_pair8,MORE,P,pair8,sapourzat,walarslat,walarslat,sapourzat,12460,23588,22.25,1,True," walarslat
+"," walarslat
+",True,True,50
+LESS_P_pair8,LESS,P,pair8,sapourzat,walarslat,sapourzat,walarslat,23588,12460,21.0,1,True," sapourzat
+"," sapourzat
+",True,True,50
+MORE_Q_pair8,MORE,Q,pair8,sapourzat,walarslat,walarslat,sapourzat,12460,23588,26.75,1,True," walarslat
+"," walarslat
+",True,True,50
+LESS_Q_pair8,LESS,Q,pair8,sapourzat,walarslat,sapourzat,walarslat,23588,12460,22.125,1,True," sapourzat
+"," sapourzat
+",True,True,50
+SAME_P_pair9,SAME,P,pair9,pirvasek,sirsolbeis,bold,cautious,16627,50799,14.25,2,False," Bold
+"," Bold
+",True,True,50
+OPP_P_pair9,OPP,P,pair9,pirvasek,sirsolbeis,cautious,bold,50799,16627,19.5,1,True," cautious
+"," cautious
+",True,True,50
+SAME_Q_pair9,SAME,Q,pair9,pirvasek,sirsolbeis,complex,simple,3996,3606,19.125,2,False," Complex
+"," Complex
+",True,True,50
+OPP_Q_pair9,OPP,Q,pair9,pirvasek,sirsolbeis,simple,complex,3606,3996,12.875,2,False," Simple
+"," Simple
+",True,True,50
+MORE_P_pair9,MORE,P,pair9,pirvasek,sirsolbeis,sirsolbeis,pirvasek,17536,24341,12.375,1,True," sirsolbeis
+"," sirsolbeis
+",True,True,50
+LESS_P_pair9,LESS,P,pair9,pirvasek,sirsolbeis,pirvasek,sirsolbeis,24341,17536,18.0,1,True," pirvasek
+"," pirvasek
+",True,True,50
+MORE_Q_pair9,MORE,Q,pair9,pirvasek,sirsolbeis,sirsolbeis,pirvasek,17536,24341,16.875,1,True," sirsolbeis
+"," sirsolbeis
+",True,True,50
+LESS_Q_pair9,LESS,Q,pair9,pirvasek,sirsolbeis,pirvasek,sirsolbeis,24341,17536,19.875,1,True," pirvasek
+"," pirvasek
+",True,True,50

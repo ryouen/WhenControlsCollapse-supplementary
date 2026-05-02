@@ -1,0 +1,11 @@
+pair_id,word_a,word_b,first_subtoken_id_a,first_subtoken_id_b,first_subtoken_text_a,first_subtoken_text_b,token_count_a,token_count_b,logit_gap_A_colon
+pair0,molwainmom,linprarsun,22337,10006,mol,lin,4,4,0.126953125
+pair1,tunzordem,plelsposrun,11716,7245,tun,ple,4,4,0.3046875
+pair2,pansaissail,felrulmat,64883,18515,pans,fel,4,4,0.015625
+pair3,lenfugron,masresgrum,2479,9427,len,mas,4,4,0.19921875
+pair4,traswansoul,girneisli,34264,41389,tras,gir,4,4,0.46875
+pair5,ferzeisrail,sursternaik,18728,1765,fer,sur,4,4,0.3447265625
+pair6,stipreisdol,mantunkrur,43773,26976,stip,mant,4,4,0.453125
+pair7,firtrarspel,grinflermai,35092,59380,fir,grin,4,4,0.375
+pair8,takrunbren,fleirstelit,18608,13259,tak,fle,4,4,0.2421875
+pair9,tirzurspail,fouwoudeil,45712,57625,tir,fou,5,5,0.125

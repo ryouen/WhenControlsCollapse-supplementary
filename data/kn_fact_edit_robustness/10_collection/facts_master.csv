@@ -1,0 +1,401 @@
+fact_idx,rel_id,sub_label,obj_label
+0,P178,Windows Mobile,Microsoft
+1,P413,Carlos Rodon,pitcher
+2,P27,Marcos Balter,Brazil
+3,P276,1996 Summer Olympics,Atlanta
+4,P178,Pilotwings 64,Nintendo
+5,P937,Thomas Cranmer,Canterbury
+6,P190,Dortmund,Leeds
+7,P19,Kalyan Kumar,Bangalore
+8,P159,Krauss-Maffei,Munich
+9,P361,atmosphere of Earth,Earth
+10,P279,Third camp,socialism
+11,P136,Jon Larsen,jazz
+12,P178,IBM Information Management System,IBM
+13,P407,Aftonbladet,Swedish
+14,P276,Jay Treaty,London
+15,P740,RapidMind,Waterloo
+16,P127,Wellington Regional Stadium,Wellington
+17,P103,Vlada Roslyakova,Russian
+18,P36,Province of New Hampshire,Portsmouth
+19,P37,Sonvilier,French
+20,P101,Michael Jackson,musician
+21,P740,Kasino,Brazil
+22,P361,Internet television,Internet
+23,P407,Bangkok Post,English
+24,P495,Pain,Sweden
+25,P159,Cinevistaas Limited,Mumbai
+26,P17,Zelenchukskaya,Russia
+27,P20,Dorothy Bullitt,Seattle
+28,P17,Guggenheim Museum,Spain
+29,P36,Alexandria Governorate,Alexandria
+30,P131,Sam Rayburn Reservoir,Texas
+31,P1376,Honolulu,Hawaii
+32,P19,Barney Balaban,Chicago
+33,P20,Morteza Momayez,Tehran
+34,P1303,Dave Hernandez,guitar
+35,P1303,Allen Toussaint,piano
+36,P159,Global Humanitarian Forum,Geneva
+37,P131,Warszawa Wschodnia Osobowa railway station,Warsaw
+38,P138,Lanyon Place railway station,Belfast
+39,P131,Hammond Civic Center,Hammond
+40,P407,Hullabaloo Soundtrack,English
+41,P136,The Flame Knife,fantasy
+42,P279,turnbuckle,screw
+43,P131,Khyber Pakhtunkhwa,Pakistan
+44,P495,Opgezwolle,Netherlands
+45,P159,J.M. Meulenhoff,Amsterdam
+46,P279,41xx steel,steel
+47,P19,Eric Gill,Brighton
+48,P27,Facundo Bagnis,Argentina
+49,P37,Haiti,French
+50,P37,Somaliland,Somali
+51,P106,Harlan Carey Brewster,politician
+52,P159,STX Europe,Oslo
+53,P127,Sky Witness,Sky
+54,P413,Matt Szczur,outfielder
+55,P39,William Croswell Doane,bishop
+56,P159,University of South Florida,Tampa
+57,P103,Guy Hocquenghem,French
+58,P413,Vince Coleman,outfielder
+59,P106,Malcolm MacDonald,politician
+60,P449,WCW Monday Nitro,TNT
+61,P19,Tinie Tempah,London
+62,P17,Galiano Island,Canada
+63,P407,Pinterest,Italian
+64,P449,Ark II,CBS
+65,P178,Google Groups,Google
+66,P530,Angola,Australia
+67,P407,Zero Motivation,Hebrew
+68,P39,Tudwal,bishop
+69,P740,Nation of Gods and Earths,Harlem
+70,P159,Smurfit-Stone Container,Chicago
+71,P495,El Bonaerense,Argentina
+72,P190,Madrid,Warsaw
+73,P20,Cornelius Vermuyden,London
+74,P30,Lebanon,Asia
+75,P178,WebKit,Apple
+76,P27,Vidar Busk,Norway
+77,P37,Delhi,English
+78,P1412,Dominic Behan,Irish
+79,P27,Robert Persons,England
+80,P131,Copenhagen Business School,Copenhagen
+81,P361,"Friends, season 5",Friends
+82,P1412,Alexandre de Marenches,French
+83,P407,Electric Warrior,English
+84,P101,Arthur Leonard Schawlow,physicist
+85,P1303,Matthew Tuck,guitar
+86,P101,The Astronomical Journal,astronomy
+87,P106,Jane Leeves,actor
+88,P176,Renault R26,Renault
+89,P103,Ewa Farna,Polish
+90,P131,Watson Island,Miami
+91,P190,Cali,Miami
+92,P361,administrative territorial entity of Wisconsin,Wisconsin
+93,P530,Ukraine,Slovakia
+94,P530,Brazil,Mexico
+95,P140,Sumayyah bint Khayyat,Islam
+96,P276,Second Crusade,Egypt
+97,P106,Valentino Bucchi,composer
+98,P530,Serbia,Ukraine
+99,P30,Zemen Knoll,Antarctica
+100,P740,Llwybr Llaethog,Wales
+101,P159,International Tea Co. Stores,London
+102,P740,Planet Soul,Miami
+103,P1412,Franciscus Donders,Dutch
+104,P27,Goffredo Petrassi,Italy
+105,P19,Ruben Simonov,Moscow
+106,P364,The Naked Sun,English
+107,P17,Karimnagar district,India
+108,P138,Peterborough Cathedral,Andrew
+109,P138,Wellington International Airport,Wellington
+110,P103,Dmitry Puchkov,Russian
+111,P364,The Great Citizen,Russian
+112,P39,Alphonsus Liguori Penney,bishop
+113,P413,Francisco Liriano,pitcher
+114,P361,horticulture,agriculture
+115,P27,Daniel Victor,Canada
+116,P449,Project Greenlight,HBO
+117,P101,Alan Turing,mathematics
+118,P530,Brazil,Chile
+119,P495,Store norske leksikon,Norway
+120,P740,Zeds Dead,Toronto
+121,P30,Srebarna Glacier,Antarctica
+122,P413,Diniyar Bilyaletdinov,midfielder
+123,P530,Serbia,Hungary
+124,P140,Yusuf Estes,Islam
+125,P190,Milan,Beijing
+126,P131,Panteion University,Athens
+127,P279,United States H-class submarine,submarine
+128,P37,Nuevo Santander,Spanish
+129,P361,embryology,biology
+130,P103,Louis Jules Trochu,French
+131,P159,Jan De Nul,Luxembourg
+132,P17,Bispebjerg,Denmark
+133,P127,Microsoft account,Microsoft
+134,P30,Vestreskorve Glacier,Antarctica
+135,P159,Northeastern University,Boston
+136,P361,covert feather,bird
+137,P27,Celso Amorim,Brazil
+138,P190,Athens,Amsterdam
+139,P101,Mogens Herman Hansen,classics
+140,P106,Jon Jerde,architect
+141,P407,PC Magazine,English
+142,P176,BMW N52,BMW
+143,P495,Danish pastry,Denmark
+144,P27,Pavol Demitra,Slovakia
+145,P1412,Steve Biko,English
+146,P361,Books of Samuel,Bible
+147,P37,Lugano,Italian
+148,P19,Jonas Hassen Khemiri,Stockholm
+149,P937,Trilussa,Rome
+150,P1303,Jimmy Webb,piano
+151,P103,Louis-Pierre Baltard,French
+152,P1412,Edmund Castell,English
+153,P17,Isfahan International Airport,Iran
+154,P37,Niue,English
+155,P449,Meet the Press,NBC
+156,P131,Hershey Country Club,Pennsylvania
+157,P19,Ranavalona I,Madagascar
+158,P495,Video & Arcade Top 10,Canada
+159,P1412,Lucrezia Bori,Spanish
+160,P131,Siazan District,Azerbaijan
+161,P30,Maglenik Heights,Antarctica
+162,P530,El Salvador,Australia
+163,P176,Fiat Marea,Fiat
+164,P37,Tierp Municipality,Swedish
+165,P413,Erik Komatsu,outfielder
+166,P27,Moses Ndiema Masai,Kenya
+167,P279,Roadster (bicycle),bicycle
+168,P37,Nigeria,English
+169,P407,The Catalogue,German
+170,P190,Havana,Barcelona
+171,P364,Paradise Ranch,Korean
+172,P364,Seducing Doctor Lewis,French
+173,P1303,Nadia Reisenberg,piano
+174,P27,Randy Bachman,Canada
+175,P1303,Roy Paci,trumpet
+176,P106,Miltos Sachtouris,poet
+177,P37,Union between Sweden and Norway,Swedish
+178,P1412,Louis Riel,French
+179,P30,Insel Range,Antarctica
+180,P138,Stafford railway station,Stafford
+181,P103,John Quincy Adams,English
+182,P27,Joanne Malar,Canada
+183,P361,Vertebral column,skeleton
+184,P37,North Sumatra,Indonesian
+185,P20,Pachomius the Great,Egypt
+186,P740,The U-Men,Seattle
+187,P413,Giacomo Tedesco,midfielder
+188,P47,Bolivia,Chile
+189,P495,Maria Flordeluna,Philippines
+190,P136,Susie Arioli,jazz
+191,P407,Ottawa Citizen,English
+192,P36,Jennings County,Vernon
+193,P407,Kangura,French
+194,P140,wahy,Islam
+195,P108,Carlos Ghosn,Nissan
+196,P27,Zadoc Kahn,France
+197,P364,"Well, Just You Wait!",Russian
+198,P1412,Jacques Pills,French
+199,P407,Grandads-Robbers,Russian
+200,P127,Sega Sports R&D,Sega
+201,P449,Second Verdict,BBC
+202,P279,cyberterrorism,terrorism
+203,P106,Tomomi Inada,politician
+204,P103,Camille de Casabianca,French
+205,P103,Jean-Pierre Thiollet,French
+206,P47,Monte Compatri,Rome
+207,P27,Charles II of Spain,Spain
+208,P495,The Sharon Cuneta Show,Philippines
+209,P27,Jan Dydak,Poland
+210,P136,Skeeter Best,jazz
+211,P20,Frank Sargeson,Auckland
+212,P106,Vic Sotto,comedian
+213,P106,Taku Iwasaki,composer
+214,P159,Shanghai Jiao Tong University,Shanghai
+215,P279,Self-regulatory organization,corporation
+216,P1412,Michele Ruggieri,Italian
+217,P37,Montenegro,Serbian
+218,P1412,Peter Rogers,English
+219,P413,Lavonte David,linebacker
+220,P30,Shirley Island,Antarctica
+221,P20,Carlos Botelho,Lisbon
+222,P36,Cambridgeshire,Cambridge
+223,P1412,Pierre Chenal,French
+224,P101,Adam Smith,economics
+225,P740,Attic Lights,Glasgow
+226,P364,Amar Akbar Anthony,Hindi
+227,P413,Derrick Thomas,linebacker
+228,P530,Sweden,Australia
+229,P39,Jacinto Vera,bishop
+230,P495,Akademi Fantasia,Malaysia
+231,P463,Poland,NATO
+232,P449,The Secret Storm,CBS
+233,P19,Eddie Locke,Detroit
+234,P106,Erika Toda,actor
+235,P101,International Committee on Taxonomy of Viruses,virus
+236,P17,Cunter,Switzerland
+237,P1303,Antonio Vivaldi,violin
+238,P407,2 Years On,English
+239,P364,Dawn,English
+240,P407,Kinda Kinks,English
+241,P19,Auguste Cain,Paris
+242,P27,Hans Magnus Ryan,Norway
+243,P17,Battle of Montereau,France
+244,P101,Albrecht Kossel,physiology
+245,P37,Arizona,English
+246,P190,Auckland,Hamburg
+247,P495,Opzij,Netherlands
+248,P364,Ram Rajya,Hindi
+249,P103,Anastasia Myskina,Russian
+250,P101,William Crookes,chemistry
+251,P1412,Basarab Nicolescu,French
+252,P264,It Doesn't Matter Anymore,Coral
+253,P103,Klaas Schilder,Dutch
+254,P1376,Muscat,Oman
+255,P407,Le Matin du Sahara et du Maghreb,French
+256,P361,malleolus,ankle
+257,P495,Burzum,Norway
+258,P36,Hawaii,Honolulu
+259,P413,Markus Halsti,midfielder
+260,P47,Gatineau,Chelsea
+261,P30,Estonia,Europe
+262,P407,Bild,German
+263,P39,Gabriel Zubeir Wako,cardinal
+264,P1303,David Gates,violin
+265,P127,Bundesautobahn 67,Germany
+266,P101,James Hillman,psychology
+267,P127,OneDrive,Microsoft
+268,P30,Imperial Trans-Antarctic Expedition,Antarctica
+269,P364,The Time Machine,English
+270,P136,Gary Burton,jazz
+271,P495,The Nylons,Canada
+272,P413,Michael Laudrup,midfielder
+273,P127,Bundesautobahn 555,Germany
+274,P103,Jacques Laffitte,French
+275,P19,Allan Peiper,Alexandra
+276,P449,Project Runway Australia,Arena
+277,P30,Turkmenistan,Asia
+278,P530,Uganda,Germany
+279,P20,Hugh Roy Cullen,Houston
+280,P159,Micro Instrumentation and Telemetry Systems,Albuquerque
+281,P37,Sundbyberg Municipality,Swedish
+282,P159,Rank Organisation,London
+283,P106,Rick Genest,actor
+284,P413,Mike Garcia,pitcher
+285,P449,American Restoration,History
+286,P140,Deobandi,Islam
+287,P30,Worcester Range,Antarctica
+288,P103,Louis-Paul Aujoulat,French
+289,P361,Kvant-2,Mir
+290,P101,Wallace Carothers,chemistry
+291,P131,Kotturpuram,Chennai
+292,P136,Steve Gadd,jazz
+293,P131,Berens River,Manitoba
+294,P413,Iago Falque,midfielder
+295,P47,Switzerland,Austria
+296,P17,Isola Dovarese,Italy
+297,P19,Adolphe d'Ennery,Paris
+298,P159,Alexandria University,Alexandria
+299,P413,Bob Allison,outfielder
+300,P449,See It Now,CBS
+301,P740,Bhayanak Maut,Mumbai
+302,P178,Microsoft Internet Explorer 6,Microsoft
+303,P279,Cichorium endivia,vegetable
+304,P37,European Union,Danish
+305,P17,Welschnofen,Italy
+306,P19,Vikram Bhatt,Mumbai
+307,P1303,Alexandre Lagoya,guitar
+308,P364,El Mariachi,Spanish
+309,P449,The Chris Rock Show,HBO
+310,P740,Sledgeback,Seattle
+311,P127,So-net,Sony
+312,P1412,Janet Street-Porter,English
+313,P279,risk management,management
+314,P495,The Mythical Detective Loki Ragnarok,Japan
+315,P361,Muzzle brake,firearm
+316,P17,Chajul,Guatemala
+317,P178,Google Play,Google
+318,P1412,Pedro Paterno,Spanish
+319,P47,Quernmore,Lancaster
+320,P276,ACTRA Award,Toronto
+321,P495,Aalog-Alog,Philippines
+322,P140,Saman Khuda,Islam
+323,P1303,Gwilym Simcock,piano
+324,P30,Schreckhorn,Europe
+325,P19,Torstein Aagaard-Nilsen,Oslo
+326,P178,Intel Parallel Studio,Intel
+327,P19,Perry Benson,London
+328,P495,Mobile Suit Gundam Wing,Japan
+329,P176,Cadillac Series 61,Cadillac
+330,P1412,Peter Quennell,English
+331,P176,Fiat Albea,Fiat
+332,P140,"Rowland Allanson-Winn, 5th Baron Headley",Islam
+333,P361,experimental physics,physics
+334,P361,bullet,cartridge
+335,P937,Joseph Whitworth,Manchester
+336,P127,Snowy Hydro,Australia
+337,P138,Devonian,Devon
+338,P136,Toninho Horta,jazz
+339,P279,subclavian artery,artery
+340,P279,euthanasia,homicide
+341,P17,Pacaya-Samiria National Reserve,Peru
+342,P176,Lexus IS,Toyota
+343,P279,Islam in India,Islam
+344,P276,Hagia Sophia,Istanbul
+345,P190,Dakar,Milan
+346,P101,Roger Penrose,physics
+347,P264,Jackie Wilson,Brunswick
+348,P106,William Burnside,mathematician
+349,P463,Latvian Football Federation,FIFA
+350,P20,Henry Jacob Bigelow,Newton
+351,P276,Mimar Sinan Fine Arts University,Istanbul
+352,P103,Andrey Malakhov,Russian
+353,P140,presbyter,Christianity
+354,P159,Henry Ford Health System,Detroit
+355,P178,Google Hummingbird,Google
+356,P530,Kenya,Libya
+357,P47,Oslo,Ski
+358,P740,German Alpine Club,Munich
+359,P413,Mohd Noor Ali,midfielder
+360,P39,Georges d'Amboise,cardinal
+361,P449,Headbangers Ball,MTV
+362,P39,Paul Vincent Donovan,bishop
+363,P276,1960 Summer Paralympics,Rome
+364,P47,Zagarolo,Rome
+365,P937,Ignaz von Born,Vienna
+366,P131,Seoul station,Seoul
+367,P279,childhood cancer,cancer
+368,P106,Lim Chin Siong,politician
+369,P103,Robert Jan van Pelt,Dutch
+370,P937,Robert Borden,Ottawa
+371,P190,Prague,Copenhagen
+372,P740,These Arms Are Snakes,Seattle
+373,P937,Marlene Dietrich,Berlin
+374,P101,Max Weber,sociology
+375,P190,Algiers,London
+376,P279,netbook,laptop
+377,P740,Dizmas,Lancaster
+378,P127,Google Search,Google
+379,P1376,Gulshan Town,Karachi
+380,P1376,Tallahassee,Florida
+381,P1303,Henri Herz,piano
+382,P740,Eastern Conference Champions,Philadelphia
+383,P740,Alice in Chains,Seattle
+384,P463,Tuvalu National Football Association,FIFA
+385,P108,Craig Federighi,Apple
+386,P364,The Telegraph,English
+387,P36,Czech Republic,Prague
+388,P106,Evan Bayh,politician
+389,P140,Al-Walid I,Islam
+390,P276,Great Smog,London
+391,P106,Donald McCaig,poet
+392,P530,Canada,Romania
+393,P279,histone,protein
+394,P178,Google Cloud Platform,Google
+395,P136,Afrasiyab Badalbeyli,opera
+396,P364,Likkutei Sichos,Hebrew
+397,P17,Borris-in-Ossory GAA,Ireland
+398,P937,"Sir Charles Cayzer, 1st Baronet",London
+399,P101,Hermann von Helmholtz,psychology

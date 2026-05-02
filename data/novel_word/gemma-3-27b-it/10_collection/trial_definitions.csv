@@ -1,0 +1,481 @@
+trial_id,crel,attr_dim,pair_id,word_a,word_b,correct_answer,incorrect_answer,answer_type,prompt
+SAME_P_pair0,SAME,P,pair0,molwainmom,linprarsun,bold,cautious,attribute_word,"Definitions:
+- molwainmom: something that is bold and complex
+- linprarsun is the same as molwainmom
+
+Q: Is linprarsun bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+OPP_P_pair0,OPP,P,pair0,molwainmom,linprarsun,cautious,bold,attribute_word,"Definitions:
+- molwainmom: something that is bold and complex
+- linprarsun is the opposite of molwainmom
+
+Q: Is linprarsun bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+SAME_Q_pair0,SAME,Q,pair0,molwainmom,linprarsun,complex,simple,attribute_word,"Definitions:
+- molwainmom: something that is bold and complex
+- linprarsun is the same as molwainmom
+
+Q: Is linprarsun complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+OPP_Q_pair0,OPP,Q,pair0,molwainmom,linprarsun,simple,complex,attribute_word,"Definitions:
+- molwainmom: something that is bold and complex
+- linprarsun is the opposite of molwainmom
+
+Q: Is linprarsun complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+MORE_P_pair0,MORE,P,pair0,molwainmom,linprarsun,linprarsun,molwainmom,novel_word,"Definitions:
+- molwainmom: something that is bold and complex
+- linprarsun is more/greater than molwainmom in all respects
+
+Q: Which is more bold, molwainmom or linprarsun? (Answer EXACTLY ONE WORD)
+A:"
+LESS_P_pair0,LESS,P,pair0,molwainmom,linprarsun,molwainmom,linprarsun,novel_word,"Definitions:
+- molwainmom: something that is bold and complex
+- linprarsun is less/smaller than molwainmom in all respects
+
+Q: Which is more bold, molwainmom or linprarsun? (Answer EXACTLY ONE WORD)
+A:"
+MORE_Q_pair0,MORE,Q,pair0,molwainmom,linprarsun,linprarsun,molwainmom,novel_word,"Definitions:
+- molwainmom: something that is bold and complex
+- linprarsun is more/greater than molwainmom in all respects
+
+Q: Which is more complex, molwainmom or linprarsun? (Answer EXACTLY ONE WORD)
+A:"
+LESS_Q_pair0,LESS,Q,pair0,molwainmom,linprarsun,molwainmom,linprarsun,novel_word,"Definitions:
+- molwainmom: something that is bold and complex
+- linprarsun is less/smaller than molwainmom in all respects
+
+Q: Which is more complex, molwainmom or linprarsun? (Answer EXACTLY ONE WORD)
+A:"
+SAME_P_pair1,SAME,P,pair1,nousdabrik,mailpluwen,bold,cautious,attribute_word,"Definitions:
+- nousdabrik: something that is bold and complex
+- mailpluwen is the same as nousdabrik
+
+Q: Is mailpluwen bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+OPP_P_pair1,OPP,P,pair1,nousdabrik,mailpluwen,cautious,bold,attribute_word,"Definitions:
+- nousdabrik: something that is bold and complex
+- mailpluwen is the opposite of nousdabrik
+
+Q: Is mailpluwen bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+SAME_Q_pair1,SAME,Q,pair1,nousdabrik,mailpluwen,complex,simple,attribute_word,"Definitions:
+- nousdabrik: something that is bold and complex
+- mailpluwen is the same as nousdabrik
+
+Q: Is mailpluwen complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+OPP_Q_pair1,OPP,Q,pair1,nousdabrik,mailpluwen,simple,complex,attribute_word,"Definitions:
+- nousdabrik: something that is bold and complex
+- mailpluwen is the opposite of nousdabrik
+
+Q: Is mailpluwen complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+MORE_P_pair1,MORE,P,pair1,nousdabrik,mailpluwen,mailpluwen,nousdabrik,novel_word,"Definitions:
+- nousdabrik: something that is bold and complex
+- mailpluwen is more/greater than nousdabrik in all respects
+
+Q: Which is more bold, nousdabrik or mailpluwen? (Answer EXACTLY ONE WORD)
+A:"
+LESS_P_pair1,LESS,P,pair1,nousdabrik,mailpluwen,nousdabrik,mailpluwen,novel_word,"Definitions:
+- nousdabrik: something that is bold and complex
+- mailpluwen is less/smaller than nousdabrik in all respects
+
+Q: Which is more bold, nousdabrik or mailpluwen? (Answer EXACTLY ONE WORD)
+A:"
+MORE_Q_pair1,MORE,Q,pair1,nousdabrik,mailpluwen,mailpluwen,nousdabrik,novel_word,"Definitions:
+- nousdabrik: something that is bold and complex
+- mailpluwen is more/greater than nousdabrik in all respects
+
+Q: Which is more complex, nousdabrik or mailpluwen? (Answer EXACTLY ONE WORD)
+A:"
+LESS_Q_pair1,LESS,Q,pair1,nousdabrik,mailpluwen,nousdabrik,mailpluwen,novel_word,"Definitions:
+- nousdabrik: something that is bold and complex
+- mailpluwen is less/smaller than nousdabrik in all respects
+
+Q: Which is more complex, nousdabrik or mailpluwen? (Answer EXACTLY ONE WORD)
+A:"
+SAME_P_pair2,SAME,P,pair2,lorspenprem,kepalmour,bold,cautious,attribute_word,"Definitions:
+- lorspenprem: something that is bold and complex
+- kepalmour is the same as lorspenprem
+
+Q: Is kepalmour bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+OPP_P_pair2,OPP,P,pair2,lorspenprem,kepalmour,cautious,bold,attribute_word,"Definitions:
+- lorspenprem: something that is bold and complex
+- kepalmour is the opposite of lorspenprem
+
+Q: Is kepalmour bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+SAME_Q_pair2,SAME,Q,pair2,lorspenprem,kepalmour,complex,simple,attribute_word,"Definitions:
+- lorspenprem: something that is bold and complex
+- kepalmour is the same as lorspenprem
+
+Q: Is kepalmour complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+OPP_Q_pair2,OPP,Q,pair2,lorspenprem,kepalmour,simple,complex,attribute_word,"Definitions:
+- lorspenprem: something that is bold and complex
+- kepalmour is the opposite of lorspenprem
+
+Q: Is kepalmour complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+MORE_P_pair2,MORE,P,pair2,lorspenprem,kepalmour,kepalmour,lorspenprem,novel_word,"Definitions:
+- lorspenprem: something that is bold and complex
+- kepalmour is more/greater than lorspenprem in all respects
+
+Q: Which is more bold, lorspenprem or kepalmour? (Answer EXACTLY ONE WORD)
+A:"
+LESS_P_pair2,LESS,P,pair2,lorspenprem,kepalmour,lorspenprem,kepalmour,novel_word,"Definitions:
+- lorspenprem: something that is bold and complex
+- kepalmour is less/smaller than lorspenprem in all respects
+
+Q: Which is more bold, lorspenprem or kepalmour? (Answer EXACTLY ONE WORD)
+A:"
+MORE_Q_pair2,MORE,Q,pair2,lorspenprem,kepalmour,kepalmour,lorspenprem,novel_word,"Definitions:
+- lorspenprem: something that is bold and complex
+- kepalmour is more/greater than lorspenprem in all respects
+
+Q: Which is more complex, lorspenprem or kepalmour? (Answer EXACTLY ONE WORD)
+A:"
+LESS_Q_pair2,LESS,Q,pair2,lorspenprem,kepalmour,lorspenprem,kepalmour,novel_word,"Definitions:
+- lorspenprem: something that is bold and complex
+- kepalmour is less/smaller than lorspenprem in all respects
+
+Q: Which is more complex, lorspenprem or kepalmour? (Answer EXACTLY ONE WORD)
+A:"
+SAME_P_pair3,SAME,P,pair3,noulnenkre,dimonkeis,bold,cautious,attribute_word,"Definitions:
+- noulnenkre: something that is bold and complex
+- dimonkeis is the same as noulnenkre
+
+Q: Is dimonkeis bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+OPP_P_pair3,OPP,P,pair3,noulnenkre,dimonkeis,cautious,bold,attribute_word,"Definitions:
+- noulnenkre: something that is bold and complex
+- dimonkeis is the opposite of noulnenkre
+
+Q: Is dimonkeis bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+SAME_Q_pair3,SAME,Q,pair3,noulnenkre,dimonkeis,complex,simple,attribute_word,"Definitions:
+- noulnenkre: something that is bold and complex
+- dimonkeis is the same as noulnenkre
+
+Q: Is dimonkeis complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+OPP_Q_pair3,OPP,Q,pair3,noulnenkre,dimonkeis,simple,complex,attribute_word,"Definitions:
+- noulnenkre: something that is bold and complex
+- dimonkeis is the opposite of noulnenkre
+
+Q: Is dimonkeis complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+MORE_P_pair3,MORE,P,pair3,noulnenkre,dimonkeis,dimonkeis,noulnenkre,novel_word,"Definitions:
+- noulnenkre: something that is bold and complex
+- dimonkeis is more/greater than noulnenkre in all respects
+
+Q: Which is more bold, noulnenkre or dimonkeis? (Answer EXACTLY ONE WORD)
+A:"
+LESS_P_pair3,LESS,P,pair3,noulnenkre,dimonkeis,noulnenkre,dimonkeis,novel_word,"Definitions:
+- noulnenkre: something that is bold and complex
+- dimonkeis is less/smaller than noulnenkre in all respects
+
+Q: Which is more bold, noulnenkre or dimonkeis? (Answer EXACTLY ONE WORD)
+A:"
+MORE_Q_pair3,MORE,Q,pair3,noulnenkre,dimonkeis,dimonkeis,noulnenkre,novel_word,"Definitions:
+- noulnenkre: something that is bold and complex
+- dimonkeis is more/greater than noulnenkre in all respects
+
+Q: Which is more complex, noulnenkre or dimonkeis? (Answer EXACTLY ONE WORD)
+A:"
+LESS_Q_pair3,LESS,Q,pair3,noulnenkre,dimonkeis,noulnenkre,dimonkeis,novel_word,"Definitions:
+- noulnenkre: something that is bold and complex
+- dimonkeis is less/smaller than noulnenkre in all respects
+
+Q: Which is more complex, noulnenkre or dimonkeis? (Answer EXACTLY ONE WORD)
+A:"
+SAME_P_pair4,SAME,P,pair4,brunplifouk,wurplonaik,bold,cautious,attribute_word,"Definitions:
+- brunplifouk: something that is bold and complex
+- wurplonaik is the same as brunplifouk
+
+Q: Is wurplonaik bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+OPP_P_pair4,OPP,P,pair4,brunplifouk,wurplonaik,cautious,bold,attribute_word,"Definitions:
+- brunplifouk: something that is bold and complex
+- wurplonaik is the opposite of brunplifouk
+
+Q: Is wurplonaik bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+SAME_Q_pair4,SAME,Q,pair4,brunplifouk,wurplonaik,complex,simple,attribute_word,"Definitions:
+- brunplifouk: something that is bold and complex
+- wurplonaik is the same as brunplifouk
+
+Q: Is wurplonaik complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+OPP_Q_pair4,OPP,Q,pair4,brunplifouk,wurplonaik,simple,complex,attribute_word,"Definitions:
+- brunplifouk: something that is bold and complex
+- wurplonaik is the opposite of brunplifouk
+
+Q: Is wurplonaik complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+MORE_P_pair4,MORE,P,pair4,brunplifouk,wurplonaik,wurplonaik,brunplifouk,novel_word,"Definitions:
+- brunplifouk: something that is bold and complex
+- wurplonaik is more/greater than brunplifouk in all respects
+
+Q: Which is more bold, brunplifouk or wurplonaik? (Answer EXACTLY ONE WORD)
+A:"
+LESS_P_pair4,LESS,P,pair4,brunplifouk,wurplonaik,brunplifouk,wurplonaik,novel_word,"Definitions:
+- brunplifouk: something that is bold and complex
+- wurplonaik is less/smaller than brunplifouk in all respects
+
+Q: Which is more bold, brunplifouk or wurplonaik? (Answer EXACTLY ONE WORD)
+A:"
+MORE_Q_pair4,MORE,Q,pair4,brunplifouk,wurplonaik,wurplonaik,brunplifouk,novel_word,"Definitions:
+- brunplifouk: something that is bold and complex
+- wurplonaik is more/greater than brunplifouk in all respects
+
+Q: Which is more complex, brunplifouk or wurplonaik? (Answer EXACTLY ONE WORD)
+A:"
+LESS_Q_pair4,LESS,Q,pair4,brunplifouk,wurplonaik,brunplifouk,wurplonaik,novel_word,"Definitions:
+- brunplifouk: something that is bold and complex
+- wurplonaik is less/smaller than brunplifouk in all respects
+
+Q: Which is more complex, brunplifouk or wurplonaik? (Answer EXACTLY ONE WORD)
+A:"
+SAME_P_pair5,SAME,P,pair5,dorsongom,plurpasnik,bold,cautious,attribute_word,"Definitions:
+- dorsongom: something that is bold and complex
+- plurpasnik is the same as dorsongom
+
+Q: Is plurpasnik bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+OPP_P_pair5,OPP,P,pair5,dorsongom,plurpasnik,cautious,bold,attribute_word,"Definitions:
+- dorsongom: something that is bold and complex
+- plurpasnik is the opposite of dorsongom
+
+Q: Is plurpasnik bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+SAME_Q_pair5,SAME,Q,pair5,dorsongom,plurpasnik,complex,simple,attribute_word,"Definitions:
+- dorsongom: something that is bold and complex
+- plurpasnik is the same as dorsongom
+
+Q: Is plurpasnik complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+OPP_Q_pair5,OPP,Q,pair5,dorsongom,plurpasnik,simple,complex,attribute_word,"Definitions:
+- dorsongom: something that is bold and complex
+- plurpasnik is the opposite of dorsongom
+
+Q: Is plurpasnik complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+MORE_P_pair5,MORE,P,pair5,dorsongom,plurpasnik,plurpasnik,dorsongom,novel_word,"Definitions:
+- dorsongom: something that is bold and complex
+- plurpasnik is more/greater than dorsongom in all respects
+
+Q: Which is more bold, dorsongom or plurpasnik? (Answer EXACTLY ONE WORD)
+A:"
+LESS_P_pair5,LESS,P,pair5,dorsongom,plurpasnik,dorsongom,plurpasnik,novel_word,"Definitions:
+- dorsongom: something that is bold and complex
+- plurpasnik is less/smaller than dorsongom in all respects
+
+Q: Which is more bold, dorsongom or plurpasnik? (Answer EXACTLY ONE WORD)
+A:"
+MORE_Q_pair5,MORE,Q,pair5,dorsongom,plurpasnik,plurpasnik,dorsongom,novel_word,"Definitions:
+- dorsongom: something that is bold and complex
+- plurpasnik is more/greater than dorsongom in all respects
+
+Q: Which is more complex, dorsongom or plurpasnik? (Answer EXACTLY ONE WORD)
+A:"
+LESS_Q_pair5,LESS,Q,pair5,dorsongom,plurpasnik,dorsongom,plurpasnik,novel_word,"Definitions:
+- dorsongom: something that is bold and complex
+- plurpasnik is less/smaller than dorsongom in all respects
+
+Q: Which is more complex, dorsongom or plurpasnik? (Answer EXACTLY ONE WORD)
+A:"
+SAME_P_pair6,SAME,P,pair6,korrourvain,gesstoukei,bold,cautious,attribute_word,"Definitions:
+- korrourvain: something that is bold and complex
+- gesstoukei is the same as korrourvain
+
+Q: Is gesstoukei bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+OPP_P_pair6,OPP,P,pair6,korrourvain,gesstoukei,cautious,bold,attribute_word,"Definitions:
+- korrourvain: something that is bold and complex
+- gesstoukei is the opposite of korrourvain
+
+Q: Is gesstoukei bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+SAME_Q_pair6,SAME,Q,pair6,korrourvain,gesstoukei,complex,simple,attribute_word,"Definitions:
+- korrourvain: something that is bold and complex
+- gesstoukei is the same as korrourvain
+
+Q: Is gesstoukei complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+OPP_Q_pair6,OPP,Q,pair6,korrourvain,gesstoukei,simple,complex,attribute_word,"Definitions:
+- korrourvain: something that is bold and complex
+- gesstoukei is the opposite of korrourvain
+
+Q: Is gesstoukei complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+MORE_P_pair6,MORE,P,pair6,korrourvain,gesstoukei,gesstoukei,korrourvain,novel_word,"Definitions:
+- korrourvain: something that is bold and complex
+- gesstoukei is more/greater than korrourvain in all respects
+
+Q: Which is more bold, korrourvain or gesstoukei? (Answer EXACTLY ONE WORD)
+A:"
+LESS_P_pair6,LESS,P,pair6,korrourvain,gesstoukei,korrourvain,gesstoukei,novel_word,"Definitions:
+- korrourvain: something that is bold and complex
+- gesstoukei is less/smaller than korrourvain in all respects
+
+Q: Which is more bold, korrourvain or gesstoukei? (Answer EXACTLY ONE WORD)
+A:"
+MORE_Q_pair6,MORE,Q,pair6,korrourvain,gesstoukei,gesstoukei,korrourvain,novel_word,"Definitions:
+- korrourvain: something that is bold and complex
+- gesstoukei is more/greater than korrourvain in all respects
+
+Q: Which is more complex, korrourvain or gesstoukei? (Answer EXACTLY ONE WORD)
+A:"
+LESS_Q_pair6,LESS,Q,pair6,korrourvain,gesstoukei,korrourvain,gesstoukei,novel_word,"Definitions:
+- korrourvain: something that is bold and complex
+- gesstoukei is less/smaller than korrourvain in all respects
+
+Q: Which is more complex, korrourvain or gesstoukei? (Answer EXACTLY ONE WORD)
+A:"
+SAME_P_pair7,SAME,P,pair7,lurtonzout,vougelspis,bold,cautious,attribute_word,"Definitions:
+- lurtonzout: something that is bold and complex
+- vougelspis is the same as lurtonzout
+
+Q: Is vougelspis bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+OPP_P_pair7,OPP,P,pair7,lurtonzout,vougelspis,cautious,bold,attribute_word,"Definitions:
+- lurtonzout: something that is bold and complex
+- vougelspis is the opposite of lurtonzout
+
+Q: Is vougelspis bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+SAME_Q_pair7,SAME,Q,pair7,lurtonzout,vougelspis,complex,simple,attribute_word,"Definitions:
+- lurtonzout: something that is bold and complex
+- vougelspis is the same as lurtonzout
+
+Q: Is vougelspis complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+OPP_Q_pair7,OPP,Q,pair7,lurtonzout,vougelspis,simple,complex,attribute_word,"Definitions:
+- lurtonzout: something that is bold and complex
+- vougelspis is the opposite of lurtonzout
+
+Q: Is vougelspis complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+MORE_P_pair7,MORE,P,pair7,lurtonzout,vougelspis,vougelspis,lurtonzout,novel_word,"Definitions:
+- lurtonzout: something that is bold and complex
+- vougelspis is more/greater than lurtonzout in all respects
+
+Q: Which is more bold, lurtonzout or vougelspis? (Answer EXACTLY ONE WORD)
+A:"
+LESS_P_pair7,LESS,P,pair7,lurtonzout,vougelspis,lurtonzout,vougelspis,novel_word,"Definitions:
+- lurtonzout: something that is bold and complex
+- vougelspis is less/smaller than lurtonzout in all respects
+
+Q: Which is more bold, lurtonzout or vougelspis? (Answer EXACTLY ONE WORD)
+A:"
+MORE_Q_pair7,MORE,Q,pair7,lurtonzout,vougelspis,vougelspis,lurtonzout,novel_word,"Definitions:
+- lurtonzout: something that is bold and complex
+- vougelspis is more/greater than lurtonzout in all respects
+
+Q: Which is more complex, lurtonzout or vougelspis? (Answer EXACTLY ONE WORD)
+A:"
+LESS_Q_pair7,LESS,Q,pair7,lurtonzout,vougelspis,lurtonzout,vougelspis,novel_word,"Definitions:
+- lurtonzout: something that is bold and complex
+- vougelspis is less/smaller than lurtonzout in all respects
+
+Q: Which is more complex, lurtonzout or vougelspis? (Answer EXACTLY ONE WORD)
+A:"
+SAME_P_pair8,SAME,P,pair8,sapourzat,walarslat,bold,cautious,attribute_word,"Definitions:
+- sapourzat: something that is bold and complex
+- walarslat is the same as sapourzat
+
+Q: Is walarslat bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+OPP_P_pair8,OPP,P,pair8,sapourzat,walarslat,cautious,bold,attribute_word,"Definitions:
+- sapourzat: something that is bold and complex
+- walarslat is the opposite of sapourzat
+
+Q: Is walarslat bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+SAME_Q_pair8,SAME,Q,pair8,sapourzat,walarslat,complex,simple,attribute_word,"Definitions:
+- sapourzat: something that is bold and complex
+- walarslat is the same as sapourzat
+
+Q: Is walarslat complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+OPP_Q_pair8,OPP,Q,pair8,sapourzat,walarslat,simple,complex,attribute_word,"Definitions:
+- sapourzat: something that is bold and complex
+- walarslat is the opposite of sapourzat
+
+Q: Is walarslat complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+MORE_P_pair8,MORE,P,pair8,sapourzat,walarslat,walarslat,sapourzat,novel_word,"Definitions:
+- sapourzat: something that is bold and complex
+- walarslat is more/greater than sapourzat in all respects
+
+Q: Which is more bold, sapourzat or walarslat? (Answer EXACTLY ONE WORD)
+A:"
+LESS_P_pair8,LESS,P,pair8,sapourzat,walarslat,sapourzat,walarslat,novel_word,"Definitions:
+- sapourzat: something that is bold and complex
+- walarslat is less/smaller than sapourzat in all respects
+
+Q: Which is more bold, sapourzat or walarslat? (Answer EXACTLY ONE WORD)
+A:"
+MORE_Q_pair8,MORE,Q,pair8,sapourzat,walarslat,walarslat,sapourzat,novel_word,"Definitions:
+- sapourzat: something that is bold and complex
+- walarslat is more/greater than sapourzat in all respects
+
+Q: Which is more complex, sapourzat or walarslat? (Answer EXACTLY ONE WORD)
+A:"
+LESS_Q_pair8,LESS,Q,pair8,sapourzat,walarslat,sapourzat,walarslat,novel_word,"Definitions:
+- sapourzat: something that is bold and complex
+- walarslat is less/smaller than sapourzat in all respects
+
+Q: Which is more complex, sapourzat or walarslat? (Answer EXACTLY ONE WORD)
+A:"
+SAME_P_pair9,SAME,P,pair9,pirvasek,sirsolbeis,bold,cautious,attribute_word,"Definitions:
+- pirvasek: something that is bold and complex
+- sirsolbeis is the same as pirvasek
+
+Q: Is sirsolbeis bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+OPP_P_pair9,OPP,P,pair9,pirvasek,sirsolbeis,cautious,bold,attribute_word,"Definitions:
+- pirvasek: something that is bold and complex
+- sirsolbeis is the opposite of pirvasek
+
+Q: Is sirsolbeis bold or cautious? (Answer EXACTLY ONE WORD)
+A:"
+SAME_Q_pair9,SAME,Q,pair9,pirvasek,sirsolbeis,complex,simple,attribute_word,"Definitions:
+- pirvasek: something that is bold and complex
+- sirsolbeis is the same as pirvasek
+
+Q: Is sirsolbeis complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+OPP_Q_pair9,OPP,Q,pair9,pirvasek,sirsolbeis,simple,complex,attribute_word,"Definitions:
+- pirvasek: something that is bold and complex
+- sirsolbeis is the opposite of pirvasek
+
+Q: Is sirsolbeis complex or simple? (Answer EXACTLY ONE WORD)
+A:"
+MORE_P_pair9,MORE,P,pair9,pirvasek,sirsolbeis,sirsolbeis,pirvasek,novel_word,"Definitions:
+- pirvasek: something that is bold and complex
+- sirsolbeis is more/greater than pirvasek in all respects
+
+Q: Which is more bold, pirvasek or sirsolbeis? (Answer EXACTLY ONE WORD)
+A:"
+LESS_P_pair9,LESS,P,pair9,pirvasek,sirsolbeis,pirvasek,sirsolbeis,novel_word,"Definitions:
+- pirvasek: something that is bold and complex
+- sirsolbeis is less/smaller than pirvasek in all respects
+
+Q: Which is more bold, pirvasek or sirsolbeis? (Answer EXACTLY ONE WORD)
+A:"
+MORE_Q_pair9,MORE,Q,pair9,pirvasek,sirsolbeis,sirsolbeis,pirvasek,novel_word,"Definitions:
+- pirvasek: something that is bold and complex
+- sirsolbeis is more/greater than pirvasek in all respects
+
+Q: Which is more complex, pirvasek or sirsolbeis? (Answer EXACTLY ONE WORD)
+A:"
+LESS_Q_pair9,LESS,Q,pair9,pirvasek,sirsolbeis,pirvasek,sirsolbeis,novel_word,"Definitions:
+- pirvasek: something that is bold and complex
+- sirsolbeis is less/smaller than pirvasek in all respects
+
+Q: Which is more complex, pirvasek or sirsolbeis? (Answer EXACTLY ONE WORD)
+A:"

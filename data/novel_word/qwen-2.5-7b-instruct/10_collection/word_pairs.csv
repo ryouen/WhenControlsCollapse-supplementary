@@ -1,0 +1,11 @@
+pair_id,word_a,word_b,first_subtoken_id_a,first_subtoken_id_b,first_subtoken_text_a,first_subtoken_text_b,token_count_a,token_count_b,logit_gap_A_colon
+pair0,toufepos,folkeirrai,14776,9443,tou,fol,4,4,0.03125
+pair1,nurmonkuk,tesfaisol,12222,50209,nur,tes,4,4,0.021484375
+pair2,borpleispat,mensoskris,31632,16049,bor,mens,4,4,0.2626953125
+pair3,tregeilnel,dansoszeis,4258,6866,tre,dans,4,4,0.234375
+pair4,besbonfer,painrikai,9057,6646,bes,pain,3,3,0.40625
+pair5,plumaislou,trailstouvi,41172,8849,plum,trail,4,4,0.2890625
+pair6,fleilrolbru,lainlasek,12962,50376,fle,lain,4,4,0.166015625
+pair7,riflarseis,speinstaimo,36924,2341,rif,spe,4,4,0.16552734375
+pair8,linfinlam,digreslem,9805,4078,lin,dig,3,3,0.1875
+pair9,sleiskrowa,voskisdai,19747,25251,sle,vos,4,4,0.1328125

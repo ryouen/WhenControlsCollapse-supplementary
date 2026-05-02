@@ -1,0 +1,2 @@
+model,n_heads,beta_imp,beta_pert,beta_layer,p_imp,p_pert,p_layer,R2_full,R2_imp_only,R2_pert_only,R2_layer_only,partial_R2_pert
+gpt-j-6b-fp32,448,0.0583,0.7519,-0.0489,0.10605149546679928,4.905231459380011e-75,0.19077472849240978,0.5586,0.0154,0.5504,0.0172,0.5311

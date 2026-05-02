@@ -1,0 +1,11 @@
+pair_id,word_a,word_b,first_subtoken_id_a,first_subtoken_id_b,first_subtoken_text_a,first_subtoken_text_b,token_count_a,token_count_b,logit_gap_A_colon
+pair0,trinplinwem,balaigri,104647,111865,trin,bala,3,3,0.37109375
+pair1,goustainga,prosbemei,45285,11341,gou,pros,3,3,0.240234375
+pair2,zeskralfo,morreisloun,98448,2953,zes,mor,4,4,0.171875
+pair3,deinnaislen,nousbrarmem,47316,5502,dein,nous,3,3,0.34375
+pair4,nurmonkuk,tesfaisol,6029,9881,nur,tes,3,3,0.15625
+pair5,reinsperter,spainonneim,86212,93838,reins,spain,3,3,0.09765625
+pair6,braistusrar,paisurpir,2984,27299,bra,pais,3,3,0.0703125
+pair7,naskairkrul,bunprunsul,7863,15907,nas,bun,4,4,0.171875
+pair8,besbonfer,painrikai,3400,4380,bes,pain,3,3,0.359375
+pair9,poldeizout,tonsasfloun,4374,15981,pol,tons,4,4,0.265625

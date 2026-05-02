@@ -1,0 +1,2 @@
+model,n_heads,beta_imp,beta_pert,beta_layer,p_imp,p_pert,p_layer,R2_full,R2_imp_only,R2_pert_only,R2_layer_only,partial_R2_pert
+gemma-3-27b-it,1984,0.0877,0.2664,0.1797,6.457981300494393e-05,1.3852500948862933e-34,2.796114912401935e-16,0.1193,0.0262,0.0718,0.0352,0.0732

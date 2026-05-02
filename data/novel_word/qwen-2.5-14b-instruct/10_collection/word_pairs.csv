@@ -1,0 +1,11 @@
+pair_id,word_a,word_b,first_subtoken_id_a,first_subtoken_id_b,first_subtoken_text_a,first_subtoken_text_b,token_count_a,token_count_b,logit_gap_A_colon
+pair0,molwainmom,linprarsun,21609,9805,mol,lin,4,4,0.453125
+pair1,borpleispat,mensoskris,31632,16049,bor,mens,4,4,0.078125
+pair2,zalmaimair,bailmaiboun,65558,24479,zal,bail,4,4,0.390625
+pair3,plelsasrait,merflouller,7100,4704,ple,mer,4,4,0.244140625
+pair4,mourpouspan,prisflismou,66583,51479,mour,pris,4,4,0.328125
+pair5,sleinvelwen,trevasleir,19747,4258,sle,tre,4,4,0.2421875
+pair6,grossulbrar,vesgoltrain,19952,64535,gross,ves,4,4,0.25
+pair7,masmolprat,plelbrelfer,9243,7100,mas,ple,4,4,0.04296875
+pair8,pennunbo,rustergis,42949,23071,penn,rust,3,3,0.380859375
+pair9,deinlullam,pronspeltun,94919,18613,dein,pron,4,4,0.28125

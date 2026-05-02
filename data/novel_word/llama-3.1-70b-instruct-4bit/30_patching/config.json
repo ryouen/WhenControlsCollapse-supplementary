@@ -1,0 +1,70 @@
+{
+  "phase_name": "30_patching",
+  "source_rule": "alpha_same_pair_same_attr_cross_crel",
+  "patch_mechanism": "input_overwrite_v5_1_pattern",
+  "patch_mechanism_version": "v2_post_20260421_oooerror_fix",
+  "ratios_dose": [
+    0.01,
+    0.03,
+    0.05,
+    0.07,
+    0.1,
+    0.12,
+    0.15,
+    0.153516,
+    0.2,
+    0.3,
+    0.5
+  ],
+  "groups": [
+    "hihp_imp_desc",
+    "hilp_imp_desc",
+    "C_imp_asc",
+    "D_imp_asc",
+    "std_imp_asc",
+    "D_pert_asc",
+    "diag_rank_asc"
+  ],
+  "max_equal_k_ratio_applied": 0.153516,
+  "total_heads": 5120,
+  "n_tuples_per_head": 120,
+  "manifest": {
+    "pipeline_version": "v7.5.0",
+    "model_id": "cmarkea/Meta-Llama-3.1-70B-Instruct-4bit",
+    "word_seed": 2026,
+    "n_pairs": 10,
+    "n_patch_trials": 120,
+    "patch_mechanism": "input_overwrite_v5_1_pattern",
+    "patch_mechanism_version": "v2_post_20260421_oooerror_fix",
+    "source_rule": "alpha_same_pair_same_attr_cross_crel",
+    "trials_fingerprint_sha256": "d4fc68d220928ffb6fbf3b5a8886827c8e6d916df47ad47edc10e396d10f0ff1"
+  },
+  "model_id": "cmarkea/Meta-Llama-3.1-70B-Instruct-4bit",
+  "c1_elapsed_sec": 16380.453,
+  "c2_elapsed_sec": 2616.957,
+  "c1_n_heads_processed": 5120,
+  "c2_n_runs": 9240,
+  "cell_counts": {
+    "hihp": 1774,
+    "hilp": 786,
+    "C": 786,
+    "D": 1774
+  },
+  "pipeline_version": "v7.5.0",
+  "prompt_format": "format_c_qa_options_v7_5",
+  "platform": "GoogleColab_A100-SXM4-80GB",
+  "model_short": "llama-3.1-70b-instruct-4bit",
+  "word_seed": 2026,
+  "perm_seed": 42,
+  "n_pairs": 10,
+  "attr_P": [
+    "bold",
+    "cautious"
+  ],
+  "attr_Q": [
+    "complex",
+    "simple"
+  ],
+  "common_word_list_source": "wordfreq.top_n_list('en', 3000, wordlist='large') from wordfreq==3.1.1 (https://pypi.org/project/wordfreq/)",
+  "saved_at": "2026-04-29T23:59:52.833841"
+}

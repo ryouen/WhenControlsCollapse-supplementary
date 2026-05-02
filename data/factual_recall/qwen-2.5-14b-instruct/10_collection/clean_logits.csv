@@ -1,0 +1,72 @@
+trial_id,relation,subject,target,competitor,target_id,competitor_id,argmax_id,argmax_token,target_rank,target_logit,competitor_logit,margin,is_top1,is_top5
+P101_10027,P101,Boris Delaunay,geometry,physics,17047,21321,17047, geometry,2,15.4375,10.25,5.1875,False,True
+P101_10066,P101,Carl Hovland,psychology,physics,29918,21321,304, in,12,16.875,9.0625,7.8125,False,False
+P103_0,P103,Danielle Darrieux,French,Russian,8585,8522,8585, French,1,20.25,13.3125,6.9375,True,True
+P103_10038,P103,Alfred Capus,French,Russian,8585,8522,8585, French,1,17.5,13.375,4.125,True,True
+P106_10026,P106,Henry Maudsley,psychiatrist,actor,72869,12089,510,":
+",5,18.625,8.75,9.875,False,True
+P106_10076,P106,Georgina Leonidas,actor,politician,12089,35938,45282, astronom,6,18.25,7.375,10.875,False,False
+P108_10032,P108,Guido van Rossum,Google,BBC,5085,18096,5085, Google,1,22.0,7.375,14.625,True,True
+P108_10064,P108,Krishna Bharat,Google,BBC,5085,18096,5085, Google,1,20.875,8.125,12.75,True,True
+P127_10,P127,BBC One,BBC,Google,18096,5085,12872, contrast,3,12.1875,4.65625,7.53125,False,True
+P127_10040,P127,Cognos,IBM,Google,27922,5085,11,",",2,15.5625,4.90625,10.65625,False,True
+P1303_10011,P1303,Marvin Stamm,trumpet,piano,91259,26278,91259, trumpet,1,15.875,11.5625,4.3125,True,True
+P1303_10017,P1303,Herbert Fryer,piano,guitar,26278,16986,264, a,13,11.375,11.25,0.125,False,False
+P131_10018,P131,Schwules Museum,Berlin,Pennsylvania,19846,19771,19846, Berlin,1,18.375,0.31640625,18.05859375,True,True
+P131_10045,P131,Neighborhoods in Detroit,Detroit,Pennsylvania,19761,19771,279, the,38,12.125,5.4375,6.6875,False,False
+P136_10043,P136,Mark Bucci,opera,jazz,42416,33897,264, a,1603,4.4375,6.53125,-2.09375,False,False
+P136_10065,P136,Alexander O'Neal,funk,jazz,68292,33897,264, a,286,6.96875,8.5,-1.53125,False,False
+P138_10042,P138,Beijing Capital International Airport,Beijing,Victoria,26549,22417,279, the,4,18.625,8.1875,10.4375,False,True
+P138_1009,P138,HMAS Sydney,Sydney,Victoria,21273,22417,279, the,2,20.25,14.125,6.125,False,True
+P140_1,P140,Edwin of Northumbria,Christianity,Islam,31086,14910,510,":
+",1,18.0,11.1875,6.8125,True,True
+P140_100,P140,Jahangir,Islam,Christianity,14910,31086,510,":
+",2,18.5,12.25,6.25,False,True
+P1412_10009,P1412,Lin Huiyin,Chinese,English,8453,6364,315, of,282,10.25,8.5625,1.6875,False,False
+P1412_10036,P1412,Dominique Perben,French,English,8585,6364,8585, French,1,16.25,13.125,3.125,True,True
+P159_1001,P159,Physikalisch-Technische Bundesanstalt,Brunswick,London,60150,7148,892, which,26,15.9375,8.75,7.1875,False,False
+P159_10015,P159,GIC Private Limited,Singapore,London,20539,7148,20539, Singapore,1,20.5,13.5,7.0,True,True
+P17_10005,P17,New Era University,Philippines,India,25296,6747,279, the,319,10.375,10.4375,-0.0625,False,False
+P17_10034,P17,Kojur District,Iran,India,10259,6747,279, the,206,9.8125,12.3125,-2.5,False,False
+P176_10014,P176,Honda CB550,Honda,Toyota,28887,29200,28887, Honda,1,20.125,13.6875,6.4375,True,True
+P176_10044,P176,Toyota Mark II,Toyota,Honda,29200,28887,892, which,2,19.375,14.0,5.375,False,True
+P178_10019,P178,Google Account,Google,Microsoft,5085,5100,5085, Google,1,21.625,12.75,8.875,True,True
+P178_10020,P178,NTLDR,Microsoft,Apple,5100,8162,5100, Microsoft,1,19.5,12.0,7.5,True,True
+P19_1002,P19,Michel Brault,Montreal,London,29513,7148,29513, Montreal,1,19.75,8.25,11.5,True,True
+P19_10031,P19,Masako Natsume,Tokyo,London,26194,7148,279, the,9,12.3125,6.96875,5.34375,False,False
+P190_10000,P190,Cincinnati,Munich,Istanbul,46204,53368,58800, Newport,4111,5.53125,3.921875,1.609375,False,False
+P190_10006,P190,Athens,Kiev,Istanbul,61625,53368,264, a,2837,6.21875,15.0,-8.78125,False,False
+P20_10007,P20,Sa'd al-Dawla,Aleppo,London,57121,7148,220, ,38,13.5625,11.3125,2.25,False,False
+P20_1008,P20,Greer Lankton,Chicago,London,10557,7148,1532, New,20,11.75,9.0625,2.6875,False,False
+P264_1000,P264,Purple Hearts,Sunshine,Brunswick,61294,60150,264, a,4536,4.71875,3.015625,1.703125,False,False
+P264_10597,P264,Meredith Andrews,Word,Brunswick,9322,60150,279, the,3550,4.84375,5.46875,-0.625,False,False
+P27_10002,P27,Colmar Freiherr von der Goltz,Germany,Canada,9856,6864,279, the,5,14.0625,8.875,5.1875,False,True
+P27_10008,P27,Paolo Martin,Italy,Canada,15344,6864,892, which,2,16.625,12.8125,3.8125,False,True
+P276_10021,P276,Jay Treaty,London,Melbourne,7148,26437,279, the,167,9.9375,3.875,6.0625,False,False
+P276_10062,P276,Chelyabinsk meteor,Russia,London,8359,7148,3881, known,965,8.1875,3.25,4.9375,False,False
+P30_10003,P30,Liard Island,Antarctica,Europe,71687,4505,279, the,315,9.125,10.625,-1.5,False,False
+P30_10028,P30,Whillans Ice Stream,Antarctica,Europe,71687,4505,71687, Antarctica,1,22.625,15.0,7.625,True,True
+P36_10035,P36,Saxony,Dresden,Paris,85445,12095,264, a,2,16.625,3.65625,12.96875,False,True
+P36_10369,P36,Second French Empire,Paris,Prague,12095,67289,12095, Paris,1,19.625,9.4375,10.1875,True,True
+P364_10013,P364,Conjunctions,English,French,6364,8585,6364, English,1,14.4375,12.5,1.9375,True,True
+P364_10039,P364,Rasigan,Tamil,English,43783,6364,264, a,883,8.25,12.8125,-4.5625,False,False
+P37_10078,P37,Papua New Guinea,English,Finnish,6364,57853,21447, Tok,2,18.875,6.96875,11.90625,False,True
+P37_10134,P37,Zimbabwe,English,Finnish,6364,57853,6364, English,1,19.375,8.5,10.875,True,True
+P39_10010,P39,Maximianus of Ravenna,bishop,pope,53206,63272,35859, saint,8,15.25,12.875,2.375,False,False
+P39_10025,P39,Bernard Tissier de Mallerais,bishop,pope,53206,63272,10560, Director,632,7.875,5.09375,2.78125,False,False
+P407_10033,P407,Vogue Italia,Italian,French,14811,8585,5497, changed,2,14.75,12.0625,2.6875,False,True
+P407_10082,P407,I Got a Boy,Korean,French,16134,8585,16134, Korean,1,16.375,11.9375,4.4375,True,True
+P413_10029,P413,Don Meredith,quarterback,midfielder,19481,43967,315, of,134,11.375,7.625,3.75,False,False
+P413_1006,P413,Jonathan Goff,linebacker,midfielder,47700,43967,62200, goalkeeper,53,12.0625,15.0,-2.9375,False,False
+P449_10023,P449,Whew!,CBS,NBC,24029,23521,3217, May,147,10.1875,7.84375,2.34375,False,False
+P449_10104,P449,Dough Re Mi,NBC,CBS,23521,24029,16390, Disney,25,13.5625,14.5625,-1.0,False,False
+P463_10050,P463,Football Association of Zambia,FIFA,NATO,43642,29234,2701, following,19,13.4375,3.25,10.1875,False,False
+P463_10121,P463,Tajikistan National Football Federation,FIFA,NATO,43642,29234,14533, Asian,7,15.4375,6.78125,8.65625,False,False
+P495_10012,P495,Franco-Belgian comics,Belgium,Japan,32961,6323,279, the,4,17.875,8.125,9.75,False,True
+P495_1003,P495,Comic High!,Japan,Canada,6323,6864,220, ,5,16.375,14.1875,2.1875,False,True
+P641_10047,P641,Stan Musial,baseball,soccer,19507,22174,19507, baseball,1,20.125,12.625,7.5,True,True
+P641_10270,P641,Billy Sunday,baseball,soccer,19507,22174,315, of,4,16.625,13.5625,3.0625,False,True
+P740_10016,P740,Pentacon,Dresden,London,85445,7148,220, ,2,20.25,10.6875,9.5625,False,True
+P740_10054,P740,Larsen & Toubro,Mumbai,London,34712,7148,220, ,7,17.125,12.875,4.25,False,False
+P937_10004,P937,Adam Jerzy Czartoryski,Paris,London,12095,7148,279, the,5,14.8125,11.25,3.5625,False,True
+P937_10060,P937,Jonathan Meese,Hamburg,London,50462,7148,279, the,24,10.0,10.625,-0.625,False,False

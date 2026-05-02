@@ -1,0 +1,44 @@
+{
+  "pipeline_version": "v7.5_causal_imp_phase2",
+  "analysis_name": "causal_importance_reanalysis",
+  "model_id": "gghfez/gemma-3-27b-novision",
+  "model_short": "gemma-3-27b-it",
+  "model_dtype": "bfloat16",
+  "orderings": [
+    "C_p_imp_asc",
+    "D_p_imp_asc"
+  ],
+  "ratio_labels": [
+    "r0.05",
+    "r0.10",
+    "saturation"
+  ],
+  "r_values": {
+    "r0.05": 0.05,
+    "r0.10": 0.1,
+    "saturation": 0.20583554376657826
+  },
+  "k_values": {
+    "r0.05": 94,
+    "r0.10": 188,
+    "saturation": 388
+  },
+  "cell_counts": {
+    "hihp_p": 604,
+    "hilp_p": 425,
+    "C_p": 388,
+    "D_p": 567
+  },
+  "thresholds": {
+    "causal_imp_median": 0.17708333333333334,
+    "perturbation_median": 1.8084520101547241
+  },
+  "patch_batch_size_used": 16,
+  "total_heads": 1984,
+  "eligible_heads": 1885,
+  "n_inactive": 99,
+  "denominator_used": "eligible",
+  "n_patch_trials": 120,
+  "phase2_elapsed_sec": 11.36,
+  "completed_at": "2026-04-30T13:00:43.246407"
+}

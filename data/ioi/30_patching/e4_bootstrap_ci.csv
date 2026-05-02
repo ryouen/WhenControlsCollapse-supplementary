@@ -1,0 +1,2 @@
+n_C_ex_NNM,n_D,mean_C_ex_NNM,mean_D,mean_diff,mean_diff_ci_low,mean_diff_ci_high,cohens_d,cohens_d_ci_low,cohens_d_ci_high,cliffs_delta,cliffs_delta_ci_low,cliffs_delta_ci_high,n_boot,random_seed
+26,44,0.0751,0.0162,0.0589,-0.0,0.1425,0.4822,-0.0001,0.83,0.257,-0.0245,0.5192,10000,42

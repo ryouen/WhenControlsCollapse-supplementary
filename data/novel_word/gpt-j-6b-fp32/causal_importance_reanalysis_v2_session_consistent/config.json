@@ -1,0 +1,41 @@
+{
+  "pipeline_version": "v7.5_causal_imp_phase2",
+  "analysis_name": "causal_importance_reanalysis",
+  "model_id": "EleutherAI/gpt-j-6b",
+  "model_short": "gpt-j-6b-fp32",
+  "model_dtype": "float32",
+  "orderings": [
+    "C_p_imp_asc",
+    "D_p_imp_asc"
+  ],
+  "ratio_labels": [
+    "r0.05",
+    "r0.10",
+    "saturation"
+  ],
+  "r_values": {
+    "r0.05": 0.05,
+    "r0.10": 0.1,
+    "saturation": 0.05803571428571429
+  },
+  "k_values": {
+    "r0.05": 22,
+    "r0.10": 44,
+    "saturation": 26
+  },
+  "cell_counts": {
+    "hihp_p": 198,
+    "hilp_p": 26,
+    "C_p": 26,
+    "D_p": 198
+  },
+  "thresholds": {
+    "causal_imp_median": 0.00791823466618851,
+    "perturbation_median": 1.0258870124816895
+  },
+  "patch_batch_size_used": 32,
+  "total_heads": 448,
+  "n_patch_trials": 120,
+  "phase2_elapsed_sec": 36.81,
+  "completed_at": "2026-04-26T10:12:44.139663"
+}

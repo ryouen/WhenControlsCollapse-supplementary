@@ -1,0 +1,2 @@
+model,n_heads,beta_imp,beta_pert,beta_layer,p_imp,p_pert,p_layer,R2_full,R2_imp_only,R2_pert_only,R2_layer_only,partial_R2_pert
+qwen-2.5-14b-instruct,1920,0.3775,0.7425,-0.4947,1.4084345247072667e-92,2.9408857982772456e-215,1.7943375861889975e-109,0.4421,0.0638,0.1933,0.0017,0.4007

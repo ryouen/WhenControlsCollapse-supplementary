@@ -1,0 +1,42 @@
+{
+  "pipeline_version": "v7.5_causal_imp_phase2",
+  "analysis_name": "causal_importance_reanalysis",
+  "model_id": "Qwen/Qwen2.5-14B-Instruct",
+  "model_short": "qwen-2.5-14b-instruct",
+  "model_dtype": "bfloat16",
+  "orderings": [
+    "C_p_imp_asc",
+    "D_p_imp_asc"
+  ],
+  "ratio_labels": [
+    "r0.05",
+    "r0.10",
+    "saturation"
+  ],
+  "r_values": {
+    "r0.05": 0.05,
+    "r0.10": 0.1,
+    "saturation": 0.2265625
+  },
+  "k_values": {
+    "r0.05": 96,
+    "r0.10": 192,
+    "saturation": 435
+  },
+  "cell_counts": {
+    "hihp_p": 525,
+    "hilp_p": 460,
+    "C_p": 435,
+    "D_p": 500
+  },
+  "thresholds": {
+    "causal_imp_median": 0.11875,
+    "perturbation_median": 0.5994039177894592
+  },
+  "patch_batch_size_used": 32,
+  "total_heads": 1920,
+  "n_patch_trials": 120,
+  "sanity_max_clean_diff": 0.0,
+  "phase2_elapsed_sec": 9.22,
+  "completed_at": "2026-04-30T05:05:15.165530"
+}

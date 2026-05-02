@@ -1,0 +1,41 @@
+{
+  "pipeline_version": "v7.5_causal_imp_phase2",
+  "analysis_name": "causal_importance_reanalysis",
+  "model_id": "cmarkea/Meta-Llama-3.1-70B-Instruct-4bit",
+  "model_short": "llama-3.1-70b-instruct-4bit",
+  "model_dtype": "nf4",
+  "orderings": [
+    "C_p_imp_asc",
+    "D_p_imp_asc"
+  ],
+  "ratio_labels": [
+    "r0.05",
+    "r0.10",
+    "saturation"
+  ],
+  "r_values": {
+    "r0.05": 0.05,
+    "r0.10": 0.1,
+    "saturation": 0.194140625
+  },
+  "k_values": {
+    "r0.05": 256,
+    "r0.10": 512,
+    "saturation": 994
+  },
+  "cell_counts": {
+    "hihp_p": 1566,
+    "hilp_p": 1134,
+    "C_p": 994,
+    "D_p": 1426
+  },
+  "thresholds": {
+    "causal_imp_median": 0.03229166666666667,
+    "perturbation_median": 0.0337541755288839
+  },
+  "patch_batch_size_used": 16,
+  "total_heads": 5120,
+  "n_patch_trials": 120,
+  "phase2_elapsed_sec": 27.41,
+  "completed_at": "2026-04-30T03:24:17.252449"
+}

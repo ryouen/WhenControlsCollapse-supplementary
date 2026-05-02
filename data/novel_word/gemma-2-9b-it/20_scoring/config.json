@@ -1,0 +1,41 @@
+{
+  "phase_name": "20_scoring",
+  "perm_seed": 42,
+  "n_perms": 10000,
+  "n_trials_rsa": 80,
+  "n_trials_sensitivity": 60,
+  "n_layers": 42,
+  "n_heads": 16,
+  "perturbation_tuples_per_head": 120,
+  "phaseB_elapsed_sec": 2.986,
+  "rsa_elapsed_sec": 1.48,
+  "perturbation_elapsed_sec": 0.396,
+  "partial_rsa_elapsed_sec": 0.0,
+  "sensitivity_elapsed_sec": 1.011,
+  "negative_head_count_before_clamp": 1,
+  "negative_value_range_min": -0.00014408607967197895,
+  "negative_value_range_max": -0.00014408607967197895,
+  "cell_counts": {
+    "hihp": 226,
+    "hilp": 110,
+    "C": 110,
+    "D": 226
+  },
+  "pipeline_version": "v7.5.0",
+  "prompt_format": "format_c_qa_options_v7_5",
+  "platform": "GoogleColab_A100-SXM4-80GB",
+  "model_id": "google/gemma-2-9b-it",
+  "model_short": "gemma-2-9b-it",
+  "word_seed": 2026,
+  "n_pairs": 10,
+  "attr_P": [
+    "bold",
+    "cautious"
+  ],
+  "attr_Q": [
+    "complex",
+    "simple"
+  ],
+  "common_word_list_source": "wordfreq.top_n_list('en', 3000, wordlist='large') from wordfreq==3.1.1 (https://pypi.org/project/wordfreq/)",
+  "saved_at": "2026-04-29T18:36:11.696360"
+}

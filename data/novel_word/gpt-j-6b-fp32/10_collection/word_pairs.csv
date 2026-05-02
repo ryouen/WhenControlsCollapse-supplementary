@@ -1,0 +1,11 @@
+pair_id,word_a,word_b,first_subtoken_id_a,first_subtoken_id_b,first_subtoken_text_a,first_subtoken_text_b,token_count_a,token_count_b,logit_gap_A_colon
+pair0,mitailplus,ginrorzes,10255,39733,mit,gin,3,3,0.4059317111968994
+pair1,molwainmom,linprarsun,18605,9493,mol,lin,4,4,0.3537893295288086
+pair2,fingreibrem,troulruprel,8038,4057,fing,trou,4,4,0.4353711009025574
+pair3,sursternaik,putreirdeim,969,1234,sur,put,5,5,0.40752363204956055
+pair4,dinbrokrat,boltrasgan,16278,11572,din,bol,4,4,0.3091602325439453
+pair5,surtolgim,posprunflei,969,1426,sur,pos,5,5,0.04504990577697754
+pair6,walbilsour,pinvullin,6514,6757,wal,pin,4,4,0.17555053532123566
+pair7,stipreisdol,mantunkrur,22111,24818,stip,mant,4,4,0.021027684211730957
+pair8,surgrouteit,resnanplais,969,581,sur,res,4,4,0.47778356075286865
+pair9,vasfloumus,muspreirdou,34439,1928,vas,mus,4,4,0.44171667098999023

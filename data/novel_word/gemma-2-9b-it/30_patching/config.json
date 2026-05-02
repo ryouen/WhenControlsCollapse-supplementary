@@ -1,0 +1,70 @@
+{
+  "phase_name": "30_patching",
+  "source_rule": "alpha_same_pair_same_attr_cross_crel",
+  "patch_mechanism": "input_overwrite_v5_1_pattern",
+  "patch_mechanism_version": "v2_post_20260421_oooerror_fix",
+  "ratios_dose": [
+    0.01,
+    0.03,
+    0.05,
+    0.07,
+    0.1,
+    0.12,
+    0.15,
+    0.16369,
+    0.2,
+    0.3,
+    0.5
+  ],
+  "groups": [
+    "hihp_imp_desc",
+    "hilp_imp_desc",
+    "C_imp_asc",
+    "D_imp_asc",
+    "std_imp_asc",
+    "D_pert_asc",
+    "diag_rank_asc"
+  ],
+  "max_equal_k_ratio_applied": 0.16369,
+  "total_heads": 672,
+  "n_tuples_per_head": 120,
+  "manifest": {
+    "pipeline_version": "v7.5.0",
+    "model_id": "google/gemma-2-9b-it",
+    "word_seed": 2026,
+    "n_pairs": 10,
+    "n_patch_trials": 120,
+    "patch_mechanism": "input_overwrite_v5_1_pattern",
+    "patch_mechanism_version": "v2_post_20260421_oooerror_fix",
+    "source_rule": "alpha_same_pair_same_attr_cross_crel",
+    "trials_fingerprint_sha256": "f538458f40860bcd4dad0da4afd32f2b63eaf7dcc0a72df381c96e2d92cd4af1"
+  },
+  "model_id": "google/gemma-2-9b-it",
+  "c1_elapsed_sec": 521.102,
+  "c2_elapsed_sec": 1074.746,
+  "c1_n_heads_processed": 672,
+  "c2_n_runs": 9240,
+  "cell_counts": {
+    "hihp": 226,
+    "hilp": 110,
+    "C": 110,
+    "D": 226
+  },
+  "pipeline_version": "v7.5.0",
+  "prompt_format": "format_c_qa_options_v7_5",
+  "platform": "GoogleColab_A100-SXM4-80GB",
+  "model_short": "gemma-2-9b-it",
+  "word_seed": 2026,
+  "perm_seed": 42,
+  "n_pairs": 10,
+  "attr_P": [
+    "bold",
+    "cautious"
+  ],
+  "attr_Q": [
+    "complex",
+    "simple"
+  ],
+  "common_word_list_source": "wordfreq.top_n_list('en', 3000, wordlist='large') from wordfreq==3.1.1 (https://pypi.org/project/wordfreq/)",
+  "saved_at": "2026-04-29T19:28:38.760944"
+}

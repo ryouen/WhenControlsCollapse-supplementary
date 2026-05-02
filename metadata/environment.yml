@@ -1,0 +1,125 @@
+# When Controls Collapse — Run-time Environments (NeurIPS 2026 supplementary, Appendix G.6)
+#
+# Three distinct conda-style environments produced data in this paper. See
+# `run_summary.txt` for the mapping run → environment. All envs run on Colab Python 3.12.
+#
+# Environment   | transformers | bitsandbytes | Used by
+# --------------+--------------+--------------+----------------------------------------------------------------------------
+# wcc-paper-main-7std        | 5.0.0       | (n/a)        | ACDC-cross-model (TransformerLens), FactRec 7-std (04-18), paper-Main 7-std (04-21),
+#                                                          Prospect 7-std (04-22), paper-Main 7-std re-run 4-of-4-models (04-29~30; Cell 1 `==5.0.0` explicit pin)
+# wcc-paper-main-70b         | 5.6.0       | 0.49.2       | paper-Main 70B (04-22), Prospect 70B (04-23),
+#                                                          paper-Main 70B re-run (04-29; Cell 1 `==5.6.0` explicit pin)
+# wcc-phase2-v2-reanalysis   | 5.6.2       | 0.49.2       | FactRec 70B (04-25), Phase 2 v2 reanalysis 8 models (04-26~27),
+#                                                          Phase 2 v3 reanalysis 6 models (04-30, same env, post-04-29 paper-Main re-run)
+
+---
+name: wcc-paper-main-7std
+# 7-standard-model environment, Colab default at 2026-04-13 ~ 04-22.
+# Captured directly from Cell 3 output of `notebooks/unified_pipeline_v7_5_0_*.ipynb`:
+#   `[2026-04-21 ...] PyTorch=2.10.0+cu128 | Transformers=5.0.0 | nnsight=0.6.3`
+# and from Cell 1: `nnsight: 0.6.3, wordfreq: 3.1.1, rapidfuzz: 3.14.5`.
+# Also used by FactRec 7-standard (04-18~19) and Prospect 7-standard (04-22) since
+# their `pip install transformers` (no `-U`) does not upgrade an existing 5.0.0.
+# Also covers the ACDC-cross-model run (04-13), which uses TransformerLens on top of
+# this same Colab Python 3.12 / torch 2.10.0+cu128 default image; the submitted ACDC
+# evidence (Appendix F.5 / Table F4) comprises the 4 TransformerLens-loadable model
+# variants whose 30_patching outputs ship under data/acdc_ioi_cross_model/
+# (gpt-j-6b, gemma-2-9b-it, qwen-2.5-7b-instruct, qwen-2.5-14b-instruct).
+# 04-29~30 paper-Main re-run for 4 models (Llama-8B, Gemma-2-9B, Gemma-3-27B + 70B-as-separate-env)
+# uses the SAME env block but with Cell 1 EXPLICITLY pinning `pip install transformers==5.0.0`
+# (instead of relying on Colab default) to neutralize Colab-image drift between Apr 22
+# and Apr 29. Verified via Cell 3 stdout: `Transformers=5.0.0` matches Apr 21 origin byte-equal.
+channels: [defaults]
+dependencies:
+  - python=3.12
+  - pip:
+    - torch==2.10.0+cu128
+    - transformers==5.0.0
+    - accelerate                   # Colab default at 04-13~04-22 (not directly captured)
+    - nnsight==0.6.3               # explicit pip-install in Cell 1 of all v7.5.0 notebooks
+    - wordfreq==3.1.1
+    - rapidfuzz==3.14.5
+    - numpy
+    - pandas==2.2.2                # Colab default at 04-13~04-22
+    - scipy
+    - scikit-learn                 # FactRec only
+    - datasets                     # FactRec data prep only
+    # ACDC cross-model only:
+    - transformer-lens             # TransformerLens (Nanda & Bloom 2022); version not pinned in our run
+  - cudatoolkit=12.8               # implied by torch 2.10.0+cu128
+
+---
+name: wcc-paper-main-70b
+# Llama-70B-4bit environment for paper-Main (04-22) and Prospect 70B (04-23).
+# 70B notebook (`unified_pipeline_llama70b-4bit_v7_5_0.ipynb`) Cell 1 output captures:
+#   `Successfully installed bitsandbytes-0.49.2 transformers-5.6.0`
+# Prospect 70B notebook (`prospect_v7_5_5_llama-3.1-70b-instruct-4bit.ipynb`) Cell 1
+# captures: `Uninstalling transformers-5.0.0... Successfully installed bitsandbytes-0.49.2 transformers-5.6.0`
+# (= explicit downgrade from Colab default 5.0.0 then re-install via `pip install -U`).
+# 04-29 paper-Main 70B re-run uses the SAME env block but Cell 1 EXPLICITLY pins
+# `pip install transformers==5.6.0 bitsandbytes==0.49.2` (instead of `-U`) to neutralize
+# any post-Apr-22 PyPI drift. Note: the original Apr 22 run had a mid-run upgrade artifact
+# (5.0.0 → 5.6.0 between Cells); the Apr 29 re-run is single-version session-consistent.
+channels: [defaults]
+dependencies:
+  - python=3.12
+  - pip:
+    - torch==2.10.0+cu128
+    - transformers==5.6.0          # Cell 1 `-U` pulled latest at 04-22; v5.6.0 released 04-22T15:41Z
+    - accelerate                   # `-U` resolved (latest at 04-22)
+    - bitsandbytes==0.49.2         # required for NF4 4-bit forward; pulled by `bitsandbytes>=0.46.1`
+    - nnsight==0.6.3
+    - wordfreq==3.1.1
+    - rapidfuzz==3.14.5
+    - pandas
+    - scipy
+  - cudatoolkit=12.8
+
+---
+name: wcc-phase2-v2-reanalysis
+# Causal-importance Phase 2 v2 reanalysis (04-26~27), FactRec 70B addendum (04-25),
+# AND Phase 2 v3 reanalysis (04-30, post v7.5.0-rerun).
+# All three runs use Cell 1 `pip install -q -U transformers accelerate nnsight scipy pandas`
+# (Phase 2 v2/v3 also include `bitsandbytes>=0.46.1` for the 70B variant).
+# The `-U` flag pulled the latest transformers at run date.
+# PyPI release dates (verified): transformers 5.6.2 released 2026-04-23T18:33Z; remained
+# the latest stable through 2026-04-30. So at all three run dates (04-25 / 04-26~27 / 04-30),
+# `pip install -U transformers` resolved to the same 5.6.2.
+#
+# Note: For Phase 2 v3 reanalysis (04-30), the env block is identical to Phase 2 v2
+# (same transformers 5.6.2, same nnsight 0.6.3, same torch 2.10.0+cu128). The v3 vs v2
+# numerical shift originates from upstream `30_patching/individual_head_effects.csv`
+# (re-generated under wcc-paper-main-7std-pinned-cell1 on 04-29~30 with HEAD_BATCH_SIZE=128
+# batched patching, replacing the Apr 21 single-head patching), NOT from this env.
+# Direct stdout evidence captured in v2 notebook Cell 1 output:
+#   `[10:09:59] Torch: 2.10.0+cu128 | CUDA available: True`
+#   `[10:09:59] GPU: NVIDIA A100-SXM4-40GB  VRAM=39.5 GB`  (or RTX PRO 6000 Blackwell for 70B)
+#   `[10:10:17] nnsight version: 0.6.3`
+channels: [defaults]
+dependencies:
+  - python=3.12
+  - pip:
+    - torch==2.10.0+cu128
+    - transformers==5.6.2          # `-U` resolved to v5.6.2 at 04-25 ~ 04-27
+    - accelerate                   # `-U` resolved
+    - bitsandbytes==0.49.2         # 70B variant only
+    - nnsight==0.6.3
+    - wordfreq==3.1.1              # only for novelword Phase 2 v2 (no FactRec)
+    - rapidfuzz==3.14.5             # only for novelword Phase 2 v2
+    # Phase 2 v2 `-U pandas` resolved to pandas 3.0.2, which is incompatible with
+    # google-colab 1.0.0 / db-dtypes / gradio / cudf-cu12 (pip emits warnings, but the
+    # pipeline does not exercise affected APIs, so warnings are non-blocking).
+    - pandas==3.0.2
+    - scipy
+    - scikit-learn                 # FactRec 70B only
+  - cudatoolkit=12.8
+
+---
+# === Auxiliary local-GPU environment (NOT in main 8-model results) ===
+# greater_than / induction / kn_fact_edit_robustness ran on a local workstation with
+# RTX 3060 (8 GB VRAM) during the 2026-04-08 ~ 04-13 design phase. These are
+# GPT-2-small TransformerLens experiments referenced by Appendix G.1 as auxiliary
+# cross-checks. The exact pinned library versions for these auxiliary runs are NOT
+# captured in the per-run config files. If exact reproduction is required, the source
+# code is in `notebooks/01_prompt_calibration_*.ipynb` and the saved data is sufficient
+# to verify the cross-check claims without re-running the experiments.

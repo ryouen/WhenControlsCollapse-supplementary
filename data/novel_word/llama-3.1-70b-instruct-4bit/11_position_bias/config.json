@@ -1,0 +1,28 @@
+{
+  "phase_name": "11_position_bias",
+  "elapsed_sec": 0.008434295654296875,
+  "n_position_bias_trials": 80,
+  "logit_gap_threshold_used": 0.5,
+  "pipeline_version": "v7.5.0",
+  "prompt_format": "format_c_qa_options_v7_5",
+  "platform": "GoogleColab_A100-SXM4-80GB",
+  "model_id": "cmarkea/Meta-Llama-3.1-70B-Instruct-4bit",
+  "model_short": "llama-3.1-70b-instruct-4bit",
+  "word_seed": 2026,
+  "perm_seed": 42,
+  "n_pairs": 10,
+  "attr_P": [
+    "bold",
+    "cautious"
+  ],
+  "attr_Q": [
+    "complex",
+    "simple"
+  ],
+  "common_word_list_source": "wordfreq.top_n_list('en', 3000, wordlist='large') from wordfreq==3.1.1 (https://pypi.org/project/wordfreq/)",
+  "saved_at": "2026-04-29T18:43:10.641470",
+  "phaseA_posbias_elapsed_sec": 50.239328145980835,
+  "n_posbias_trials": 80,
+  "d_plus_rate_posbias": 1.0,
+  "argmax_accuracy_posbias": 0.625
+}

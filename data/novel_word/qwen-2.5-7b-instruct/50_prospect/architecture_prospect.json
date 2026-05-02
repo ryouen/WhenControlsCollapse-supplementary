@@ -1,0 +1,9 @@
+{
+  "num_layers": 28,
+  "num_heads": 28,
+  "head_dim": 128,
+  "hidden_size": 3584,
+  "vocab_size": 152064,
+  "total_heads": 784,
+  "torch_dtype": "bfloat16"
+}

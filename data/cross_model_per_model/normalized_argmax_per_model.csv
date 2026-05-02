@@ -1,0 +1,9 @@
+model,n,strict_argmax_pct,normalized_first_token_argmax_pct,gain_pp,d_plus_pct
+Llama-8B-Inst,80,100.0,100.0,0.0,100.0
+Gemma-2-9B-IT,80,43.75,100.0,56.25,100.0
+Qwen-7B-Inst,80,97.5,100.0,2.5,100.0
+Qwen-14B-Inst,80,97.5,100.0,2.5,100.0
+Gemma-3-27B-IT,80,63.75,100.0,36.25,100.0
+OLMo-13B-Inst,80,100.0,100.0,0.0,100.0
+GPT-J-6B-fp32,80,22.5,33.75,11.25,50.0
+Llama-70B-Inst-4bit,80,76.25,100.0,23.75,100.0

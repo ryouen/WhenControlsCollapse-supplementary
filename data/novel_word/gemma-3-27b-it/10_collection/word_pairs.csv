@@ -1,0 +1,11 @@
+pair_id,word_a,word_b,first_subtoken_id_a,first_subtoken_id_b,first_subtoken_text_a,first_subtoken_text_b,token_count_a,token_count_b,logit_gap_A_colon
+pair0,molwainmom,linprarsun,8627,12161,mol,lin,4,4,0.140625
+pair1,nousdabrik,mailpluwen,7653,10658,nous,mail,3,3,0.0625
+pair2,lorspenprem,kepalmour,16003,16104,lors,kep,3,3,0.375
+pair3,noulnenkre,dimonkeis,10515,4045,nou,dim,4,4,0.140625
+pair4,brunplifouk,wurplonaik,29856,9540,brun,wur,4,4,0.2734375
+pair5,dorsongom,plurpasnik,38224,75416,dors,plur,3,3,0.1875
+pair6,korrourvain,gesstoukei,13583,13502,kor,ges,4,4,0.484375
+pair7,lurtonzout,vougelspis,61501,19414,lur,vou,4,4,0.0390625
+pair8,sapourzat,walarslat,23588,12460,sap,wal,3,3,0.28515625
+pair9,pirvasek,sirsolbeis,24341,17536,pir,sir,3,3,0.0625

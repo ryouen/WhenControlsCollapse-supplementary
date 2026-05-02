@@ -1,0 +1,50 @@
+{
+  "phase_name": "40_readout",
+  "source_rule": "alpha_same_pair_same_attr_cross_crel",
+  "patch_mechanism": "input_overwrite_v5_1_pattern",
+  "patch_mechanism_version": "v2_post_20260421_oooerror_fix",
+  "ratios_readout": [
+    0.05,
+    0.1,
+    0.15
+  ],
+  "cache_layer_indices": [
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41
+  ],
+  "groups": [
+    "hihp_imp_desc",
+    "hilp_imp_desc",
+    "C_imp_asc",
+    "D_imp_asc",
+    "std_imp_asc"
+  ],
+  "readout_direction_source": "W_U_correct_minus_incorrect_normalized",
+  "n_readout_rows": 14400,
+  "elapsed_sec": 216.182,
+  "cache_layer_count": 8,
+  "pipeline_version": "v7.5.0",
+  "prompt_format": "format_c_qa_options_v7_5",
+  "platform": "GoogleColab_A100-SXM4-80GB",
+  "model_id": "google/gemma-2-9b-it",
+  "model_short": "gemma-2-9b-it",
+  "word_seed": 2026,
+  "perm_seed": 42,
+  "n_pairs": 10,
+  "attr_P": [
+    "bold",
+    "cautious"
+  ],
+  "attr_Q": [
+    "complex",
+    "simple"
+  ],
+  "common_word_list_source": "wordfreq.top_n_list('en', 3000, wordlist='large') from wordfreq==3.1.1 (https://pypi.org/project/wordfreq/)",
+  "saved_at": "2026-04-29T19:32:49.193491"
+}

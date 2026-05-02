@@ -1,0 +1,45 @@
+# When Controls Collapse — Model Checkpoint Revisions
+# (NeurIPS 2026 supplementary, Appendix G.6)
+#
+# All models loaded from Hugging Face Hub via `nnsight.LanguageModel(model_id)` (or, for
+# the IOI/ACDC cross-check, `transformer_lens.HookedTransformer.from_pretrained(name)`)
+# without an explicit `revision=` argument. The revision_sha column is the commit SHA on
+# `main` at the date of the production run (column run_date_utc; oldest-applicable date
+# across the multiple runs that loaded each model — see `run_summary.txt` for which date
+# applies to which run). At the final paper-preparation snapshot recorded in run_summary.txt, all 8 revisions remain the head
+# of `main` (= `is_current_main = True` for all rows), so byte-level reproduction does not
+# require time-travelling the HF index.
+#
+# Per-file sizes and LFS sha256 hashes are listed in checkpoint_manifest.json.
+#
+# To download the exact bytes used by this paper:
+#
+#   from huggingface_hub import snapshot_download
+#   snapshot_download(repo_id="<model_id>", revision="<revision_sha>")
+#
+# Format: model_id <tab> revision_sha <tab> earliest_run_date_utc <tab> total_size_bytes
+#         <tab> n_files <tab> dtype <tab> notes
+
+model_id	revision_sha	earliest_run_date_utc	total_size_bytes	n_files	dtype	notes
+meta-llama/Llama-3.1-8B-Instruct	0e9e39f249a16976918f6564b8830bc894c89659	2026-04-13	32125778304	17	bf16	Used by ACDC-cross-model (04-13), FactRec (04-18), paper-Main (04-21), Prospect (04-22~24), Phase 2 v2 (04-26), paper-Main re-run (04-29), Phase 2 v3 (04-30)
+google/gemma-2-9b-it	11c9b309abf73637e4b6f9a3fa1e92e615547819	2026-04-13	18510000000	14	bf16	Used by ACDC-cross-model (04-13), FactRec (04-18), paper-Main (04-21), Prospect (04-22), Phase 2 v2 (04-26), paper-Main re-run (04-29), Phase 2 v3 (04-30)
+Qwen/Qwen2.5-7B-Instruct	a09a35458c702b33eeacc393d103063234e8bc28	2026-04-13	15240000000	14	bf16	Used by ACDC-cross-model (04-13), FactRec (04-18), paper-Main (04-21), Prospect (04-22), Phase 2 v2 (04-26), Phase 2 v3 (04-30, deterministic re-classification only)
+Qwen/Qwen2.5-14B-Instruct	cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8	2026-04-13	29550000000	18	bf16	Used by ACDC-cross-model (04-13), FactRec (04-18), paper-Main (04-21), Prospect (04-22), Phase 2 v2 (04-26), Phase 2 v3 (04-30, deterministic re-classification only)
+allenai/OLMo-2-1124-13B-Instruct	3a5c85baefbb1896a54d56fe2e76c0395627ddf4	2026-04-18	27440000000	16	bf16	FactRec (04-18), paper-Main (04-21), Prospect (04-22), Phase 2 v2 (04-26). NOT loadable via TransformerLens, so absent from ACDC-cross-model. Phase 2 v3 attempted (04-30) but stopped at Phase A; v2 retained as final.
+EleutherAI/gpt-j-6B	47e169305d2e8376be1d31e765533382721b2cc1	2026-04-13	72620000000	12	fp32	Used by ACDC-cross-model (04-13), FactRec (04-18), paper-Main (04-21), Prospect (04-22), Phase 2 v2 (04-26)
+gghfez/gemma-3-27b-novision	e3ec23e3009355eaabd928aa668abc8b5ff80e9a	2026-04-18	54060000000	21	bf16	FactRec (04-18), paper-Main (04-21), Prospect (04-22), Phase 2 v2 (04-26), paper-Main re-run (04-29~30, equal-k bug fix), Phase 2 v3 (04-30). Text-only fork of google/gemma-3-27b-it.
+cmarkea/Meta-Llama-3.1-70B-Instruct-4bit	c2cec70761fa46268e7ec4296cf9edf2acd7cbe5	2026-04-22	39530000000	16	NF4-4bit	paper-Main 70B (04-22), Prospect 70B (04-23), FactRec 70B (04-25), Phase 2 v2 70B (04-26), paper-Main 70B re-run (04-29, transformers==5.6.0 pinned), Phase 2 v3 70B (04-30). Pre-quantized NF4 (no runtime bnb-quant non-determinism).
+
+# Notes:
+# - All 8 revisions are static repos (last commit dates: 2023-06-21 to 2025-03-17).
+#   None of the model repos has been updated since the production runs, so reviewers
+#   reproducing today will obtain identical bytes by setting `revision=<sha>` OR by
+#   pulling `main` (equivalent on 2026-04-27).
+# - `gghfez/gemma-3-27b-novision` is a community fork of `google/gemma-3-27b-it` with
+#   the vision tower removed. We use this fork because the original `gemma-3-27b-it`
+#   requires `transformers >= 5.6.0` for its vision-aware code path, while the
+#   paper-Main pipeline runs on the Colab default `transformers 5.0.0` (2026-04-21).
+# - 70B is loaded as a pre-quantized NF4 model from `cmarkea/...`. We do NOT runtime-
+#   quantize the original `meta-llama/Meta-Llama-3.1-70B-Instruct` weights via bnb;
+#   loading a pre-quantized snapshot eliminates a source of NF4 quant-block-RNG drift
+#   between reviewers.
