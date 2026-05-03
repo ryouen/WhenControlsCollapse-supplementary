@@ -42,6 +42,13 @@ for m in models:
     per_head.columns = ['layer', 'head', 'mean_abs_delta']
 
     df = rsa.merge(pert, on=['layer', 'head']).merge(per_head, on=['layer', 'head'])
+    # Eligibility convention (Appendix G.3): heads with non-finite rsa_max
+    # (zero same-pair-source representational variance) are inactive / non-evaluable
+    # and excluded from all A/B/C/D-based calculations. Dropping them here aligns
+    # the regression head universe with the cell-classification head universe.
+    # For the six models with n_inactive = 0, eligible == architectural;
+    # only Gemma-3-27B-IT (99 GQA-paired inactive heads) and Qwen-2.5-7B-Instruct
+    # (1 inactive head) differ between conventions.
     df = df.dropna(subset=['rsa_max', 'perturbation_L2', 'mean_abs_delta'])
     if len(df) < 4:
         continue
