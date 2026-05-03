@@ -7,7 +7,7 @@ are the canonical entry points:
 | Pipeline | Where | Purpose |
 |---|---|---|
 | Novel-word (8 models) | `notebooks/unified_pipeline_*.ipynb` (Colab) | RSA + perturbation + cell classification + group patching + Prospect 10-seed |
-| Causal-importance reanalysis (8 models) | `notebooks/causal_importance_reanalysis_*.ipynb` | Phase 2 v2 (Appendix B.10) |
+| Causal-importance reanalysis (8 models) | `notebooks/causal_importance_reanalysis_*.ipynb` | Body §3.6 / Appendix B.10 |
 | Factual recall (8 models) | `notebooks/factual_recall_*.ipynb` | Body Table 7 / Appendix D |
 | ACDC cross-model (4 model variants) | `notebooks/acdc_ioi_cross_model.ipynb` | Appendix F.5 / Table F4 |
 | IOI / Induction / Greater-Than | `code/tasks/{ioi,induction,greater_than}/run_full_pipeline.py` | Boundary benchmarks (Appendix E, F.1–F.3) |
@@ -54,7 +54,7 @@ export HF_TOKEN=<YOUR_HF_TOKEN>   # supply your own HuggingFace token
 #   Source CSV: data/novel_word/{m}/30_patching/dose_response_v2.csv (std_imp_asc rows)
 
 # Body Table 6 / Appendix B Tables B11–B15 — Causal-importance reanalysis
-#   Source CSV: data/novel_word/{m}/causal_importance_reanalysis_v2_session_consistent/
+#   Source CSV: data/novel_word/{m}/causal_importance_reanalysis/
 #                 dose_response_v2_causal.csv
 #               + data/cross_model/causal_importance_phase2_*.csv
 #   Producer: notebooks/causal_importance_reanalysis_*.ipynb

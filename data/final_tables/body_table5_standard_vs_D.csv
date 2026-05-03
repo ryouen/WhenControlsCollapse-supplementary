@@ -1,0 +1,9 @@
+model,standard_null,cell_D_ref,standard_minus_D
+Llama-8B-Inst,1.196,0.038,1.158
+Gemma-2-9B-IT,1.146,0.121,1.025
+Qwen-7B-Inst,3.905,0.071,3.834
+Qwen-14B-Inst,5.153,0.142,5.011
+Gemma-3-27B-IT,1.193,0.281,0.912
+OLMo-13B-Inst,1.029,0.051,0.978
+GPT-J-6B-fp32,0.152,0.018,0.134
+Llama-70B-Inst-4bit,0.43,0.036,0.394

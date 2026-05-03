@@ -1,7 +1,7 @@
 # Paper-Main 7-standard environment (default for novel-word + factual-recall + ACDC + Prospect 7-std runs)
 # This file mirrors the wcc-paper-main-7std conda block in environment.yml.
-# For 70B and Phase 2 v2 environments, see requirements_paper_main_70b.txt and
-# requirements_phase2_v2_reanalysis.txt respectively. See metadata/run_summary.txt
+# For 70B and causal-importance reanalysis environments, see requirements_paper_main_70b.txt and
+# requirements_causal_imp_reanalysis.txt respectively. See metadata/run_summary.txt
 # for which environment applies to which run.
 #
 # Python: 3.12 (Colab default at 2026-04-13 ~ 04-22)

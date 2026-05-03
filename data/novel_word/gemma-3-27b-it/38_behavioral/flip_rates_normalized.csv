@@ -1,0 +1,17 @@
+group,ratio,n_trials,flip_rate_normalized
+hihp_imp_desc,0.05,120,0.3167
+hihp_imp_desc,0.1,120,0.6167
+hihp_imp_desc,0.2,120,0.9083
+hihp_imp_desc,0.3,120,1.0
+hilp_imp_desc,0.05,120,0.0
+hilp_imp_desc,0.1,120,0.0167
+hilp_imp_desc,0.2,120,0.0167
+hilp_imp_desc,0.3,120,0.0167
+C_imp_asc,0.05,120,0.0833
+C_imp_asc,0.1,120,0.375
+C_imp_asc,0.2,120,1.0
+C_imp_asc,0.3,120,1.0
+D_imp_asc,0.05,120,0.0167
+D_imp_asc,0.1,120,0.0167
+D_imp_asc,0.2,120,0.0167
+D_imp_asc,0.3,120,0.0167

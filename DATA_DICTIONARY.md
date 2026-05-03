@@ -70,7 +70,14 @@ Models referenced as `{m}` ∈ `{llama-3.1-8b-instruct, gemma-2-9b-it, qwen-2.5-
 - **`trials_all_prospect.csv`** — Prospect 80-pair held-out trial set.
 - **`word_pairs_prospect.csv`** — Prospect 80 word pairs (`WORD_SEED = 2027`).
 
-### `causal_importance_reanalysis_v2_session_consistent/` — Appendix B §B.10
+### `38_behavioral/` — capitalization-normalized greedy top-1 flip rates (Body Table 4 / Appendix B §B.5 / Table B6)
+
+- **`behavioral_per_trial.csv`** — per-(trial × group × ratio) raw outcomes including `argmax_clean`, `argmax_patched` (token IDs), `is_argmax_flip` (strict, token-id-level), `is_correct_clean / patched`, and `target_logit_delta_signed`.
+- **`behavioral_aggregate.csv`** — model-level aggregate per (group, ratio): `n_trials`, `accuracy_clean`, `accuracy_patched`, `flip_rate` (**strict**, token-id-level), and signed-delta means. The `flip_rate` here measures any token-id change.
+- **`flip_rates.csv`** — per-trial `is_argmax_flip` (strict). Companion to `behavioral_per_trial.csv`.
+- **`flip_rates_normalized.csv`** — per-(group, ratio) **capitalization-normalized** flip rate matching the body Table 4 / Appendix B Table B6 convention: each token id is decoded via the model's HF tokenizer, then `lower(strip(decoded))` is compared. This counts a flip only when the **effective first-token answer** changes, not when the patched argmax is merely a capitalization variant of the clean argmax. The two conventions are intentionally distinct and disagree by 0.0–0.16 across the eight models when models produce capitalization variants of the same word as alternate top tokens (largest disagreement at Llama-3.1-70B-Inst-4bit under NF4 quantization). Body Table 4 reports r = 0.10 rows from this CSV. Reproduction script: `paper/_ai_workspace/compute_normalized_flip_rates.py`.
+
+### `causal_importance_reanalysis/` — Appendix B §B.10
 
 - **`per_head_causal_imp.csv`** — single-head causal patch effect per head.
   Columns: `layer, head, causal_imp`.
@@ -183,19 +190,19 @@ Edge-level analysis on 4 model variants: `gpt-j-6b, gemma-2-9b-it, qwen-2.5-7b-i
 - **`signed_delta_per_cell.csv`** — backs **Appendix B Table B1**. 8 models × 4 cells = 32 rows. Columns: `model, cell ∈ {A,B,C,D}, n_heads, mean_signed, mean_abs, pct_down_pt1, pct_up_pt1, pct_near0_pt1, tilt_down_minus_up`. `mean_signed` = mean(`delta_target_logit_signed`) over (head, tuple) pairs in cell, where `delta_target_logit_signed = patched − clean` (Appendix B §B.1). `tilt_down_minus_up` = (% with Δ < −0.1) − (% with Δ > +0.1), in pp.
 - **`strict_argmax_flip_per_model.csv`** — strict (token-id-level, no normalization) argmax-flip rate per (model, group, ratio). 8 models × 5 groups × ~5 ratios = 156 rows. Columns: `model, group, ratio, strict_flip_rate, n`. Companion to body Table 4 and Appendix B Table B6 (which use capitalization-normalized flips).
 - **`normalized_argmax_per_model.csv`** — per-model task-validation accuracy (clean prompts, no patching). Columns: `model, n=80, strict_argmax_pct, normalized_first_token_argmax_pct, gain_pp, d_plus_pct`. Backs Appendix A §A.5 (Table A3) D+ validity and the body §2.1 "100% capitalization-normalized first-token argmax" claim for the canonical-instruct core.
-- **`causal_imp_crossfit.csv`** — Phase-1-vs-Phase-2 cross-fit per-head sensitivity check on the causal-importance reanalysis (8 models × 5 cycles). Columns include `model, source ∈ {v2, v3, v4}, n_C_p, n_D_p, k, mean_abs_delta_C_p_full, mean_abs_delta_D_p_full, mean_abs_delta_C_p_xfit, mean_abs_delta_D_p_xfit, gap_full, gap_xfit`. Per-model `source` indicates which reanalysis variant supplied the per-head causal-imp values for that row (see Appendix G §G.1 / `metadata/run_summary.txt`). Backs Appendix B Table B15.
+- **`causal_imp_crossfit.csv`** — Phase-1-vs-Phase-2 cross-fit per-head sensitivity check on the causal-importance reanalysis (8 models × 5 cycles). Columns: `model, n_C_p, n_D_p, k, mean_abs_delta_C_p_full, mean_abs_delta_D_p_full, mean_abs_delta_C_p_xfit, mean_abs_delta_D_p_xfit, gap_full, gap_xfit`. Per-model values are computed from the canonical `data/novel_word/{m}/causal_importance_reanalysis/` source. Backs Appendix B Table B15.
 
 **Auxiliary cross-model summaries** (retained for consistency checks; canonical table values are documented in the corresponding per-model CSVs and Appendix tables above):
 
 - **`8model_comparison.csv`** — auxiliary cross-model summary; canonical values come from per-model `30_patching/dose_response_v2.csv` (Appendix G §G.4 / Table G1).
 - **`behavioral_flip_rates_per_model.csv`** — auxiliary per-model top-1 flip aggregate (7-model only; 70B not included).
+- **`normalized_flip_per_model.csv`** — cross-model capitalization-normalized flip rate per (model, group, ratio); 8 models × 4 groups × 5 ratios = up to 156 rows. Columns: `model, group, ratio, n_trials, flip_rate_normalized`. Aggregated from per-model `38_behavioral/flip_rates_normalized.csv`. Backs body Table 4 (r=0.10 slice across 4 groups × 8 models) and Appendix B Table B6 (full 5 ratios × 4 cells × 8 models grid).
 - **`cell_counts_per_model.csv`** — auxiliary per-model |A|/|B|/|C|/|D| (7-model only); canonical counts are in Table G2.
 - **`main_dose_response_gap_per_model.csv`** — auxiliary C−D summary (7-model only).
 - **`prospect_gap_per_model.csv`** — auxiliary prospect gap summary (Prospect not run on 70B by design).
 - **`body_table7_gini_fr_vs_nw.csv`** — auxiliary Table 7 Gini comparison; canonical values come from a per-head Gini recompute on the eligibility-filtered head set (Gemma-3 = 1885, Qwen-7B = 783, others architectural).
 - **`saturation_onsets.csv`** — per-model `r_sat = min(|C|, |D|) / eligible_heads`. Matches Appendix G §G.3 Table G2.
 - **`within_stratum_28rows.csv`** — flattened table source for Appendix B Table B2 (the `28rows` filename refers to the native-precision seven-model × 4-quartile = 28-comparison family α / 28 = 0.001786; the 70B stress-arm rows are appended in the Appendix table for the full 8-model × 4-quartile = 32-row presentation).
-- **`causal_importance_reanalysis_v2_summary.csv`** — auxiliary Phase-2 summary; canonical headline values are in Table B11/B12, with the cross-fit values in `causal_imp_crossfit.csv`.
 
 ## Naming conventions and units
 
@@ -206,4 +213,4 @@ Edge-level analysis on 4 model variants: `gpt-j-6b, gemma-2-9b-it, qwen-2.5-7b-i
 
 ## Reproduction provenance
 
-All values can be regenerated from the model checkpoints listed in `metadata/checkpoint_revisions.txt` via the analysis scripts in `code/` and the Colab notebooks in `notebooks/`. The production runs are documented in `metadata/run_summary.txt`; environment versions are pinned in `metadata/environment.yml` (three blocks: `wcc-paper-main-7std`, `wcc-paper-main-70b`, `wcc-phase2-v2-reanalysis`). The causal-importance reanalysis is session-consistent — see Appendix G §G.5 for the OLMo-13B 6.0-logit cross-session divergence rationale.
+All values can be regenerated from the model checkpoints listed in `metadata/checkpoint_revisions.txt` via the analysis scripts in `code/` and the Colab notebooks in `notebooks/`. The production runs are documented in `metadata/run_summary.txt`; environment versions are pinned in `metadata/environment.yml` (three blocks: `wcc-paper-main-7std`, `wcc-paper-main-70b`, `wcc-causal-imp-reanalysis`). The causal-importance reanalysis is session-consistent — see Appendix G §G.5 for the OLMo-13B 6.0-logit cross-session divergence rationale.

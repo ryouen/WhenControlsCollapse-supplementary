@@ -1,0 +1,9 @@
+model,C_prime,D_prime,C_minus_D_prime,C_prime_exhausted_at_r010
+Llama-8B-Inst,0.067,0.033,0.034,True
+Gemma-2-9B-IT,0.093,0.046,0.047,False
+Qwen-7B-Inst,0.353,0.084,0.269,False
+Qwen-14B-Inst,0.891,0.185,0.706,False
+Gemma-3-27B-IT,0.333,0.252,0.081,False
+OLMo-13B-Inst,0.145,0.044,0.101,False
+GPT-J-6B-fp32,0.063,0.011,0.052,True
+Llama-70B-Inst-4bit,0.28,0.04,0.24,False
