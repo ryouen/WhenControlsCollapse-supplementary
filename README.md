@@ -102,11 +102,12 @@ bundle minimal and focused on the reproduction path.
 
 | Pipeline | Script | Used by |
 |---|---|---|
-| Novel-Word Phase 10–40 (7 standard models) | `notebooks/unified_pipeline_*.ipynb` | All 7 standard models |
-| Novel-Word Phase 10–40 (Llama-70B-4bit) | `notebooks/unified_pipeline_llama-3.1-70b-instruct-4bit.ipynb` | 70B paper-Main |
+| Novel-Word Phase 10–40 (5 bf16 instruct-tuned models, shared template) | `notebooks/unified_pipeline_llama-3.1-8b-instruct.ipynb` | Llama-3.1-8B-Instruct, Gemma-2-9B-IT, Qwen-2.5-7B-Instruct, Qwen-2.5-14B-Instruct, OLMo-2-13B-Instruct |
+| Novel-Word Phase 10–40 (Gemma-3-27B-IT, separate template) | `notebooks/unified_pipeline_gemma-3-27b-it.ipynb` | Gemma-3-27B-IT (loaded via `gghfez/gemma-3-27b-novision` text-only fork) |
+| Novel-Word Phase 10–40 (GPT-J-6B fp32, separate template) | `notebooks/unified_pipeline_gpt-j-6b-fp32.ipynb` | GPT-J-6B (fp32; base, non-instruct) |
+| Novel-Word Phase 10–40 (Llama-70B-4bit, separate template) | `notebooks/unified_pipeline_llama-3.1-70b-instruct-4bit.ipynb` | Llama-3.1-70B-Instruct-4bit (NF4 stress arm) |
 | Novel-Word Prospect (Phase 50) | `notebooks/prospect_*.ipynb` | All 8 models |
 | causal-importance reanalysis (group-patch causal-imp) | `notebooks/causal_importance_reanalysis_*.ipynb` | All 8 models |
-| Behavioral aggregates | `notebooks/behavioral_*.ipynb` | All 8 models |
 | ACDC cross-model | `notebooks/acdc_ioi_cross_model.ipynb` | 4 TransformerLens-loadable models (gpt-j-6b, gemma-2-9b-it, qwen-2.5-7b-instruct, qwen-2.5-14b-instruct) |
 | Factual-recall (Appendix D) | `notebooks/factual_recall_*.ipynb` | All 8 models |
 | Cross-model aggregation | `code/cross_model/aggregate_v7_5.py` | Selected cross-model summary CSVs (cell counts, dose-response gap, prospect gap, behavioral); paper-table values can also be verified directly from the per-model CSVs in `data/` |
@@ -162,15 +163,15 @@ python supplementary/code/cross_model/aggregate_v7_5.py
 Reads from `$WCC_ROOT/data/novel_word/{model}/{20_scoring,30_patching,38_behavioral,50_prospect}/...`
 and writes 4 cross-model tables under `$WCC_ROOT/data/cross_model_per_model/`.
 
-## Critical caveat: OLMo-2-13B Phase 2 group patching
+## Critical caveat: OLMo-2-13B causal-importance reanalysis
 
-For the Phase 2 group-patching reanalysis of OLMo-2-13B (Appendix G §G.5), the `transformers`
+For the causal-importance reanalysis of OLMo-2-13B (Appendix G §G.5), the `transformers`
 version of activation extraction MUST match the version of group-patching forward passes.
 Cross-session mixing of `transformers 5.0.0` (paper-Main extraction) with `transformers 5.6.x`
-(Phase 2 reanalysis) produces a **6.0-logit** clean-logit divergence on OLMo (other 7 models
+(causal-importance reanalysis) produces a **6.0-logit** clean-logit divergence on OLMo (other 7 models
 unaffected). The `wcc-causal-imp-reanalysis` environment is **session-consistent** by design:
 both extraction and patching happen in a single Colab kernel using the same `transformers 5.6.2`,
-which restores byte-level reproducibility for OLMo. This is the v2 notebook redesign documented
+which restores byte-level reproducibility for OLMo. The single-session design is documented
 in Appendix G §G.5 and summarized in `metadata/run_summary.txt`.
 
 ## Caveat for size-limited supplementary submission

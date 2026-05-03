@@ -45,10 +45,12 @@ export HF_TOKEN=<YOUR_HF_TOKEN>   # supply your own HuggingFace token
 #   Source CSV: data/novel_word/{m}/50_prospect/prospect_dose_response_v2.csv
 #   Producer: notebooks/prospect_*.ipynb
 
-# Body Table 4 — Greedy top-1 flip rate
-#   Source CSV: data/novel_word/{m}/30_patching/dose_response_v2.csv (argmax cols)
-#               + data/cross_model_per_model/behavioral_flip_rates_per_model.csv
-#   Producer: notebooks/behavioral_*.ipynb (3 variants cover 8 models)
+# Body Table 4 — Greedy top-1 flip rate (capitalization-normalized)
+#   Source CSV: data/final_tables/body_table4_behavioral_flip.csv
+#               + per-model data/novel_word/{m}/38_behavioral/flip_rates_normalized.csv
+#               (cross-model summary: data/cross_model_per_model/normalized_flip_per_model.csv)
+#   Producer: notebooks/unified_pipeline_*.ipynb Phase 38 (behavioral derivation),
+#             plus paper/_ai_workspace/compute_normalized_flip_rates.py for cap-normalization
 
 # Body Table 5 — std vs D
 #   Source CSV: data/novel_word/{m}/30_patching/dose_response_v2.csv (std_imp_asc rows)
